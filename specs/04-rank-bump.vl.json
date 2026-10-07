@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bump chart: medal-table rank of Australia and five rival nations at every Summer Games, 1948-2024.",
+  "title": {
+    "text": "Australia has finished in the top 10 at every Games since 1992",
+    "subtitle": "Place on the medal table, 1948–2024 (1st is the top). Hover over a line to follow a country.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": 420,
+  "padding": {"left": 5, "top": 5, "bottom": 5, "right": 95},
+  "data": {"url": "data/summer_ranks.csv"},
+  "transform": [
+    {"filter": {"field": "noc", "oneOf": ["AUS", "GBR", "JPN", "FRA", "ITA", "NED"]}},
+    {
+      "calculate": "{'AUS': 'Australia', 'GBR': 'Great Britain', 'JPN': 'Japan', 'FRA': 'France', 'ITA': 'Italy', 'NED': 'Netherlands'}[datum.noc]",
+      "as": "nation"
+    },
+    {"calculate": "datum.noc === 'AUS' ? 1 : 0", "as": "is_aus"},
+    {"calculate": "toString(datum.year)", "as": "games"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "games",
+      "type": "ordinal",
+      "title": null,
+      "scale": {"padding": 0.5},
+      "axis": {"labelAngle": 0, "labelFontSize": 12, "ticks": false, "domain": false}
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "title": "Place on the medal table",
+      "scale": {"reverse": true, "domain": [1, 36], "nice": false},
+      "axis": {"values": [1, 5, 10, 15, 20, 25, 30, 35], "grid": true, "domain": false, "ticks": false}
+    }
+  },
+  "layer": [
+    {
+      "params": [
+        {
+          "name": "focus",
+          "select": {"type": "point", "fields": ["nation"], "on": "pointerover", "clear": "pointerout"}
+        }
+      ],
+      "mark": {"type": "line", "interpolate": "monotone", "strokeCap": "round"},
+      "encoding": {
+        "detail": {"field": "nation"},
+        "order": {"field": "year"},
+        "color": {
+          "condition": [
+            {"test": "datum.noc === 'AUS'", "value": "#00843D"},
+            {"param": "focus", "empty": false, "value": "#1F2328"}
+          ],
+          "value": "#BFC4C9"
+        },
+        "strokeWidth": {
+          "condition": [
+            {"test": "datum.noc === 'AUS'", "value": 3.5},
+            {"param": "focus", "empty": false, "value": 2.5}
+          ],
+          "value": 1.5
+        },
+        "tooltip": [{"field": "nation", "title": "Country"}]
+      }
+    },
+    {
+      "mark": {"type": "circle", "size": 45, "opacity": 1, "stroke": "#FAF8F3", "strokeWidth": 1},
+      "encoding": {
+        "color": {
+          "condition": {"test": "datum.noc === 'AUS'", "value": "#00843D"},
+          "value": "#9AA0A6"
+        },
+        "tooltip": [
+          {"field": "nation", "title": "Country"},
+          {"field": "games", "title": "Games"},
+          {"field": "rank", "title": "Place"},
+          {"field": "gold", "title": "Gold"},
+          {"field": "total", "title": "Total medals"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.games === '2024'"}],
+      "mark": {"type": "text", "align": "left", "dx": 9, "fontSize": 12, "fontWeight": 600},
+      "encoding": {
+        "text": {"field": "nation"},
+        "color": {
+          "condition": {"test": "datum.noc === 'AUS'", "value": "#00843D"},
+          "value": "#5A6169"
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"games": "1976", "rank": 32, "text": "Montreal 1976: 32nd"},
+          {"games": "2000", "rank": 4, "text": "Sydney 2000: 4th"}
+        ]
+      },
+      "mark": {"type": "text", "align": "left", "dx": 10, "dy": -12, "fontSize": 12, "fontWeight": 600, "color": "#00843D"},
+      "encoding": {"text": {"field": "text"}}
+    }
+  ]
+}

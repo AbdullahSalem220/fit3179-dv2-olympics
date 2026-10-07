@@ -1,0 +1,392 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Flow map: curved great-circle lines from the birth country of each overseas-born Australian Summer Olympic medallist (1896-2024) to Australia, line width proportional to the number of medallists. Shows birth country only, not migration routes or dates. Equal Earth projection centred on Australia.",
+  "title": {
+    "text": "77 Australian medallists were born in 30 other countries",
+    "subtitle": "Birth country of medallists born overseas, 1896–2024. Lines show where they were born, not how or when they came to Australia.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": 500,
+  "projection": {
+    "type": "equalEarth",
+    "rotate": [
+      -150,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/geo/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.name !== 'Antarctica'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#E9E5DC",
+        "stroke": "#FAF8F3",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "data/geo/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.id === '036'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#00843D",
+        "stroke": "#FAF8F3",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {
+        "url": "data/overseas_born.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "medallists": "number",
+            "lat": "number",
+            "lon": "number",
+            "dest_lat": "number",
+            "dest_lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.country === 'UK' ? 'United Kingdom' : datum.country === 'US' ? 'United States' : datum.country",
+          "as": "name"
+        },
+        {
+          "calculate": "PI / 180",
+          "as": "rad"
+        },
+        {
+          "calculate": "datum.dest_lat * datum.rad",
+          "as": "p1"
+        },
+        {
+          "calculate": "datum.dest_lon * datum.rad",
+          "as": "l1"
+        },
+        {
+          "calculate": "datum.lat * datum.rad",
+          "as": "p2"
+        },
+        {
+          "calculate": "datum.lon * datum.rad",
+          "as": "l2"
+        },
+        {
+          "calculate": "2 * asin(sqrt(pow(sin((datum.p2 - datum.p1) / 2), 2) + cos(datum.p1) * cos(datum.p2) * pow(sin((datum.l2 - datum.l1) / 2), 2)))",
+          "as": "arc"
+        },
+        {
+          "calculate": "min(900 / 6371 / datum.arc, 1)",
+          "as": "f"
+        },
+        {
+          "calculate": "sin((1 - datum.f) * datum.arc) / sin(datum.arc)",
+          "as": "wa"
+        },
+        {
+          "calculate": "sin(datum.f * datum.arc) / sin(datum.arc)",
+          "as": "wb"
+        },
+        {
+          "calculate": "datum.wa * cos(datum.p1) * cos(datum.l1) + datum.wb * cos(datum.p2) * cos(datum.l2)",
+          "as": "gx"
+        },
+        {
+          "calculate": "datum.wa * cos(datum.p1) * sin(datum.l1) + datum.wb * cos(datum.p2) * sin(datum.l2)",
+          "as": "gy"
+        },
+        {
+          "calculate": "datum.wa * sin(datum.p1) + datum.wb * sin(datum.p2)",
+          "as": "gz"
+        },
+        {
+          "calculate": "atan2(datum.gz, sqrt(datum.gx * datum.gx + datum.gy * datum.gy)) / datum.rad",
+          "as": "fan_lat"
+        },
+        {
+          "calculate": "atan2(datum.gy, datum.gx) / datum.rad",
+          "as": "fan_lon"
+        },
+        {
+          "calculate": "{'type': 'Feature', 'properties': {}, 'geometry': {'type': 'LineString', 'coordinates': [[datum.lon, datum.lat], [datum.fan_lon, datum.fan_lat]]}}",
+          "as": "route"
+        },
+        {
+          "calculate": "datum.name + ' ' + datum.medallists",
+          "as": "label"
+        },
+        {
+          "calculate": "{'GBR': 'upleft', 'IND': 'left', 'SGP': 'left', 'MAS': 'upright', 'MAW': 'left', 'RSA': 'left', 'USA': 'right', 'NZL': 'right'}[datum.ioc] || 'left'",
+          "as": "pos"
+        }
+      ],
+      "layer": [
+        {
+          "mark": {
+            "type": "geoshape",
+            "filled": false,
+            "strokeCap": "round",
+            "opacity": 0.75
+          },
+          "encoding": {
+            "shape": {
+              "field": "route",
+              "type": "geojson"
+            },
+            "strokeWidth": {
+              "field": "medallists",
+              "type": "quantitative",
+              "scale": {
+                "range": [
+                  1,
+                  9
+                ],
+                "domain": [
+                  1,
+                  15
+                ]
+              },
+              "legend": {
+                "title": "Medallists born there",
+                "orient": "bottom",
+                "values": [
+                  1,
+                  5,
+                  15
+                ],
+                "symbolType": "stroke",
+                "symbolStrokeColor": "#5A6169",
+                "direction": "horizontal"
+              }
+            },
+            "stroke": {
+              "value": "#5A6169"
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "Birth country"
+              },
+              {
+                "field": "medallists",
+                "title": "Australian medallists born there"
+              }
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "size": 36,
+            "color": "#1F2328",
+            "opacity": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "tooltip": [
+              {
+                "field": "name",
+                "title": "Birth country"
+              },
+              {
+                "field": "medallists",
+                "title": "Australian medallists born there"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.medallists >= 6"
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            }
+          },
+          "layer": [
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'left'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -9,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FFFFFF",
+                "strokeWidth": 4,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'left'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -9,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'upleft'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -9,
+                "dy": -11,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FFFFFF",
+                "strokeWidth": 4,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'upleft'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -9,
+                "dy": -11,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'right'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 9,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FFFFFF",
+                "strokeWidth": 4,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'right'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 9,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'upright'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": -11,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FFFFFF",
+                "strokeWidth": 4,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'upright'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": -11,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

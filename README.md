@@ -66,7 +66,7 @@ The Paris 2024 files are fetched from an unmodified public copy on GitHub ([simj
 
 | Chart | Covers | Left out |
 |---|---|---|
-| Dot map of birthplaces, 1896–2024 | 805 of 820 Australian-born medallists (98%) | 6 town names shared by several places, 5 with no match, 4 with no town recorded. Also 77 born overseas and 108 with no birthplace |
+| Bin map of birthplaces, 1896–2024 (counts per 1° grid square; a dot map would stack the 126 medallists born in Sydney on one point) | 805 of 820 Australian-born medallists (98%) | 6 town names shared by several places, 5 with no match, 4 with no town recorded. Also 77 born overseas and 108 with no birthplace |
 | State choropleth, 2000–2024 (medallists with at least one medal at Sydney 2000 or later) | 530 of 610 medallists | 55 born overseas, 22 with no birthplace, 3 born in Australia with no state |
 | Flow map, birth country of medallists born overseas (not migration) | 77 medallists from 30 countries | none |
 | World choropleth, Paris 2024 medals per million people | 92 medal-winning teams | Individual Neutral Athletes and the Refugee Olympic Team (no country); Chinese Taipei (no World Bank population) |

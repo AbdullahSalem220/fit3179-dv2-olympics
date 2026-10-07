@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Diverging bar chart: medals Australia won in women's events (left) and men's events (right) at each Summer Games, 1896-2024.",
+  "title": {
+    "text": "Women have won more than men at four of the last five Games",
+    "subtitle": "Medals won in women's and men's events, 1896–2024",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": {"step": 14},
+  "data": {
+    "url": "data/medals_by_gender_games.csv",
+    "format": {"type": "csv", "parse": {"year": "number", "medals": "number"}}
+  },
+  "transform": [
+    {"filter": {"field": "gender", "oneOf": ["Women", "Men"]}},
+    {"aggregate": [{"op": "sum", "field": "medals", "as": "medals"}], "groupby": ["year", "gender"]},
+    {"calculate": "datum.gender === 'Women' ? -datum.medals : datum.medals", "as": "signed"},
+    {"calculate": "toString(datum.year)", "as": "games"},
+    {"calculate": "datum.gender === 'Women' ? \"Women's events\" : \"Men's events\"", "as": "events"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "games",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "domain": ["1896", "1900", "1904", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016", "2020", "2024"],
+        "paddingInner": 0.2
+      },
+      "axis": {"labelFontSize": 11, "ticks": false, "domain": false}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar"},
+      "encoding": {
+        "x": {
+          "field": "signed",
+          "type": "quantitative",
+          "title": "Medals",
+          "scale": {"domain": [-36, 36]},
+          "axis": {"labelExpr": "abs(datum.value)", "values": [-30, -20, -10, 0, 10, 20, 30], "grid": true, "domain": false, "ticks": false}
+        },
+        "color": {
+          "field": "events",
+          "type": "nominal",
+          "scale": {"domain": ["Women's events", "Men's events"], "range": ["#7B4FA0", "#E07B39"]},
+          "legend": {"title": null, "orient": "top", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 13}
+        },
+        "tooltip": [
+          {"field": "games", "title": "Games"},
+          {"field": "events", "title": "Category"},
+          {"field": "medals", "title": "Medals"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.gender === 'Women'"}],
+      "mark": {"type": "text", "align": "right", "dx": -3, "fontSize": 10, "color": "#5A6169"},
+      "encoding": {
+        "x": {"field": "signed", "type": "quantitative"},
+        "text": {"field": "medals", "type": "quantitative"}
+      }
+    },
+    {
+      "transform": [{"filter": "datum.gender === 'Men'"}],
+      "mark": {"type": "text", "align": "left", "dx": 3, "fontSize": 10, "color": "#5A6169"},
+      "encoding": {
+        "x": {"field": "signed", "type": "quantitative"},
+        "text": {"field": "medals", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#1F2328", "strokeWidth": 1},
+      "encoding": {"x": {"datum": 0}}
+    },
+    {
+      "data": {
+        "values": [
+          {"games": "1972", "x": 5, "text": "Women won twice as many"},
+          {"games": "2024", "x": 20, "text": "Women's record: 30"}
+        ]
+      },
+      "mark": {"type": "text", "align": "left", "dx": 20, "fontSize": 11, "fontWeight": 600, "color": "#1F2328"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    }
+  ]
+}

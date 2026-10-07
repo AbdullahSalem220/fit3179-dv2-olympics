@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Choropleth map: Paris 2024 medals per million people for every medal-winning country, Equal Earth projection.",
   "title": {
-    "text": "Per person, no big country won more medals than Australia",
+    "text": "Per person, Australia won the 8th most medals in the world",
     "subtitle": "Paris 2024 medals for every million people living in each country",
     "subtitleColor": "#5A6169",
     "subtitleFontSize": 14,
@@ -158,12 +158,12 @@
           {
             "lon": 100,
             "lat": -47,
-            "line": "Australia: 1.95 medals per million people."
+            "line": "Australia: 1.95 medals per million people,"
           },
           {
             "lon": 100,
             "lat": -52.5,
-            "line": "Highest of any country with more than 10 million people."
+            "line": "8th of 89 medal-winning countries with population data."
           }
         ]
       },

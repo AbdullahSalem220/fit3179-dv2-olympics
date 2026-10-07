@@ -1,9 +1,9 @@
-state,abbr,medallists,population,per_million
-New South Wales,NSW,172,8670100,19.8
-Victoria,VIC,103,7154200,14.4
-Queensland,QLD,119,5739500,20.7
-Western Australia,WA,54,3096200,17.4
-South Australia,SA,46,1916800,24.0
-Tasmania,TAS,18,580700,31.0
-Australian Capital Territory,ACT,8,489700,16.3
-Northern Territory,NT,10,268900,37.2
+state,abbr,medallists,population,per_million,label_lon,label_lat
+New South Wales,NSW,172,8670100,19.8,146.781,-32.4751
+Victoria,VIC,103,7154200,14.4,144.75,-37.0082
+Queensland,QLD,119,5739500,20.7,144.778,-23.1364
+Western Australia,WA,54,3096200,17.4,121.646,-25.8483
+South Australia,SA,46,1916800,24.0,135.783,-29.6504
+Tasmania,TAS,18,580700,31.0,146.603,-42.1383
+Australian Capital Territory,ACT,8,489700,16.3,148.983,-35.4618
+Northern Territory,NT,10,268900,37.2,133.78,-20.1026

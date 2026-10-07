@@ -1,0 +1,244 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Bin map: birthplaces of Australian-born Summer Olympic medallists, 1896-2024, counted in 1-degree grid squares (about 100 km across). Albers equal-area conic projection.",
+  "title": {
+    "text": "Most medallists were born in or near a capital city",
+    "subtitle": "Birthplaces of 805 medallists, 1896–2024, in squares about 100 km wide",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": 400,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/geo/aus-states.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#E9E5DC",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {
+        "url": "data/birthplaces.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "lat": "number",
+            "lon": "number"
+          }
+        }
+      },
+      "transform": [
+        {
+          "calculate": "floor(datum.lon) + 0.5",
+          "as": "bin_lon"
+        },
+        {
+          "calculate": "floor(datum.lat) + 0.5",
+          "as": "bin_lat"
+        },
+        {
+          "aggregate": [
+            {
+              "op": "count",
+              "as": "town_count"
+            }
+          ],
+          "groupby": [
+            "bin_lon",
+            "bin_lat",
+            "town"
+          ]
+        },
+        {
+          "aggregate": [
+            {
+              "op": "sum",
+              "field": "town_count",
+              "as": "medallists"
+            },
+            {
+              "op": "argmax",
+              "field": "town_count",
+              "as": "top"
+            },
+            {
+              "op": "count",
+              "as": "towns"
+            }
+          ],
+          "groupby": [
+            "bin_lon",
+            "bin_lat"
+          ]
+        },
+        {
+          "calculate": "datum.top.town",
+          "as": "main_town"
+        },
+        {
+          "calculate": "datum.medallists >= 50 ? '50 or more' : datum.medallists >= 20 ? '20 to 49' : datum.medallists >= 5 ? '5 to 19' : datum.medallists >= 2 ? '2 to 4' : '1'",
+          "as": "class"
+        }
+      ],
+      "mark": {
+        "type": "square",
+        "size": 115,
+        "opacity": 1,
+        "stroke": "#FFFFFF",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {
+          "field": "bin_lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "bin_lat",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "1",
+              "2 to 4",
+              "5 to 19",
+              "20 to 49",
+              "50 or more"
+            ],
+            "range": [
+              "#C7E9C0",
+              "#A1D99B",
+              "#74C476",
+              "#31A354",
+              "#006D2C"
+            ]
+          },
+          "legend": {
+            "title": "Medallists born in the square",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 180,
+            "labelFontSize": 12,
+            "columns": 5
+          }
+        },
+        "order": {
+          "field": "medallists"
+        },
+        "tooltip": [
+          {
+            "field": "medallists",
+            "title": "Medallists born in this square"
+          },
+          {
+            "field": "main_town",
+            "title": "Most common birthplace"
+          },
+          {
+            "field": "towns",
+            "title": "Different towns"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 154.6,
+            "lat": -33.6,
+            "text": "Sydney area 179"
+          },
+          {
+            "lon": 144.6,
+            "lat": -39.9,
+            "text": "Melbourne area 98"
+          },
+          {
+            "lon": 151.2,
+            "lat": -26.0,
+            "text": "Brisbane area 84"
+          },
+          {
+            "lon": 113.8,
+            "lat": -31.6,
+            "text": "Perth area 57"
+          },
+          {
+            "lon": 137.2,
+            "lat": -36.3,
+            "text": "Adelaide area 43"
+          }
+        ]
+      },
+      "transform": [
+        {
+          "calculate": "datum.text === 'Brisbane area 84' ? 'right' : datum.lon > 150 ? 'left' : datum.lon > 140 ? 'center' : 'right'",
+          "as": "align"
+        }
+      ],
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "text"
+        },
+        "align": {
+          "field": "align",
+          "type": "nominal",
+          "scale": null
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "fontWeight": 600,
+            "stroke": "#FFFFFF",
+            "strokeWidth": 4,
+            "strokeJoin": "round"
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "fontSize": 11,
+            "fontWeight": 600,
+            "color": "#1F2328"
+          }
+        }
+      ]
+    }
+  ]
+}

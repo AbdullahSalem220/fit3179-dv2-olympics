@@ -1,0 +1,263 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map: Australian-born Olympic medallists (2000-2024) per million current residents, by state or territory of birth. Albers equal-area conic projection.",
+  "title": {
+    "text": "Tasmania and the Northern Territory lead, but from small numbers",
+    "subtitle": "Medallists born in each state for every million people living there, 2000–2024",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": 400,
+  "projection": {
+    "type": "conicEqualArea",
+    "parallels": [
+      -18,
+      -36
+    ],
+    "rotate": [
+      -134,
+      0
+    ]
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/geo/aus-states.json",
+        "format": {
+          "type": "topojson",
+          "feature": "states"
+        }
+      },
+      "transform": [
+        {
+          "lookup": "properties.state",
+          "from": {
+            "data": {
+              "url": "data/state_medallists.csv"
+            },
+            "key": "state",
+            "fields": [
+              "abbr",
+              "medallists",
+              "population",
+              "per_million"
+            ]
+          }
+        },
+        {
+          "calculate": "datum.per_million >= 30 ? '30 or more' : datum.per_million >= 20 ? '20 to 30' : datum.per_million >= 15 ? '15 to 20' : 'Fewer than 15'",
+          "as": "class"
+        },
+        {
+          "calculate": "format(datum.population / 1e6, '.2f') + ' million'",
+          "as": "population_label"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 0.6
+      },
+      "encoding": {
+        "color": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Fewer than 15",
+              "15 to 20",
+              "20 to 30",
+              "30 or more"
+            ],
+            "range": [
+              "#C7E9C0",
+              "#74C476",
+              "#31A354",
+              "#006D2C"
+            ]
+          },
+          "legend": {
+            "title": "Medallists per million people",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 180,
+            "labelFontSize": 12,
+            "columns": 4
+          }
+        },
+        "tooltip": [
+          {
+            "field": "properties.state",
+            "title": "Birth state"
+          },
+          {
+            "field": "medallists",
+            "title": "Medallists born there, 2000–2024"
+          },
+          {
+            "field": "population_label",
+            "title": "Population, March 2026"
+          },
+          {
+            "field": "per_million",
+            "title": "Medallists per million people",
+            "format": ".1f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 149.0,
+            "lat": -35.45,
+            "lon2": 153.3,
+            "lat2": -35.85
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#1F2328",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "longitude2": {
+          "field": "lon2"
+        },
+        "latitude2": {
+          "field": "lat2"
+        }
+      }
+    },
+    {
+      "data": {
+        "url": "data/state_medallists.csv"
+      },
+      "transform": [
+        {
+          "calculate": "datum.abbr === 'ACT' ? 153.6 : datum.abbr === 'TAS' ? 151.2 : datum.label_lon",
+          "as": "lon"
+        },
+        {
+          "calculate": "datum.abbr === 'ACT' ? -35.9 : datum.abbr === 'TAS' ? -42.4 : datum.label_lat",
+          "as": "lat"
+        },
+        {
+          "calculate": "datum.abbr + ' ' + format(datum.per_million, '.1f')",
+          "as": "line1"
+        },
+        {
+          "calculate": "datum.medallists + ' people'",
+          "as": "line2"
+        },
+        {
+          "calculate": "datum.abbr === 'ACT' || datum.abbr === 'TAS' ? 'left' : 'center'",
+          "as": "align"
+        },
+        {
+          "calculate": "datum.per_million >= 20 ? '#FFFFFF' : '#1F2328'",
+          "as": "ink"
+        },
+        {
+          "calculate": "datum.abbr === 'ACT' || datum.abbr === 'TAS' ? '#1F2328' : datum.ink",
+          "as": "ink"
+        }
+      ],
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "align": {
+          "field": "align",
+          "type": "nominal",
+          "scale": null
+        },
+        "color": {
+          "field": "ink",
+          "type": "nominal",
+          "scale": null
+        }
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "text",
+            "dy": -7,
+            "fontSize": 13,
+            "fontWeight": 700,
+            "font": "Barlow Condensed"
+          },
+          "encoding": {
+            "text": {
+              "field": "line1"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "dy": 8,
+            "fontSize": 11
+          },
+          "encoding": {
+            "text": {
+              "field": "line2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 113.5,
+            "lat": -38.6,
+            "line": "Small numbers: the NT rate rests on 10 people\nand the ACT on 8, so one more medallist moves it a lot."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 11,
+        "fontWeight": 600,
+        "color": "#1F2328",
+        "lineBreak": "\n",
+        "baseline": "top",
+        "lineHeight": 15
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "line"
+        }
+      }
+    }
+  ]
+}

@@ -144,11 +144,13 @@ h1 {
 
 .chart figcaption {
   max-width: var(--measure);
-  margin-top: 8px;
-  font-size: 14px;
-  line-height: 1.45;
-  color: var(--ink-muted);
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #3D434A;
 }
+
+.chart--full figcaption { max-width: none; }
 
 /* Hook: waffle chart beside the headline numbers */
 .row--hook {
@@ -163,7 +165,7 @@ h1 {
 }
 
 .stats-title {
-  margin: 0 0 12px;
+  margin: 0 0 4px;
   font-family: var(--font-display);
   font-weight: 600;
   font-size: 18px;
@@ -178,7 +180,7 @@ h1 {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  padding: 8px 0;
+  padding: 6px 0;
   border-bottom: 1px solid var(--rule);
 }
 
@@ -218,6 +220,9 @@ h1 {
 .chart .vega-embed > canvas {
   max-width: 100%;
 }
+
+/* Fixed-width charts (host-city map with inset) shrink on narrow screens */
+.chart .vega-embed > svg { height: auto; }
 
 /* Empty chart slots (removed as charts are built in Phase 3) */
 .slot:empty {
@@ -264,8 +269,9 @@ h1 {
 
 .credits h2:not(:first-child) { margin-top: 24px; }
 
-.sources { margin: 0; padding-left: 18px; }
-.sources li { margin-bottom: 6px; }
+.sources, .method { margin: 0; padding-left: 18px; }
+.sources li, .method li { margin-bottom: 6px; }
+.method strong { color: var(--ink); font-weight: 600; }
 
 a { color: var(--green); }
 a:hover { color: var(--ink); }

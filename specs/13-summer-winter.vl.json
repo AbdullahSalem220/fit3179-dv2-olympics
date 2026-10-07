@@ -1,0 +1,100 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Small multiples: Australia's medals at every Summer Games (1896-2024) and Winter Games (1924-2026), one panel each, on a shared timeline. The vertical scales differ.",
+  "title": {
+    "text": "Winter medals are rare, but Milano Cortina 2026 was the best yet",
+    "subtitle": "Australia's medals at each Summer and Winter Games. Note the different scales: Summer up to 58, Winter up to 6.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "data": {
+    "url": "data/medals_by_games.csv",
+    "format": {"type": "csv", "parse": {"year": "number", "gold": "number", "silver": "number", "bronze": "number", "total": "number"}}
+  },
+  "transform": [
+    {"calculate": "datum.season + ' Games'", "as": "panel"},
+    {"calculate": "toString(datum.year)", "as": "games"}
+  ],
+  "facet": {
+    "row": {
+      "field": "panel",
+      "type": "nominal",
+      "sort": ["Summer Games", "Winter Games"],
+      "title": null,
+      "header": {
+        "labelAngle": 0,
+        "labelAlign": "left",
+        "labelAnchor": "start",
+        "labelOrient": "top",
+        "labelFont": "Barlow Condensed",
+        "labelFontSize": 18,
+        "labelFontWeight": 700,
+        "labelColor": "#1F2328",
+        "labelPadding": 4
+      }
+    }
+  },
+  "resolve": {"scale": {"y": "independent"}},
+  "spacing": 28,
+  "spec": {
+    "width": "container",
+    "height": 150,
+    "layer": [
+      {
+        "transform": [
+          {"fold": ["gold", "silver", "bronze"], "as": ["medal_key", "medals"]},
+          {"calculate": "upper(slice(datum.medal_key, 0, 1)) + slice(datum.medal_key, 1)", "as": "medal"},
+          {"calculate": "indexof(['gold', 'silver', 'bronze'], datum.medal_key)", "as": "medal_order"}
+        ],
+        "mark": {"type": "bar", "width": 7},
+        "encoding": {
+          "x": {
+            "field": "year",
+            "type": "quantitative",
+            "title": null,
+            "scale": {"domain": [1894, 2028]},
+            "axis": {"format": "d", "values": [1900, 1920, 1940, 1960, 1980, 2000, 2020], "grid": false, "ticks": false, "domainColor": "#BFC4C9"}
+          },
+          "y": {
+            "field": "medals",
+            "type": "quantitative",
+            "stack": "zero",
+            "title": "Medals",
+            "axis": {"tickCount": 3, "grid": true, "domain": false, "ticks": false}
+          },
+          "color": {
+            "field": "medal",
+            "type": "nominal",
+            "scale": {"domain": ["Gold", "Silver", "Bronze"], "range": ["#C9A227", "#A8ADB3", "#A0673A"]},
+            "legend": {"title": null, "orient": "top", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 13}
+          },
+          "order": {"field": "medal_order", "sort": "ascending"},
+          "tooltip": [
+            {"field": "panel", "title": "Season"},
+            {"field": "games", "title": "Games"},
+            {"field": "gold", "title": "Gold"},
+            {"field": "silver", "title": "Silver"},
+            {"field": "bronze", "title": "Bronze"},
+            {"field": "total", "title": "Total"}
+          ]
+        }
+      },
+      {
+        "transform": [
+          {"filter": "datum.games === '2026' || datum.games === '1994' || datum.games === '2002' || datum.games === '2000' || datum.games === '2024'"},
+          {
+            "calculate": "{'2026': 'Milano Cortina: 6 medals, 3 gold', '1994': 'First Winter medal', '2002': 'First Winter gold', '2000': 'Sydney 58', '2024': 'Paris 53'}[datum.games]",
+            "as": "note"
+          }
+        ],
+        "mark": {"type": "text", "align": "right", "dx": -8, "dy": -2, "baseline": "bottom", "fontSize": 11, "fontWeight": 600, "color": "#1F2328"},
+        "encoding": {
+          "x": {"field": "year", "type": "quantitative"},
+          "y": {"field": "total", "type": "quantitative"},
+          "text": {"field": "note"}
+        }
+      }
+    ]
+  }
+}

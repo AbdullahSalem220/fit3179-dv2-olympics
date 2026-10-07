@@ -1,0 +1,99 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stacked bar chart: Australia's gold, silver and bronze medals at every Summer Games, 1896-2024.",
+  "title": {
+    "text": "From no gold in Montreal to a record 18 in Paris",
+    "subtitle": "Australia's medals at every Summer Games, 1896–2024",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": 380,
+  "data": {"url": "data/medals_by_games.csv"},
+  "transform": [
+    {"filter": "datum.season === 'Summer'"},
+    {"calculate": "toString(datum.year)", "as": "games"}
+  ],
+  "encoding": {
+    "x": {
+      "field": "games",
+      "type": "ordinal",
+      "title": null,
+      "axis": {"labelAngle": -90, "labelFontSize": 12, "ticks": false, "domainColor": "#BFC4C9"}
+    }
+  },
+  "layer": [
+    {
+      "transform": [
+        {"fold": ["gold", "silver", "bronze"], "as": ["medal_key", "medals"]},
+        {"calculate": "upper(slice(datum.medal_key, 0, 1)) + slice(datum.medal_key, 1)", "as": "medal"},
+        {"calculate": "indexof(['gold', 'silver', 'bronze'], datum.medal_key)", "as": "medal_order"}
+      ],
+      "mark": {"type": "bar", "width": {"band": 0.75}},
+      "encoding": {
+        "y": {
+          "field": "medals",
+          "type": "quantitative",
+          "stack": "zero",
+          "title": "Medals",
+          "axis": {"tickCount": 6, "grid": true, "domain": false, "ticks": false}
+        },
+        "color": {
+          "field": "medal",
+          "type": "nominal",
+          "scale": {"domain": ["Gold", "Silver", "Bronze"], "range": ["#C9A227", "#A8ADB3", "#A0673A"]},
+          "legend": {"title": null, "orient": "top-left", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 13}
+        },
+        "order": {"field": "medal_order", "sort": "ascending"},
+        "tooltip": [
+          {"field": "games", "title": "Games"},
+          {"field": "gold", "title": "Gold", "type": "quantitative"},
+          {"field": "silver", "title": "Silver", "type": "quantitative"},
+          {"field": "bronze", "title": "Bronze", "type": "quantitative"},
+          {"field": "total", "title": "Total", "type": "quantitative"},
+          {"field": "rank", "title": "Place on medal table", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "dy": -7, "fontSize": 11, "color": "#5A6169"},
+      "encoding": {
+        "y": {"field": "total", "type": "quantitative"},
+        "text": {"field": "total", "type": "quantitative"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"games": "1956", "y": 37.5, "y2": 39.5},
+          {"games": "1976", "y": 9.5, "y2": 28}
+        ]
+      },
+      "mark": {"type": "rule", "color": "#5A6169", "strokeWidth": 1},
+      "encoding": {
+        "x": {"field": "games", "type": "ordinal"},
+        "y": {"field": "y", "type": "quantitative"},
+        "y2": {"field": "y2"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"games": "1956", "y": 41, "text": "Melbourne: first home Games", "align": "center"},
+          {"games": "1976", "y": 30, "text": "Montreal: no gold at all", "align": "center"},
+          {"games": "1980", "y": 38, "text": "1981: Australian Institute of Sport opens", "align": "left"},
+          {"games": "2000", "y": 66, "text": "Sydney: most medals ever (58)", "align": "right"},
+          {"games": "2024", "y": 66, "text": "Paris: most gold ever (18)", "align": "right"}
+        ]
+      },
+      "mark": {"type": "text", "fontSize": 12, "fontWeight": 600, "color": "#1F2328"},
+      "encoding": {
+        "x": {"field": "games", "type": "ordinal"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "text"},
+        "align": {"field": "align", "type": "nominal", "scale": null}
+      }
+    }
+  ]
+}

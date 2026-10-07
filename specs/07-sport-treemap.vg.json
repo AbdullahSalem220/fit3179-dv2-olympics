@@ -1,0 +1,176 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "description": "Treemap: all of Australia's Summer Olympic medals, 1896-2024. Each rectangle is a sport, sized by its medals and split into gold, silver and bronze.",
+  "title": {
+    "text": "More than a third of all Australia's medals came from the pool",
+    "subtitle": "All 594 Summer Olympic medals, 1896–2024. Each block is a sport; its area shows its share of medals.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "anchor": "start",
+    "offset": 12,
+    "frame": "group"
+  },
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "padding": 5,
+  "height": 440,
+  "signals": [
+    {
+      "name": "width",
+      "init": "containerSize()[0] || 1000",
+      "on": [{"events": "window:resize", "update": "containerSize()[0] || 1000"}]
+    }
+  ],
+  "data": [
+    {
+      "name": "medals",
+      "url": "data/medals_by_sport_games.csv",
+      "format": {"type": "csv", "parse": {"medals": "number"}},
+      "transform": [
+        {"type": "aggregate", "groupby": ["sport_group", "medal"], "fields": ["medals"], "ops": ["sum"], "as": ["medals"]},
+        {"type": "formula", "as": "id", "expr": "datum.sport_group + '|' + datum.medal"},
+        {"type": "formula", "as": "parent", "expr": "datum.sport_group"},
+        {"type": "formula", "as": "medal_order", "expr": "indexof(['Gold', 'Silver', 'Bronze'], datum.medal)"},
+        {"type": "formula", "as": "sort_key", "expr": "datum.medal_order"}
+      ]
+    },
+    {
+      "name": "sports",
+      "source": "medals",
+      "transform": [
+        {"type": "aggregate", "groupby": ["sport_group"], "fields": ["medals"], "ops": ["sum"], "as": ["sport_total"]},
+        {"type": "formula", "as": "id", "expr": "datum.sport_group"},
+        {"type": "formula", "as": "parent", "expr": "'root'"},
+        {"type": "formula", "as": "sort_key", "expr": "-datum.sport_total"}
+      ]
+    },
+    {
+      "name": "top",
+      "values": [{"id": "root", "parent": null}]
+    },
+    {
+      "name": "tree",
+      "source": ["top", "sports", "medals"],
+      "transform": [
+        {"type": "stratify", "key": "id", "parentKey": "parent"},
+        {
+          "type": "treemap",
+          "field": "medals",
+          "sort": {"field": "data.sort_key", "order": "ascending"},
+          "round": true,
+          "method": "squarify",
+          "ratio": 1.4,
+          "paddingInner": 1,
+          "paddingOuter": 0,
+          "size": [{"signal": "width"}, {"signal": "height"}]
+        }
+      ]
+    },
+    {
+      "name": "leaves",
+      "source": "tree",
+      "transform": [
+        {"type": "filter", "expr": "datum.depth === 2"},
+        {"type": "lookup", "from": "sports", "key": "id", "fields": ["parent"], "values": ["sport_total"]}
+      ]
+    },
+    {
+      "name": "groups",
+      "source": "tree",
+      "transform": [
+        {"type": "filter", "expr": "datum.depth === 1"},
+        {"type": "formula", "as": "share", "expr": "datum.sport_total / 594"}
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "medal_colour",
+      "type": "ordinal",
+      "domain": ["Gold", "Silver", "Bronze"],
+      "range": ["#C9A227", "#A8ADB3", "#A0673A"]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "medal_colour",
+      "orient": "bottom",
+      "direction": "horizontal",
+      "symbolType": "square",
+      "symbolSize": 180,
+      "labelFontSize": 13,
+      "offset": 6
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "leaves"},
+      "encode": {
+        "enter": {
+          "fill": {"scale": "medal_colour", "field": "medal"},
+          "stroke": {"value": "#FAF8F3"},
+          "strokeWidth": {"value": 0.5}
+        },
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fillOpacity": {"value": 1},
+          "tooltip": {
+            "signal": "{'Sport': datum.sport_group, 'Medal': datum.medal, 'Medals': datum.medals, 'All medals in this sport': datum.sport_total}"
+          }
+        },
+        "hover": {"fillOpacity": {"value": 0.8}}
+      }
+    },
+    {
+      "type": "rect",
+      "from": {"data": "groups"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {"value": null},
+          "stroke": {"value": "#FAF8F3"},
+          "strokeWidth": {"value": 3}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "groups"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.x0 + 6"},
+          "y": {"signal": "datum.y0 + 18"},
+          "text": {"signal": "(datum.x1 - datum.x0) > 70 && (datum.y1 - datum.y0) > 40 ? datum.sport_group : ''"},
+          "font": {"value": "Barlow Condensed"},
+          "fontSize": {"signal": "datum.sport_total > 100 ? 22 : 15"},
+          "fontWeight": {"value": 700},
+          "fill": {"value": "#1F2328"}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "groups"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.x0 + 6"},
+          "y": {"signal": "datum.y0 + (datum.sport_total > 100 ? 38 : 33)"},
+          "text": {"signal": "(datum.x1 - datum.x0) > 70 && (datum.y1 - datum.y0) > 55 ? datum.sport_total + ' medals (' + format(datum.share, '.0%') + ')' : ''"},
+          "font": {"value": "Barlow"},
+          "fontSize": {"value": 12},
+          "fontWeight": {"value": 600},
+          "fill": {"value": "#1F2328"}
+        }
+      }
+    }
+  ]
+}

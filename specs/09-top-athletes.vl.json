@@ -1,0 +1,87 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Dot plot: Australia's 15 most successful Summer Olympians by gold medals, showing gold medals and total medals for each.",
+  "title": {
+    "text": "Emma McKeon has won more Olympic medals than any other Australian",
+    "subtitle": "The 15 Australians with the most gold medals, 1896–2024",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": {"step": 26},
+  "data": {
+    "url": "data/top_athletes.csv",
+    "format": {"type": "csv", "parse": {"gold": "number", "silver": "number", "bronze": "number", "total": "number", "first_year": "number", "last_year": "number"}}
+  },
+  "transform": [
+    {
+      "window": [{"op": "row_number", "as": "order"}],
+      "sort": [{"field": "gold", "order": "descending"}, {"field": "total", "order": "descending"}, {"field": "silver", "order": "descending"}]
+    },
+    {"filter": "datum.order <= 15"},
+    {"calculate": "datum.first_year === datum.last_year ? toString(datum.first_year) : datum.first_year + '–' + datum.last_year", "as": "span"},
+    {"calculate": "replace(datum.disciplines, 'Equestrian Eventing', 'Equestrian')", "as": "sport"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "name",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "order", "op": "min", "order": "ascending"},
+      "axis": {"labelFontSize": 12, "labelColor": "#1F2328", "ticks": false, "domain": false, "labelPadding": 8}
+    },
+    "tooltip": [
+      {"field": "name", "title": "Athlete"},
+      {"field": "sport", "title": "Sport"},
+      {"field": "span", "title": "Medal-winning Games"},
+      {"field": "gold", "title": "Gold"},
+      {"field": "silver", "title": "Silver"},
+      {"field": "bronze", "title": "Bronze"},
+      {"field": "total", "title": "Total medals"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#BFC4C9", "strokeWidth": 2},
+      "encoding": {
+        "x": {
+          "field": "gold",
+          "type": "quantitative",
+          "title": "Medals",
+          "scale": {"domain": [0, 15]},
+          "axis": {"values": [0, 3, 6, 9, 12, 15], "grid": true, "domain": false, "ticks": false}
+        },
+        "x2": {"field": "total"}
+      }
+    },
+    {
+      "transform": [{"fold": ["gold", "total"], "as": ["measure", "count"]}],
+      "mark": {"type": "circle", "size": 110, "opacity": 1, "stroke": "#FAF8F3", "strokeWidth": 1},
+      "encoding": {
+        "x": {"field": "count", "type": "quantitative"},
+        "color": {
+          "field": "measure",
+          "type": "nominal",
+          "scale": {"domain": ["gold", "total"], "range": ["#C9A227", "#1F2328"]},
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "labelExpr": "datum.label === 'gold' ? 'Gold medals' : 'All medals'",
+            "symbolSize": 150,
+            "labelFontSize": 13
+          }
+        }
+      }
+    },
+    {
+      "transform": [{"filter": "datum.sport !== 'Swimming'"}],
+      "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 11, "color": "#5A6169"},
+      "encoding": {
+        "x": {"field": "total", "type": "quantitative"},
+        "text": {"field": "sport"}
+      }
+    }
+  ]
+}

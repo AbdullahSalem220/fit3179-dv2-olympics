@@ -1,0 +1,86 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Heat map: Australia's medals in each sport at each Summer Games, 1896-2024. Darker cells mean more medals; empty cells mean none.",
+  "title": {
+    "text": "Swimming has won medals at every Summer Games since 1948",
+    "subtitle": "Australia's medals by sport and Games, 1896–2024. Sports are sorted by all-time medals.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": {"step": 19},
+  "data": {
+    "url": "data/medals_by_sport_games.csv",
+    "format": {"type": "csv", "parse": {"year": "number", "medals": "number"}}
+  },
+  "transform": [
+    {"aggregate": [{"op": "sum", "field": "medals", "as": "medals"}], "groupby": ["year", "sport_group"]},
+    {"joinaggregate": [{"op": "sum", "field": "medals", "as": "sport_total"}], "groupby": ["sport_group"]},
+    {"calculate": "toString(datum.year)", "as": "games"},
+    {
+      "calculate": "datum.medals >= 15 ? '15 or more' : datum.medals >= 10 ? '10 to 14' : datum.medals >= 6 ? '6 to 9' : datum.medals >= 3 ? '3 to 5' : '1 or 2'",
+      "as": "class"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "games",
+      "type": "ordinal",
+      "title": null,
+      "scale": {
+        "domain": ["1896", "1900", "1904", "1920", "1924", "1928", "1932", "1936", "1948", "1952", "1956", "1960", "1964", "1968", "1972", "1976", "1980", "1984", "1988", "1992", "1996", "2000", "2004", "2008", "2012", "2016", "2020", "2024"],
+        "paddingInner": 0.08
+      },
+      "axis": {"orient": "top", "labelAngle": -90, "labelFontSize": 11, "ticks": false, "domain": false}
+    },
+    "y": {
+      "field": "sport_group",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "sport_total", "op": "max", "order": "descending"},
+      "scale": {"paddingInner": 0.08},
+      "axis": {"labelFontSize": 12, "labelColor": "#1F2328", "ticks": false, "domain": false}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rect", "cornerRadius": 1},
+      "encoding": {
+        "color": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": ["1 or 2", "3 to 5", "6 to 9", "10 to 14", "15 or more"],
+            "range": ["#C7E9C0", "#A1D99B", "#74C476", "#31A354", "#006D2C"]
+          },
+          "legend": {
+            "title": "Medals at that Games",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 180,
+            "labelFontSize": 12
+          }
+        },
+        "tooltip": [
+          {"field": "sport_group", "title": "Sport"},
+          {"field": "games", "title": "Games"},
+          {"field": "medals", "title": "Medals"},
+          {"field": "sport_total", "title": "All-time medals in this sport"}
+        ]
+      }
+    },
+    {
+      "transform": [{"filter": "datum.medals >= 6"}],
+      "mark": {"type": "text", "fontSize": 10, "fontWeight": 600},
+      "encoding": {
+        "text": {"field": "medals", "type": "quantitative"},
+        "color": {
+          "condition": {"test": "datum.medals >= 10", "value": "#FFFFFF"},
+          "value": "#1F2328"
+        }
+      }
+    }
+  ]
+}

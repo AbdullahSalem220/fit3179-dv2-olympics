@@ -1,0 +1,999 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Proportional symbol map: every Summer Games host city, circle area proportional to the medals Australia won there (all Games in that city added together). A world map with an enlarged inset of Europe, where host cities are close together.",
+  "title": {
+    "text": "Australia's medals by host city",
+    "subtitle": "Circle area shows the medals Australia won in each Summer Games host city, 1896–2024. Cities that hosted more than once add their Games together.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "data": {
+    "url": "data/host_cities.csv"
+  },
+  "transform": [
+    {
+      "filter": "isValid(datum.total)"
+    },
+    {
+      "calculate": "toString(datum.year)",
+      "as": "games"
+    },
+    {
+      "aggregate": [
+        {
+          "op": "sum",
+          "field": "total",
+          "as": "medals"
+        },
+        {
+          "op": "sum",
+          "field": "gold",
+          "as": "golds"
+        },
+        {
+          "op": "count",
+          "as": "games_count"
+        },
+        {
+          "op": "min",
+          "field": "games",
+          "as": "first_games"
+        },
+        {
+          "op": "max",
+          "field": "games",
+          "as": "last_games"
+        }
+      ],
+      "groupby": [
+        "city",
+        "country",
+        "lat",
+        "lon"
+      ]
+    },
+    {
+      "filter": "datum.medals > 0"
+    },
+    {
+      "calculate": "datum.city === 'Melbourne' || datum.city === 'Sydney' ? 'Home Games' : 'Overseas Games'",
+      "as": "where"
+    },
+    {
+      "calculate": "datum.games_count === 1 ? datum.first_games : datum.games_count + ' Games, ' + datum.first_games + ' to ' + datum.last_games",
+      "as": "games_label"
+    },
+    {
+      "calculate": "datum.city + ' ' + datum.medals",
+      "as": "label"
+    },
+    {
+      "calculate": "datum.lon > -15 && datum.lon < 40 && datum.lat > 34 && datum.lat < 62",
+      "as": "in_europe"
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "size": "shared",
+      "color": "shared"
+    }
+  },
+  "spacing": 20,
+  "hconcat": [
+    {
+      "width": 700,
+      "height": 420,
+      "projection": {
+        "type": "equalEarth",
+        "rotate": [
+          -10,
+          0
+        ]
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/geo/world-110m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "countries"
+            }
+          },
+          "transform": [
+            {
+              "filter": "datum.properties.name !== 'Antarctica'"
+            }
+          ],
+          "mark": {
+            "type": "geoshape",
+            "fill": "#E9E5DC",
+            "stroke": "#FAF8F3",
+            "strokeWidth": 0.5
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "type": "Feature",
+                "properties": {},
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [
+                      -15,
+                      34
+                    ],
+                    [
+                      40,
+                      34
+                    ],
+                    [
+                      40,
+                      62
+                    ],
+                    [
+                      -15,
+                      62
+                    ],
+                    [
+                      -15,
+                      34
+                    ]
+                  ]
+                }
+              }
+            ]
+          },
+          "mark": {
+            "type": "geoshape",
+            "filled": false,
+            "stroke": "#5A6169",
+            "strokeWidth": 1,
+            "strokeDash": [
+              3,
+              2
+            ]
+          }
+        },
+        {
+          "mark": {
+            "type": "circle",
+            "opacity": 0.8,
+            "stroke": "#FFFFFF",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "medals",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  64
+                ],
+                "range": [
+                  0,
+                  1500
+                ]
+              },
+              "legend": {
+                "title": "Medals won by Australia",
+                "orient": "bottom",
+                "values": [
+                  10,
+                  30,
+                  60
+                ],
+                "symbolFillColor": "#8F969C",
+                "symbolStrokeColor": "#FFFFFF",
+                "direction": "horizontal"
+              }
+            },
+            "color": {
+              "field": "where",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Home Games",
+                  "Overseas Games"
+                ],
+                "range": [
+                  "#00843D",
+                  "#8F969C"
+                ]
+              },
+              "legend": {
+                "title": null,
+                "orient": "bottom",
+                "symbolType": "circle",
+                "symbolSize": 150,
+                "direction": "horizontal"
+              }
+            },
+            "order": {
+              "field": "medals",
+              "sort": "descending"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "title": "City"
+              },
+              {
+                "field": "country",
+                "title": "Country"
+              },
+              {
+                "field": "games_label",
+                "title": "Games"
+              },
+              {
+                "field": "medals",
+                "title": "Medals won by Australia"
+              },
+              {
+                "field": "golds",
+                "title": "Gold"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "!datum.in_europe && (datum.medals >= 20 || datum.where === 'Home Games')"
+            },
+            {
+              "calculate": "datum.city === 'Los Angeles' ? 'farleft' : datum.city === 'Beijing' ? 'farleft' : datum.city === 'Melbourne' ? 'farleft' : datum.city === 'Atlanta' ? 'farright' : datum.city === 'Tokyo' ? 'farright' : datum.city === 'Sydney' ? 'farright' : datum.city === 'Rio de Janeiro' ? 'farright' : 'farright'",
+              "as": "pos"
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            }
+          },
+          "layer": [
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'right'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 11,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'right'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 11,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'left'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -11,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'left'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -11,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'above'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": -14,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'above'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": -14,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'below'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": 22,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'below'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": 22,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightdown'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": 9,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightdown'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": 9,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightup'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": -8,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightup'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": -8,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farright'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 20,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farright'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 20,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farleft'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -20,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farleft'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -20,
+                "dy": 0,
+                "fontSize": 12,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            }
+          ]
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "lon": 12,
+                "lat": 64.5,
+                "text": "Europe, enlarged on the right"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "bottom",
+            "fontSize": 11,
+            "color": "#5A6169"
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "text"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 420,
+      "title": {
+        "text": "Europe",
+        "fontSize": 15,
+        "font": "Barlow Condensed",
+        "anchor": "start",
+        "subtitle": ""
+      },
+      "projection": {
+        "type": "azimuthalEqualArea",
+        "rotate": [
+          -12,
+          -49
+        ],
+        "fit": {
+          "type": "Feature",
+          "properties": {},
+          "geometry": {
+            "type": "LineString",
+            "coordinates": [
+              [
+                -10,
+                36
+              ],
+              [
+                38,
+                36
+              ],
+              [
+                38,
+                61
+              ],
+              [
+                -10,
+                61
+              ]
+            ]
+          }
+        }
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "data/geo/world-110m.json",
+            "format": {
+              "type": "topojson",
+              "feature": "countries"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#E9E5DC",
+            "stroke": "#FAF8F3",
+            "strokeWidth": 0.5,
+            "clip": true
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.in_europe"
+            }
+          ],
+          "mark": {
+            "type": "circle",
+            "opacity": 0.8,
+            "stroke": "#FFFFFF",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "size": {
+              "field": "medals",
+              "type": "quantitative"
+            },
+            "color": {
+              "field": "where",
+              "type": "nominal"
+            },
+            "order": {
+              "field": "medals",
+              "sort": "descending"
+            },
+            "tooltip": [
+              {
+                "field": "city",
+                "title": "City"
+              },
+              {
+                "field": "country",
+                "title": "Country"
+              },
+              {
+                "field": "games_label",
+                "title": "Games"
+              },
+              {
+                "field": "medals",
+                "title": "Medals won by Australia"
+              },
+              {
+                "field": "golds",
+                "title": "Gold"
+              }
+            ]
+          }
+        },
+        {
+          "transform": [
+            {
+              "filter": "datum.in_europe"
+            },
+            {
+              "calculate": "datum.city === 'London' ? 'left' : datum.city === 'Barcelona' ? 'left' : datum.city === 'Amsterdam' ? 'above' : datum.city === 'Berlin' ? 'right' : datum.city === 'Moscow' ? 'right' : datum.city === 'Helsinki' ? 'right' : datum.city === 'Munich' ? 'right' : datum.city === 'Antwerp' ? 'rightdown' : datum.city === 'Paris' ? 'below' : datum.city === 'Rome' ? 'below' : datum.city === 'Athens' ? 'below' : 'right'",
+              "as": "pos"
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "text": {
+              "field": "label"
+            }
+          },
+          "layer": [
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'right'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 11,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'right'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 11,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'left'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -11,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'left'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -11,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'above'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": -14,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'above'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": -14,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'below'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": 22,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'below'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "center",
+                "dx": 0,
+                "dy": 22,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightdown'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": 9,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightdown'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": 9,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightup'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": -8,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'rightup'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 8,
+                "dy": -8,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farright'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 20,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farright'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "dx": 20,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farleft'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -20,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "stroke": "#FAF8F3",
+                "strokeWidth": 3,
+                "strokeJoin": "round"
+              }
+            },
+            {
+              "transform": [
+                {
+                  "filter": "datum.pos === 'farleft'"
+                }
+              ],
+              "mark": {
+                "type": "text",
+                "align": "right",
+                "dx": -20,
+                "dy": 0,
+                "fontSize": 11,
+                "fontWeight": 600,
+                "color": "#1F2328"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

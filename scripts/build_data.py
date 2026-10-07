@@ -196,7 +196,8 @@ def match_paris_to_olympedia(src):
     people = src["p_athletes"][src["p_athletes"].code.isin(pm.code_athlete)].copy()
 
     def surname(name):
-        return norm(" ".join(t for t in str(name).split() if t.isupper()))
+        # Paris writes surnames in capitals ("PATTERSON Eleanor", "McKEON Emma").
+        return norm(" ".join(t for t in str(name).split() if t.replace("Mc", "MC", 1).isupper()))
 
     people["key_surname"] = people.name.map(surname)
     people["birth"] = pd.to_datetime(people.birth_date, errors="coerce").dt.date
@@ -346,7 +347,13 @@ def build_state_choropleth(people):
     out = pop.set_index("state").join(counts).fillna({"medallists": 0}).reset_index()
     out["medallists"] = out.medallists.astype(int)
     out["per_million"] = (out.medallists / out.population * 1e6).round(1)
-    write(out[["state", "abbr", "medallists", "population", "per_million"]], "state_medallists.csv")
+    # Label positions: Natural Earth's own label point for each state.
+    admin1 = json.loads((RAW / "ne_10m_admin_1_states_provinces.geojson").read_text(encoding="utf8"))
+    label = {f["properties"]["name"]: (f["properties"]["longitude"], f["properties"]["latitude"])
+             for f in admin1["features"] if f["properties"]["adm0_a3"] == "AUS"}
+    out["label_lon"] = out.state.map(lambda s: label[s][0])
+    out["label_lat"] = out.state.map(lambda s: label[s][1])
+    write(out[["state", "abbr", "medallists", "population", "per_million", "label_lon", "label_lat"]], "state_medallists.csv")
     coverage["state_choropleth"] = {
         "span": f"{CHOROPLETH_FROM}-2024",
         "medallists": len(recent),
@@ -396,6 +403,7 @@ def build_overseas_born(src, people):
     dest_lat, dest_lon = label["AUS"]
     counts = counts.dropna(subset=["lat"]).assign(dest_lat=dest_lat, dest_lon=dest_lon)
     write(counts.sort_values("medallists", ascending=False), "overseas_born.csv")
+
 
 
 # ---------------------------------------------------------------- maps: world and host cities
