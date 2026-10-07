@@ -150,7 +150,69 @@ h1 {
   color: var(--ink-muted);
 }
 
+/* Hook: waffle chart beside the headline numbers */
+.row--hook {
+  grid-template-columns: minmax(0, 5fr) minmax(0, 2fr);
+  align-items: start;
+}
+
+.stats {
+  padding: 20px 24px;
+  border-top: 4px solid var(--green);
+  background: var(--surface);
+}
+
+.stats-title {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.stats dl { margin: 0; }
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.stat dt { font-size: 16px; color: var(--ink-muted); }
+
+.stat dd {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.stat--total dd { color: var(--green); }
+
+.swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  vertical-align: -1px;
+}
+.swatch--gold { background: var(--medal-gold); }
+.swatch--silver { background: var(--medal-silver); }
+.swatch--bronze { background: var(--medal-bronze); }
+
+.stats-note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
 /* Vega output scales to its container: no horizontal scroll */
+.chart .vega-embed { width: 100%; }
 .chart .vega-embed,
 .chart .vega-embed > svg,
 .chart .vega-embed > canvas {
@@ -212,7 +274,7 @@ a:hover { color: var(--ink); }
 
 @media (max-width: 760px) {
   :root { --gutter: 16px; }
-  .row { grid-template-columns: minmax(0, 1fr); }
+  .row, .row--hook { grid-template-columns: minmax(0, 1fr); }
   .section-title { font-size: 32px; }
   .story { padding: 48px 0; }
 }

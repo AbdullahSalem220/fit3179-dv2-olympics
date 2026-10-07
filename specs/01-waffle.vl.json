@@ -1,0 +1,108 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Waffle chart: Australia's 53 medals at Paris 2024, one square per medal, grouped by sport and coloured by medal.",
+  "title": {
+    "text": "Swimming won 19 of Australia's 53 medals in Paris",
+    "subtitle": "Each square is one medal. Fifteen sports won at least one.",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "data": {"url": "data/paris2024_aus_medals.csv"},
+  "transform": [
+    {"calculate": "indexof(['Gold', 'Silver', 'Bronze'], datum.medal)", "as": "medal_order"},
+    {"calculate": "datum.medal === 'Gold' ? 1 : 0", "as": "is_gold"},
+    {
+      "joinaggregate": [
+        {"op": "count", "as": "sport_total"},
+        {"op": "sum", "field": "is_gold", "as": "sport_gold"}
+      ],
+      "groupby": ["sport_group"]
+    },
+    {"calculate": "datum.sport_total * 100 + datum.sport_gold", "as": "sport_rank_key"},
+    {
+      "window": [{"op": "row_number", "as": "position"}],
+      "sort": [{"field": "medal_order"}, {"field": "event"}],
+      "groupby": ["sport_group"]
+    },
+    {
+      "calculate": "datum.gender === 'Women' ? \"Women's event\" : datum.gender === 'Men' ? \"Men's event\" : datum.gender + ' event'",
+      "as": "category"
+    }
+  ],
+  "height": {"step": 26},
+  "width": 540,
+  "encoding": {
+    "y": {
+      "field": "sport_group",
+      "type": "nominal",
+      "sort": {"field": "sport_rank_key", "op": "max", "order": "descending"},
+      "axis": {
+        "title": null,
+        "domain": false,
+        "ticks": false,
+        "labelFontSize": 14,
+        "labelColor": "#1F2328",
+        "labelPadding": 10
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "square", "size": 380, "opacity": 1},
+      "encoding": {
+        "x": {
+          "field": "position",
+          "type": "quantitative",
+          "scale": {"domain": [0.5, 21]},
+          "axis": null
+        },
+        "color": {
+          "field": "medal",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Gold", "Silver", "Bronze"],
+            "range": ["#C9A227", "#A8ADB3", "#A0673A"]
+          },
+          "legend": {
+            "title": null,
+            "orient": "top",
+            "direction": "horizontal",
+            "symbolType": "square",
+            "symbolSize": 200,
+            "labelFontSize": 13,
+            "offset": 4
+          }
+        },
+        "tooltip": [
+          {"field": "event", "title": "Event"},
+          {"field": "discipline", "title": "Sport"},
+          {"field": "medal", "title": "Medal"},
+          {"field": "category", "title": "Category"}
+        ]
+      }
+    },
+    {
+      "transform": [
+        {
+          "aggregate": [{"op": "max", "field": "sport_total", "as": "total"}],
+          "groupby": ["sport_group", "sport_rank_key"]
+        },
+        {"calculate": "datum.total + 0.9", "as": "label_x"}
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "middle",
+        "font": "Barlow Condensed",
+        "fontSize": 15,
+        "fontWeight": 600,
+        "color": "#1F2328"
+      },
+      "encoding": {
+        "x": {"field": "label_x", "type": "quantitative"},
+        "text": {"field": "total", "type": "quantitative"}
+      }
+    }
+  ]
+}

@@ -21,6 +21,7 @@ const theme = {
 
 // [container id, spec path]
 const charts = [
+  ["chart-waffle", "specs/01-waffle.vl.json"],
 ];
 
 for (const [id, spec] of charts) {
