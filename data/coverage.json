@@ -1,0 +1,42 @@
+{
+  "mixed_nation_medal_rows_excluded": 2,
+  "paris_medallists": 95,
+  "paris_medallists_matched_to_olympedia": 55,
+  "dot_map": {
+    "span": "1896-2024",
+    "medallists": 1005,
+    "born_in_australia": 820,
+    "mapped": 805,
+    "not_mapped": {
+      "several places with this name": 6,
+      "no match": 5,
+      "no town recorded": 4
+    },
+    "born_overseas": 77,
+    "no_birthplace": 108
+  },
+  "state_choropleth": {
+    "span": "2000-2024",
+    "medallists": 610,
+    "with_known_birth_state": 530,
+    "born_overseas": 55,
+    "no_birthplace": 22,
+    "born_in_australia_state_unknown": 3
+  },
+  "flow_map": {
+    "overseas_born_medallists": 77,
+    "countries": 30,
+    "countries_without_coordinates": [],
+    "medallists_without_coordinates": 0
+  },
+  "world_choropleth": {
+    "medal_winning_teams": 92,
+    "without_country_code": [
+      "AIN",
+      "EOR"
+    ],
+    "without_population": [
+      "TPE"
+    ]
+  }
+}

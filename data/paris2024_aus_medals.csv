@@ -1,0 +1,54 @@
+sport_group,discipline,event,medal,gender
+Athletics,Athletics,Women's Pole Vault,Gold,Women
+Canoeing,Canoe Slalom,Women's Kayak Single,Gold,Women
+Canoeing,Canoe Slalom,Women's Canoe Single,Gold,Women
+Canoeing,Canoe Slalom,Women's Kayak Cross,Gold,Women
+Cycling,Cycling Road,Women's Individual Time Trial,Gold,Women
+Cycling,Cycling BMX Racing,Women,Gold,Women
+Cycling,Cycling Track,Men's Team Pursuit,Gold,Men
+Sailing,Sailing,Men's Dinghy,Gold,Men
+Skateboarding,Skateboarding,Women's Park,Gold,Women
+Skateboarding,Skateboarding,Men's Park,Gold,Men
+Swimming,Swimming,Women's 4 x 100m Freestyle Relay,Gold,Women
+Swimming,Swimming,Women's 400m Freestyle,Gold,Women
+Swimming,Swimming,Women's 200m Freestyle,Gold,Women
+Swimming,Swimming,Women's 100m Backstroke,Gold,Women
+Swimming,Swimming,Women's 4 x 200m Freestyle Relay,Gold,Women
+Swimming,Swimming,Men's 50m Freestyle,Gold,Men
+Swimming,Swimming,Women's 200m Backstroke,Gold,Women
+Tennis,Tennis,Men's Doubles,Gold,Men
+Athletics,Athletics,Women's High Jump,Silver,Women
+Athletics,Athletics,Women's 1500m,Silver,Women
+Canoeing,Canoe Sprint,Men's Kayak Four 500m,Silver,Men
+Cycling,Cycling Track,Men's Sprint,Silver,Men
+Cycling,Cycling Track,Men's Keirin,Silver,Men
+Diving,Diving,Women's 3m Springboard,Silver,Women
+Equestrian,Equestrian,Eventing Individual,Silver,Open
+Sailing,Sailing,Men's Windsurfing,Silver,Men
+Surfing,Surfing,Men,Silver,Men
+Swimming,Swimming,Men's 4 x 100m Freestyle Relay,Silver,Men
+Swimming,Swimming,Men's 400m Freestyle,Silver,Men
+Swimming,Swimming,Women's 200m Freestyle,Silver,Women
+Swimming,Swimming,Men's 100m Freestyle,Silver,Men
+Swimming,Swimming,Men's 200m Breaststroke,Silver,Men
+Swimming,Swimming,Women's 800m Freestyle,Silver,Women
+Swimming,Swimming,Women's 4 x 100m Medley Relay,Silver,Women
+Swimming,Swimming,Women's 50m Freestyle,Silver,Women
+Swimming,Marathon Swimming,Women's 10km,Silver,Women
+Water Polo,Water Polo,Women,Silver,Women
+Athletics,Athletics,Women's 20km Race Walk,Bronze,Women
+Athletics,Athletics,Women's High Jump,Bronze,Women
+Athletics,Athletics,Marathon Race Walk Relay Mixed,Bronze,Mixed
+Athletics,Athletics,Men's Discus Throw,Bronze,Men
+Basketball,Basketball,Women,Bronze,Women
+Boxing,Boxing,Men's 57kg,Bronze,Men
+Boxing,Boxing,Women's 75kg,Bronze,Women
+Canoeing,Canoe Sprint,Men's Kayak Double 500m,Bronze,Men
+Cycling,Cycling BMX Freestyle,Women's Park,Bronze,Women
+Cycling,Cycling Track,Men's Team Sprint,Bronze,Men
+Cycling,Cycling Track,Men's Keirin,Bronze,Men
+Rowing,Rowing,Women's Pair,Bronze,Women
+Shooting,Shooting,Trap Women,Bronze,Women
+Swimming,Swimming,Men's 4 x 200m Freestyle Relay,Bronze,Men
+Swimming,Swimming,Mixed 4 x 100m Medley Relay,Bronze,Mixed
+Swimming,Swimming,Women's 200m Individual Medley,Bronze,Women

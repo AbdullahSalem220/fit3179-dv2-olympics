@@ -1,0 +1,331 @@
+year,sport_group,discipline,medal,medals
+1896,Athletics,Athletics,Gold,2
+1900,Athletics,Athletics,Bronze,3
+1920,Athletics,Athletics,Silver,1
+1920,Swimming,Swimming,Bronze,1
+1920,Swimming,Swimming,Silver,1
+1924,Athletics,Athletics,Gold,1
+1924,Diving,Diving,Gold,1
+1924,Swimming,Swimming,Bronze,2
+1924,Swimming,Swimming,Gold,1
+1924,Swimming,Swimming,Silver,1
+1928,Cycling,Cycling Track,Bronze,1
+1928,Rowing,Rowing,Gold,1
+1928,Swimming,Swimming,Silver,2
+1932,Cycling,Cycling Track,Gold,1
+1932,Rowing,Rowing,Gold,1
+1932,Swimming,Swimming,Gold,1
+1932,Swimming,Swimming,Silver,1
+1932,Wrestling,Wrestling,Bronze,1
+1936,Athletics,Athletics,Bronze,1
+1948,Athletics,Athletics,Bronze,2
+1948,Athletics,Athletics,Gold,1
+1948,Athletics,Athletics,Silver,3
+1948,Rowing,Rowing,Gold,1
+1948,Swimming,Swimming,Bronze,2
+1948,Swimming,Swimming,Silver,2
+1948,Wrestling,Wrestling,Bronze,1
+1948,Wrestling,Wrestling,Silver,1
+1952,Athletics,Athletics,Bronze,1
+1952,Athletics,Athletics,Gold,3
+1952,Cycling,Cycling Track,Gold,2
+1952,Cycling,Cycling Track,Silver,1
+1952,Rowing,Rowing,Bronze,1
+1952,Rowing,Rowing,Silver,1
+1952,Swimming,Swimming,Gold,1
+1952,Weightlifting,Weightlifting,Bronze,1
+1956,Athletics,Athletics,Bronze,6
+1956,Athletics,Athletics,Gold,4
+1956,Athletics,Athletics,Silver,2
+1956,Boxing,Boxing,Bronze,1
+1956,Canoeing,Canoe Marathon,Bronze,1
+1956,Cycling,Cycling Track,Bronze,1
+1956,Cycling,Cycling Track,Gold,1
+1956,Rowing,Rowing,Bronze,2
+1956,Rowing,Rowing,Silver,1
+1956,Sailing,Sailing,Bronze,1
+1956,Sailing,Sailing,Silver,1
+1956,Swimming,Swimming,Bronze,2
+1956,Swimming,Swimming,Gold,8
+1956,Swimming,Swimming,Silver,4
+1960,Athletics,Athletics,Bronze,1
+1960,Athletics,Athletics,Gold,1
+1960,Athletics,Athletics,Silver,2
+1960,Boxing,Boxing,Bronze,2
+1960,Equestrian,Equestrian Eventing,Gold,2
+1960,Equestrian,Equestrian Eventing,Silver,1
+1960,Swimming,Swimming,Bronze,3
+1960,Swimming,Swimming,Gold,5
+1960,Swimming,Swimming,Silver,5
+1964,Athletics,Athletics,Bronze,4
+1964,Athletics,Athletics,Gold,1
+1964,Athletics,Athletics,Silver,1
+1964,Hockey,Hockey,Bronze,1
+1964,Judo,Judo,Bronze,1
+1964,Sailing,Sailing,Gold,1
+1964,Swimming,Swimming,Bronze,4
+1964,Swimming,Swimming,Gold,4
+1964,Swimming,Swimming,Silver,1
+1968,Athletics,Athletics,Bronze,1
+1968,Athletics,Athletics,Gold,2
+1968,Athletics,Athletics,Silver,3
+1968,Equestrian,Equestrian Eventing,Bronze,1
+1968,Hockey,Hockey,Silver,1
+1968,Rowing,Rowing,Silver,1
+1968,Swimming,Swimming,Bronze,3
+1968,Swimming,Swimming,Gold,3
+1968,Swimming,Swimming,Silver,2
+1972,Athletics,Athletics,Silver,2
+1972,Cycling,Cycling Road,Silver,1
+1972,Cycling,Cycling Track,Silver,2
+1972,Sailing,Sailing,Gold,2
+1972,Swimming,Swimming,Bronze,2
+1972,Swimming,Swimming,Gold,6
+1972,Swimming,Swimming,Silver,2
+1976,Equestrian,Equestrian Eventing,Bronze,1
+1976,Hockey,Hockey,Silver,1
+1976,Sailing,Sailing,Bronze,2
+1976,Swimming,Swimming,Bronze,1
+1980,Athletics,Athletics,Silver,1
+1980,Canoeing,Canoe Sprint,Silver,1
+1980,Swimming,Swimming,Bronze,5
+1980,Swimming,Swimming,Gold,2
+1984,Athletics,Athletics,Bronze,1
+1984,Athletics,Athletics,Gold,1
+1984,Athletics,Athletics,Silver,1
+1984,Canoeing,Canoe Sprint,Bronze,1
+1984,Cycling,Cycling Track,Gold,1
+1984,Rowing,Rowing,Bronze,2
+1984,Rowing,Rowing,Silver,1
+1984,Sailing,Sailing,Bronze,1
+1984,Shooting,Shooting,Bronze,1
+1984,Swimming,Swimming,Bronze,6
+1984,Swimming,Swimming,Gold,1
+1984,Swimming,Swimming,Silver,5
+1984,Weightlifting,Weightlifting,Gold,1
+1984,Weightlifting,Weightlifting,Silver,1
+1988,Athletics,Athletics,Gold,1
+1988,Athletics,Athletics,Silver,1
+1988,Boxing,Boxing,Silver,1
+1988,Canoeing,Canoe Sprint,Bronze,1
+1988,Canoeing,Canoe Sprint,Silver,1
+1988,Cycling,Cycling Track,Bronze,2
+1988,Cycling,Cycling Track,Silver,2
+1988,Hockey,Hockey,Gold,1
+1988,Swimming,Swimming,Bronze,1
+1988,Swimming,Swimming,Gold,1
+1988,Swimming,Swimming,Silver,1
+1988,Tennis,Tennis,Bronze,1
+1992,Athletics,Athletics,Bronze,2
+1992,Canoeing,Canoe Slalom,Silver,1
+1992,Canoeing,Canoe Sprint,Bronze,1
+1992,Canoeing,Canoe Sprint,Gold,1
+1992,Cycling,Cycling Road,Gold,1
+1992,Cycling,Cycling Track,Silver,4
+1992,Equestrian,Equestrian Eventing,Gold,2
+1992,Hockey,Hockey,Silver,1
+1992,Rowing,Rowing,Gold,2
+1992,Sailing,Sailing,Bronze,2
+1992,Swimming,Swimming,Bronze,5
+1992,Swimming,Swimming,Gold,1
+1992,Swimming,Swimming,Silver,3
+1992,Tennis,Tennis,Bronze,1
+1996,Athletics,Athletics,Silver,2
+1996,Basketball,Basketball,Bronze,1
+1996,Beach Volleyball,Beach Volleyball,Bronze,1
+1996,Canoeing,Canoe Sprint,Bronze,3
+1996,Cycling,Cycling Track,Bronze,4
+1996,Cycling,Cycling Track,Silver,1
+1996,Equestrian,Equestrian Eventing,Gold,1
+1996,Hockey,Hockey,Bronze,1
+1996,Hockey,Hockey,Gold,1
+1996,Rowing,Rowing,Bronze,3
+1996,Rowing,Rowing,Gold,2
+1996,Rowing,Rowing,Silver,1
+1996,Sailing,Sailing,Bronze,1
+1996,Sailing,Sailing,Silver,1
+1996,Shooting,Shooting,Bronze,1
+1996,Shooting,Shooting,Gold,2
+1996,Softball,Softball,Bronze,1
+1996,Swimming,Swimming,Bronze,6
+1996,Swimming,Swimming,Gold,2
+1996,Swimming,Swimming,Silver,4
+1996,Tennis,Tennis,Gold,1
+1996,Weightlifting,Weightlifting,Bronze,1
+2000,Archery,Archery,Gold,1
+2000,Athletics,Athletics,Gold,1
+2000,Athletics,Athletics,Silver,2
+2000,Basketball,Basketball,Silver,1
+2000,Beach Volleyball,Beach Volleyball,Gold,1
+2000,Canoeing,Canoe Sprint,Bronze,1
+2000,Canoeing,Canoe Sprint,Silver,1
+2000,Cycling,Cycling Track,Bronze,3
+2000,Cycling,Cycling Track,Gold,1
+2000,Cycling,Cycling Track,Silver,2
+2000,Diving,Diving,Bronze,2
+2000,Equestrian,Equestrian Eventing,Gold,1
+2000,Equestrian,Equestrian Eventing,Silver,1
+2000,Hockey,Hockey,Bronze,1
+2000,Hockey,Hockey,Gold,1
+2000,Judo,Judo,Bronze,1
+2000,Rowing,Rowing,Bronze,2
+2000,Rowing,Rowing,Silver,3
+2000,Sailing,Sailing,Bronze,1
+2000,Sailing,Sailing,Gold,2
+2000,Sailing,Sailing,Silver,1
+2000,Shooting,Shooting,Bronze,1
+2000,Shooting,Shooting,Gold,1
+2000,Shooting,Shooting,Silver,1
+2000,Softball,Softball,Bronze,1
+2000,Swimming,Swimming,Bronze,4
+2000,Swimming,Swimming,Gold,5
+2000,Swimming,Swimming,Silver,9
+2000,Taekwondo,Taekwondo,Gold,1
+2000,Taekwondo,Taekwondo,Silver,1
+2000,Tennis,Tennis,Silver,1
+2000,Trampoline,Trampolining,Silver,1
+2000,Triathlon,Triathlon,Silver,1
+2000,Water Polo,Water Polo,Gold,1
+2004,Archery,Archery,Bronze,1
+2004,Athletics,Athletics,Bronze,2
+2004,Athletics,Athletics,Silver,1
+2004,Baseball,Baseball,Silver,1
+2004,Basketball,Basketball,Silver,1
+2004,Canoeing,Canoe Sprint,Silver,2
+2004,Cycling,Cycling Road,Bronze,1
+2004,Cycling,Cycling Road,Gold,1
+2004,Cycling,Cycling Track,Bronze,2
+2004,Cycling,Cycling Track,Gold,5
+2004,Cycling,Cycling Track,Silver,2
+2004,Diving,Diving,Bronze,4
+2004,Diving,Diving,Gold,1
+2004,Diving,Diving,Silver,1
+2004,Hockey,Hockey,Gold,1
+2004,Rowing,Rowing,Bronze,2
+2004,Rowing,Rowing,Gold,1
+2004,Rowing,Rowing,Silver,1
+2004,Shooting,Shooting,Bronze,1
+2004,Shooting,Shooting,Gold,1
+2004,Softball,Softball,Silver,1
+2004,Swimming,Swimming,Bronze,3
+2004,Swimming,Swimming,Gold,7
+2004,Swimming,Swimming,Silver,5
+2004,Tennis,Tennis,Bronze,1
+2004,Triathlon,Triathlon,Silver,1
+2008,Athletics,Athletics,Bronze,1
+2008,Athletics,Athletics,Gold,1
+2008,Athletics,Athletics,Silver,2
+2008,Basketball,Basketball,Silver,1
+2008,Canoeing,Canoe Slalom,Bronze,1
+2008,Canoeing,Canoe Slalom,Silver,1
+2008,Canoeing,Canoe Sprint,Bronze,2
+2008,Canoeing,Canoe Sprint,Gold,1
+2008,Cycling,Cycling Track,Silver,1
+2008,Diving,Diving,Gold,1
+2008,Diving,Diving,Silver,1
+2008,Equestrian,Equestrian Eventing,Silver,1
+2008,Hockey,Hockey,Bronze,1
+2008,Rowing,Rowing,Gold,2
+2008,Rowing,Rowing,Silver,1
+2008,Sailing,Sailing,Gold,2
+2008,Sailing,Sailing,Silver,1
+2008,Shooting,Shooting,Bronze,1
+2008,Softball,Softball,Bronze,1
+2008,Swimming,Swimming,Bronze,8
+2008,Swimming,Swimming,Gold,6
+2008,Swimming,Swimming,Silver,6
+2008,Triathlon,Triathlon,Bronze,1
+2008,Triathlon,Triathlon,Gold,1
+2008,Water Polo,Water Polo,Bronze,1
+2012,Athletics,Athletics,Gold,2
+2012,Athletics,Athletics,Silver,1
+2012,Basketball,Basketball,Bronze,1
+2012,Canoeing,Canoe Slalom,Silver,1
+2012,Canoeing,Canoe Sprint,Gold,1
+2012,Cycling,Cycling BMX Racing,Silver,1
+2012,Cycling,Cycling Track,Bronze,3
+2012,Cycling,Cycling Track,Gold,1
+2012,Cycling,Cycling Track,Silver,1
+2012,Diving,Diving,Silver,1
+2012,Hockey,Hockey,Bronze,1
+2012,Rowing,Rowing,Bronze,2
+2012,Rowing,Rowing,Silver,3
+2012,Sailing,Sailing,Gold,3
+2012,Sailing,Sailing,Silver,1
+2012,Swimming,Swimming,Bronze,3
+2012,Swimming,Swimming,Gold,1
+2012,Swimming,Swimming,Silver,6
+2012,Triathlon,Triathlon,Bronze,1
+2012,Water Polo,Water Polo,Bronze,1
+2016,Archery,Archery,Bronze,1
+2016,Athletics,Athletics,Bronze,1
+2016,Athletics,Athletics,Silver,1
+2016,Canoeing,Canoe Slalom,Bronze,1
+2016,Canoeing,Canoe Sprint,Bronze,1
+2016,Cycling,Cycling Track,Bronze,1
+2016,Cycling,Cycling Track,Silver,1
+2016,Diving,Diving,Bronze,1
+2016,Equestrian,Equestrian Eventing,Bronze,1
+2016,Modern Pentathlon,Modern Pentathlon,Gold,1
+2016,Rowing,Rowing,Gold,1
+2016,Rowing,Rowing,Silver,2
+2016,Rugby Sevens,Rugby Sevens,Gold,1
+2016,Sailing,Sailing,Gold,1
+2016,Sailing,Sailing,Silver,3
+2016,Shooting,Shooting,Gold,1
+2016,Swimming,Swimming,Bronze,3
+2016,Swimming,Swimming,Gold,3
+2016,Swimming,Swimming,Silver,4
+2020,Athletics,Athletics,Bronze,2
+2020,Athletics,Athletics,Silver,1
+2020,Basketball,Basketball,Bronze,1
+2020,Beach Volleyball,Beach Volleyball,Silver,1
+2020,Boxing,Boxing,Bronze,1
+2020,Canoeing,Canoe Slalom,Bronze,1
+2020,Canoeing,Canoe Slalom,Gold,1
+2020,Canoeing,Canoe Sprint,Gold,1
+2020,Cycling,Cycling BMX Freestyle,Gold,1
+2020,Cycling,Cycling Road,Bronze,1
+2020,Cycling,Cycling Track,Bronze,1
+2020,Diving,Diving,Bronze,1
+2020,Equestrian,Equestrian Eventing,Bronze,1
+2020,Equestrian,Equestrian Eventing,Silver,1
+2020,Hockey,Hockey,Silver,1
+2020,Rowing,Rowing,Bronze,2
+2020,Rowing,Rowing,Gold,2
+2020,Sailing,Sailing,Gold,2
+2020,Skateboarding,Skateboarding,Gold,1
+2020,Surfing,Surfing,Bronze,1
+2020,Swimming,Marathon Swimming,Bronze,1
+2020,Swimming,Swimming,Bronze,8
+2020,Swimming,Swimming,Gold,9
+2020,Swimming,Swimming,Silver,3
+2020,Tennis,Tennis,Bronze,1
+2024,Athletics,Athletics,Bronze,4
+2024,Athletics,Athletics,Gold,1
+2024,Athletics,Athletics,Silver,2
+2024,Basketball,Basketball,Bronze,1
+2024,Boxing,Boxing,Bronze,2
+2024,Canoeing,Canoe Slalom,Gold,3
+2024,Canoeing,Canoe Sprint,Bronze,1
+2024,Canoeing,Canoe Sprint,Silver,1
+2024,Cycling,Cycling BMX Freestyle,Bronze,1
+2024,Cycling,Cycling BMX Racing,Gold,1
+2024,Cycling,Cycling Road,Gold,1
+2024,Cycling,Cycling Track,Bronze,2
+2024,Cycling,Cycling Track,Gold,1
+2024,Cycling,Cycling Track,Silver,2
+2024,Diving,Diving,Silver,1
+2024,Equestrian,Equestrian,Silver,1
+2024,Rowing,Rowing,Bronze,1
+2024,Sailing,Sailing,Gold,1
+2024,Sailing,Sailing,Silver,1
+2024,Shooting,Shooting,Bronze,1
+2024,Skateboarding,Skateboarding,Gold,2
+2024,Surfing,Surfing,Silver,1
+2024,Swimming,Marathon Swimming,Silver,1
+2024,Swimming,Swimming,Bronze,3
+2024,Swimming,Swimming,Gold,7
+2024,Swimming,Swimming,Silver,8
+2024,Tennis,Tennis,Gold,1
+2024,Water Polo,Water Polo,Silver,1

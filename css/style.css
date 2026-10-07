@@ -1,0 +1,218 @@
+/* Green and Gold: Australia at the Olympics
+   Typography: Barlow Condensed (headings, numbers, chart titles) + Barlow (body).
+   Colour: Australian sporting green and gold for emphasis, grey for context. */
+
+:root {
+  /* Brand */
+  --green: #00843D;        /* Australia, highlighted */
+  --gold-accent: #FFCD00;  /* sparing accent */
+
+  /* Medals: lightness differs, so they still separate in greyscale */
+  --medal-gold: #C9A227;
+  --medal-silver: #A8ADB3;
+  --medal-bronze: #A0673A;
+
+  /* Gender: avoids pink/blue stereotypes; colour-blind safe pair */
+  --women: #7B4FA0;
+  --men: #E07B39;
+
+  /* Context and surfaces */
+  --context: #BFC4C9;
+  --bg: #FAF8F3;
+  --surface: #FFFFFF;
+  --ink: #1F2328;
+  --ink-muted: #5A6169;
+  --rule: #E3DFD6;
+
+  /* Type */
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+
+  /* Layout */
+  --wrap: 1120px;
+  --measure: 62ch;       /* about 60 characters per line */
+  --gutter: 32px;
+  --space: 24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  overflow-x: hidden;
+}
+
+.wrap {
+  max-width: var(--wrap);
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+/* ---------- Masthead ---------- */
+
+.masthead {
+  padding: 72px 0 48px;
+  border-bottom: 4px solid var(--green);
+}
+
+.kicker {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+h1 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(48px, 7vw, 84px);
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+
+.standfirst {
+  max-width: var(--measure);
+  margin: 16px 0 0;
+  font-size: 22px;
+  line-height: 1.4;
+  color: var(--ink-muted);
+}
+
+.byline {
+  margin: 24px 0 0;
+  font-size: 15px;
+  color: var(--ink-muted);
+}
+
+/* ---------- Story sections ---------- */
+
+.story {
+  padding: 64px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.section-title {
+  margin: 0 0 16px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.section-num {
+  display: inline-block;
+  margin-right: 0.35em;
+  color: var(--green);
+}
+
+.lede,
+.story p {
+  max-width: var(--measure);
+  margin: 0 0 var(--space);
+}
+
+.note {
+  font-size: 15px;
+  color: var(--ink-muted);
+  border-left: 3px solid var(--gold-accent);
+  padding-left: 12px;
+}
+
+/* ---------- Charts ---------- */
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--gutter);
+}
+
+.chart {
+  margin: 0 0 var(--space);
+  min-width: 0;
+}
+
+.chart figcaption {
+  max-width: var(--measure);
+  margin-top: 8px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink-muted);
+}
+
+/* Vega output scales to its container: no horizontal scroll */
+.chart .vega-embed,
+.chart .vega-embed > svg,
+.chart .vega-embed > canvas {
+  max-width: 100%;
+}
+
+/* Empty chart slots (removed as charts are built in Phase 3) */
+.slot:empty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  padding: 16px;
+  border: 2px dashed var(--rule);
+  border-radius: 4px;
+  background: var(--surface);
+  color: var(--ink-muted);
+  font-family: var(--font-display);
+  font-size: 18px;
+  text-align: center;
+}
+
+.slot:empty::before { content: attr(data-label); }
+
+.placeholder { color: var(--ink-muted); font-style: italic; }
+
+/* Vega tooltip uses the page fonts */
+#vg-tooltip-element {
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+/* ---------- Footer ---------- */
+
+.credits {
+  padding: 48px 0 64px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--ink-muted);
+}
+
+.credits h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.credits h2:not(:first-child) { margin-top: 24px; }
+
+.sources { margin: 0; padding-left: 18px; }
+.sources li { margin-bottom: 6px; }
+
+a { color: var(--green); }
+a:hover { color: var(--ink); }
+
+/* ---------- Narrow screens ---------- */
+
+@media (max-width: 760px) {
+  :root { --gutter: 16px; }
+  .row { grid-template-columns: minmax(0, 1fr); }
+  .section-title { font-size: 32px; }
+  .story { padding: 48px 0; }
+}

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Green and Gold: Australia at the Olympics</title>
+  <meta name="description" content="A data story about Australia's Olympic performance, from Athens 1896 to Paris 2024 and Milano Cortina 2026.">
+  <meta name="author" content="Abdullah Salem">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0/build/vega.min.js"
+          integrity="sha384-em7CHpJd+SsMugVFf6TY7AKQcLWMcbPhD84hmNK8o6WFDkK+2uHSUQRVQV1/w827" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0/build/vega-lite.min.js"
+          integrity="sha384-GhkD6ks9/zgY1m5EFOUZWz/vMVMUFF/92DL61RZc+B42J8osL+jNufKv68bNHHZ2" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0/build/vega-embed.min.js"
+          integrity="sha384-TqXb8su49m5OnEpKGO8m+VrgHesrUxyP22HgpXi4hnh1Hm43dXroiSYemNf5D8lv" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="kicker">Australia at the Olympic Games, 1896–2026</p>
+    <h1>Green and Gold</h1>
+    <!-- PHASE 4: subtitle (one sentence that states the story's main finding) -->
+    <p class="standfirst placeholder">Subtitle to come in Phase 4.</p>
+    <p class="byline">By Abdullah Salem · <time datetime="2026-10">October 2026</time></p>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. Hook -->
+  <section id="paris" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">01</span> Paris 2024</h2>
+      <p class="lede placeholder">Introduction to come in Phase 4.</p>
+      <figure class="chart chart--full">
+        <div id="chart-waffle" class="slot" data-label="Waffle chart · Paris 2024: 53 medals by medal and sport"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Australia vs the world -->
+  <section id="world" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">02</span> Punching above our weight</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <figure class="chart chart--full">
+        <div id="chart-world" class="slot" data-label="Choropleth map · Paris 2024 medals per million people"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 3. Over time -->
+  <section id="time" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">03</span> Rise, fall and rebound</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <figure class="chart chart--full">
+        <div id="chart-games" class="slot" data-label="Stacked bar · Medals per Summer Games, 1896–2024"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+      <figure class="chart chart--full">
+        <div id="chart-bump" class="slot" data-label="Bump chart · Medal-table rank against rival nations, 1948–2024"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 4. Host cities -->
+  <section id="hosts" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">04</span> Where the Games took us</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <figure class="chart chart--full">
+        <div id="chart-hosts" class="slot" data-label="Proportional symbol map · Host cities sized by Australia's medals"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 5. Sports -->
+  <section id="sports" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">05</span> Our strongest sports</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <figure class="chart chart--full">
+        <div id="chart-heatmap" class="slot" data-label="Heat map · Medals by sport and Games"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+      <figure class="chart chart--full">
+        <div id="chart-treemap" class="slot" data-label="Treemap · All-time medals by sport"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 6. People -->
+  <section id="people" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">06</span> Who wins the medals</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <div class="row">
+        <figure class="chart chart--half">
+          <div id="chart-gender" class="slot" data-label="Diverging bar · Women's and men's medals per Games"></div>
+          <figcaption class="placeholder">Caption</figcaption>
+        </figure>
+        <figure class="chart chart--half">
+          <div id="chart-athletes" class="slot" data-label="Dot plot · Top Australian Olympians"></div>
+          <figcaption class="placeholder">Caption</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Birthplaces -->
+  <section id="born" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">07</span> Where our medallists were born</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <p class="note">Birth state is where an athlete was born, not where they trained or live.</p>
+      <div class="row">
+        <figure class="chart chart--half">
+          <div id="chart-states" class="slot" data-label="Choropleth map · Medallists per million residents by birth state, 2000–2024"></div>
+          <figcaption class="placeholder">Caption</figcaption>
+        </figure>
+        <figure class="chart chart--half">
+          <div id="chart-dots" class="slot" data-label="Dot map · Medallists' birthplaces, 1896–2024"></div>
+          <figcaption class="placeholder">Caption</figcaption>
+        </figure>
+      </div>
+      <figure class="chart chart--full">
+        <div id="chart-flow" class="slot" data-label="Flow map · Birth country of medallists born overseas (not migration)"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 8. Summer vs Winter -->
+  <section id="winter" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">08</span> Summer and Winter</h2>
+      <p class="lede placeholder">Text to come in Phase 4.</p>
+      <figure class="chart chart--full">
+        <div id="chart-seasons" class="slot" data-label="Small multiples · Summer and Winter medals per Games"></div>
+        <figcaption class="placeholder">Caption</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 9. Conclusion -->
+  <section id="brisbane" class="story">
+    <div class="wrap">
+      <h2 class="section-title"><span class="section-num">09</span> Next stop: Brisbane 2032</h2>
+      <p class="lede placeholder">Conclusion to come in Phase 4.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="credits">
+  <div class="wrap">
+    <div class="row">
+      <div class="col">
+        <h2>Data sources</h2>
+        <ul class="sources">
+          <li><a href="https://www.olympedia.org/countries/AUS">Olympedia</a>, OlyMADMen. Medal tallies per Games, Summer 1896–2024 and Winter 1924–2026.</li>
+          <li><a href="https://www.kaggle.com/datasets/josephcheng123456/olympic-historical-dataset-from-olympediaorg">Olympic Historical Dataset from Olympedia.org</a>, Joseph Cheng (Kaggle, CC0). Athlete results and medal tables, 1896–2022.</li>
+          <li><a href="https://www.kaggle.com/datasets/piterfm/paris-2024-olympic-summer-games">Paris 2024 Olympic Summer Games</a>, Petro Ivaniuk (Kaggle, CC BY-NC-SA 4.0). Medals, medallists and athletes.</li>
+          <li><a href="https://github.com/KeithGalli/Olympics-Dataset">Olympics-Dataset</a>, Keith Galli (MIT), from Olympedia. Athletes' birthplaces.</li>
+          <li><a href="https://en.wikipedia.org/wiki/Australia_at_the_Olympics">Australia at the Olympics</a>, Wikipedia (CC BY-SA 4.0). Cross-check of tallies and ranks.</li>
+          <li><a href="https://data.worldbank.org/indicator/SP.POP.TOTL">Population, total (SP.POP.TOTL)</a>, World Bank (CC BY 4.0). Country populations, 2024.</li>
+          <li><a href="https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/latest-release">National, state and territory population, March 2026</a>, Australian Bureau of Statistics (CC BY 4.0).</li>
+          <li><a href="https://www.geonames.org/">GeoNames</a> (CC BY 4.0). Birthplace coordinates.</li>
+          <li><a href="https://www.naturalearthdata.com/">Natural Earth</a> (public domain) via <a href="https://github.com/topojson/world-atlas">world-atlas</a> (ISC). Map outlines and host-city locations.</li>
+          <li><a href="https://github.com/datasets/country-codes">country-codes</a>, datasets.io (PDDL). Olympic to ISO country codes.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <h2>Methodology</h2>
+        <!-- PHASE 4: short plain-language methodology; full detail in README.md -->
+        <p class="placeholder">Methodology summary to come in Phase 4. Full detail is in the <a href="https://github.com/AbdullahSalem220/fit3179-dv2-olympics#methodology">README</a>.</p>
+        <h2>Use of generative AI</h2>
+        <p class="placeholder">AI acknowledgement to come in Phase 4.</p>
+        <h2>About</h2>
+        <p>Made by Abdullah Salem for FIT3179 Data Visualisation, Monash University, October 2026. Charts built with <a href="https://vega.github.io/vega-lite/">Vega-Lite</a> and <a href="https://vega.github.io/vega/">Vega</a>. Chart specifications are in the <a href="https://github.com/AbdullahSalem220/fit3179-dv2-olympics/tree/main/specs">specs folder</a>.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

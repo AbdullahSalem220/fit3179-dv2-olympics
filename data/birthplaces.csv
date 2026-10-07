@@ -1,0 +1,806 @@
+name,town,state,lat,lon,first_year,last_year,total
+Simon Fairweather,Adelaide,South Australia,-34.92866,138.59863,2000,2000,1
+Nicole Provis-Bradtke,Melbourne,Victoria,-37.814,144.96332,1992,1992,1
+Liz Smylie,Perth,Western Australia,-31.95224,115.8614,1988,1988,1
+Wendy Turnbull,Brisbane,Queensland,-27.46794,153.02809,1988,1988,1
+Todd Woodbridge,Sydney,New South Wales,-33.86785,151.20732,1996,2000,2
+Mark Woodforde,Adelaide,South Australia,-34.92866,138.59863,1996,2000,2
+Jo Brown,Canberra,Australian Capital Territory,-35.28346,149.12807,1996,2000,2
+Kim Cooper,Parramatta,New South Wales,-33.8178,151.00348,1996,1996,1
+Carolyn Crudgington,Brisbane,Queensland,-27.46794,153.02809,1996,1996,1
+Kerry Dienelt,Darwin,Northern Territory,-12.46113,130.84185,1996,2000,2
+Peta Edebone,Melbourne,Victoria,-37.814,144.96332,1996,2004,3
+Tanya Harding,Brisbane,Queensland,-27.46794,153.02809,1996,2008,4
+Jenny Holliday,Melbourne,Victoria,-37.814,144.96332,1996,1996,1
+Joyce Lester,Brisbane,Queensland,-27.46794,153.02809,1996,1996,1
+Francine McRae,Melbourne,Victoria,-37.814,144.96332,1996,1996,1
+Haylea Petrie,Wee Waa,New South Wales,-30.2266,149.44041,1996,1996,1
+Nicole Richardson,Melbourne,Victoria,-37.814,144.96332,1996,1996,1
+Melanie Roche,Sydney,New South Wales,-33.86785,151.20732,1996,2008,4
+Natalie Ward,Newcastle,New South Wales,-32.92953,151.7801,1996,2008,4
+Brooke Wilkins,Sydney,New South Wales,-33.86785,151.20732,1996,2004,3
+Jeff Williams,Canberra,Australian Capital Territory,-35.28346,149.12807,2004,2004,1
+Grahame Cheney,Lithgow,New South Wales,-33.4845,150.14903,1988,1988,1
+Tony Madigan,Sydney,New South Wales,-33.86785,151.20732,1960,1960,1
+Carla Boyd,Wynyard,Tasmania,-40.9897,145.72617,1996,2000,2
+Michelle Brogan-Griffiths,Adelaide,South Australia,-34.92866,138.59863,1996,2000,2
+Sandy Brondello,Mackay,Queensland,-21.15345,149.16554,1996,2004,3
+Michelle Chandler,Geelong,Victoria,-38.14711,144.36069,1996,1996,1
+Allison Cook-Tranquilli,Melbourne,Victoria,-37.814,144.96332,1996,2004,2
+Trish Fallon,Melbourne,Victoria,-37.814,144.96332,1996,2004,3
+Shelley Gorman-Sandie,Melbourne,Victoria,-37.814,144.96332,1996,2000,2
+Robyn Maher,Ballarat,Victoria,-37.56622,143.84957,1996,1996,1
+Fiona Robinson-Hannan,Perth,Western Australia,-31.95224,115.8614,1996,1996,1
+Rachael Sporn,Murrayville,Victoria,-35.26245,141.18346,1996,2004,3
+Michele Timms,Melbourne,Victoria,-37.814,144.96332,1996,2000,2
+Jenny Whittle,Gold Coast,Queensland,-28.00029,153.43088,1996,2000,2
+Ollie Taylor,Townsville,Queensland,-19.26639,146.80569,1960,1960,1
+Danielle Woodward,Melbourne,Victoria,-37.814,144.96332,1992,1992,1
+Ramon Andersson,Middle Swan,Western Australia,-31.85,116.01667,1992,1992,1
+Danny Collins,Sydney,New South Wales,-33.86785,151.20732,1996,2000,2
+Grant Davies,Dalby,Queensland,-27.18169,151.26205,1988,1988,1
+Dennis Green,Sydney,New South Wales,-33.86785,151.20732,1956,1956,1
+Barry Kelly,Byron Bay,New South Wales,-28.64989,153.61246,1984,1984,1
+Grant Kenny,Maryborough,Queensland,-25.54073,152.70493,1984,1984,1
+Clint Robinson,Brisbane,Queensland,-27.46794,153.02809,1992,2004,3
+John Sumegi,Orange,New South Wales,-33.28397,149.10018,1980,1980,1
+Andrew Trim,Sydney,New South Wales,-33.86785,151.20732,1996,2000,2
+Gillian Rolton,Adelaide,South Australia,-34.92866,138.59863,1992,1996,2
+Wendy Schaeffer,Adelaide,South Australia,-34.92866,138.59863,1996,1996,1
+Brien Cobcroft,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Brian Crago,Mount Barker,South Australia,-35.06667,138.86667,1960,1960,1
+Phillip Dutton,Nyngan,New South Wales,-31.56375,147.19373,1996,2000,2
+David Green,Brisbane,Queensland,-27.46794,153.02809,1992,1992,1
+Andrew Hoy,Culcairn,New South Wales,-35.66669,147.03845,1992,2020,6
+Neale Lavis,Murwillumbah,New South Wales,-28.32732,153.39339,1960,1960,2
+Laurie Morgan,Yea,Victoria,-37.21067,145.42755,1960,1960,2
+Bill Roycroft,Flowerdale,Victoria,-37.33333,145.33333,1960,1976,3
+Wayne Roycroft,Mansfield,Victoria,-37.052,146.08846,1968,1976,2
+Matt Ryan,Sydney,New South Wales,-33.86785,151.20732,1992,2000,3
+James Scanlon,Pakenham,Victoria,-38.07018,145.47411,1968,1968,1
+Michelle Ferris,Warrnambool,Victoria,-38.38176,142.48799,1996,2000,2
+Kathy Watt,Warragul,Victoria,-38.15912,145.93118,1992,1992,2
+Brett Aitken,Adelaide,South Australia,-34.92866,138.59863,1992,2000,3
+Joey Browne,Melbourne,Victoria,-37.814,144.96332,1956,1956,1
+Danny Clark,Launceston,Tasmania,-41.43876,147.13467,1972,1972,1
+Lionel Cox,Brisbane,Queensland,-27.46794,153.02809,1952,1952,2
+Brett Dutton,Hurstville,New South Wales,-33.9677,151.10149,1988,1988,1
+Dunc Gray,Goulburn,New South Wales,-34.75155,149.72086,1928,1932,2
+Darryn Hill,Perth,Western Australia,-31.95224,115.8614,2000,2000,1
+Shane Kelly,Ararat,Victoria,-37.28542,142.92728,1992,2004,3
+Tony Marchant,Chelsea,Victoria,-38.05,145.11667,1956,1956,1
+Wayne McCarney,Colac,Victoria,-38.339,143.58489,1988,1988,1
+Brad McGee,Sydney,New South Wales,-33.86785,151.20732,1996,2004,5
+Stephen McGlede,Sydney,New South Wales,-33.86785,151.20732,1988,1992,2
+Scott McGrory,Walwa,Victoria,-35.9659,147.73401,1988,2000,2
+Russell Mockridge,South Melbourne,Victoria,-37.83333,144.96667,1952,1952,2
+Gary Neiwand,Melbourne,Victoria,-37.814,144.96332,1988,2000,4
+Kevin Nichols,Grafton,New South Wales,-29.68104,152.93394,1984,1984,1
+John Nicholson,Melbourne,Victoria,-37.814,144.96332,1972,1972,1
+Stuart O'Grady,Adelaide,South Australia,-34.92866,138.59863,1992,2004,4
+Timothy O'Shannessey,Burnie,Tasmania,-41.05584,145.90375,1996,1996,1
+Dick Ploog,Melbourne,Victoria,-37.814,144.96332,1956,1956,1
+Clyde Sefton,South Purrumbete,Victoria,-38.35478,143.20031,1972,1972,1
+Mike Turtur,Adelaide,South Australia,-34.92866,138.59863,1984,1984,1
+Martin Vinnicombe,Melbourne,Victoria,-37.814,144.96332,1988,1988,1
+Dean Woods,Wangaratta,Victoria,-36.35846,146.32056,1984,1996,4
+Shelley Andrews,Newcastle,New South Wales,-32.92953,151.7801,1996,1996,1
+Alyson Annan,Wentworthville,New South Wales,-33.80652,150.96785,1996,2000,2
+Tracey Belbin,Tingalpa,Queensland,-27.4736,153.12704,1988,1988,1
+Lee Capes,North Fremantle,Western Australia,-32.03333,115.75,1988,1988,1
+Michelle Capes-Hager,East Fremantle,Western Australia,-32.03823,115.7676,1988,1988,1
+Sally Carbon,Cottesloe,Western Australia,-31.99426,115.75816,1988,1988,1
+Louise Dobson,Shepparton,Victoria,-36.38047,145.39867,1996,1996,1
+Renita Farrell-Garard,Townsville,Queensland,-19.26639,146.80569,1996,2000,2
+Maree Fish,Hobart,Tasmania,-42.87936,147.32941,1988,1988,1
+Juliet Haslam,Adelaide,South Australia,-34.92866,138.59863,1996,2000,2
+Rechelle Hawkes,Albany,Western Australia,-35.02692,117.88369,1988,2000,3
+Clover Maitland,Maryborough,Queensland,-25.54073,152.70493,1996,2000,2
+Karen Marsden,Margaret River,Western Australia,-33.95504,115.07599,1996,1996,1
+Jenny Morris,Maryborough,Queensland,-25.54073,152.70493,1996,2000,2
+Kathleen Partridge,Sydney,New South Wales,-33.86785,151.20732,1988,1988,1
+Alison Peek,Adelaide,South Australia,-34.92866,138.59863,2000,2000,1
+Jackie Pereira,Perth,Western Australia,-31.95224,115.8614,1988,1996,2
+Nova Peris-Kneebone,Darwin,Northern Territory,-12.46113,130.84185,1996,1996,1
+Triny Powell,Canberra,Australian Capital Territory,-35.28346,149.12807,1996,2000,2
+Lisa Powell-Carruthers,Sydney,New South Wales,-33.86785,151.20732,1996,2000,2
+Danni Roche,Melbourne,Victoria,-37.814,144.96332,1996,1996,1
+Kate Starre,Perth,Western Australia,-31.95224,115.8614,1996,2000,2
+Debbie Bowman-Sullivan,Southport,Queensland,-27.96724,153.39796,1988,1988,1
+Liane Tooth,Sydney,New South Wales,-33.86785,151.20732,1988,1996,2
+David Bell,Melbourne,Victoria,-37.814,144.96332,1976,1976,1
+Lee Bodimeade,Warwick,Western Australia,-31.83974,115.80855,1992,1992,1
+Stuart Carruthers,Melbourne,Victoria,-37.814,144.96332,1996,1996,1
+Ric Charlesworth,Subiaco,Western Australia,-31.9485,115.8268,1976,1976,1
+Baeden Choppy,Mackay,Queensland,-21.15345,149.16554,1996,1996,1
+Greg Corbitt,Perth,Western Australia,-31.95224,115.8614,1992,1992,1
+Mervyn Crossman,Home Hill,Queensland,-19.65921,147.41232,1964,1964,1
+Barry Dancer,Brisbane,Queensland,-27.46794,153.02809,1976,1976,1
+Stephen Davies,Parkes,New South Wales,-33.1372,148.1759,1992,2000,3
+Damon Diletti,Perth,Western Australia,-31.95224,115.8614,1992,2000,3
+Lachlan Dreher,Melbourne,Victoria,-37.814,144.96332,1992,2000,3
+Lachlan Elmer,Melbourne,Victoria,-37.814,144.96332,1992,1996,2
+Ray Evans,Northam,Western Australia,-31.64932,116.67423,1964,1968,2
+Brendan Garard,Brisbane,Queensland,-27.46794,153.02809,1996,1996,1
+Paul Gaudoin,Perth,Western Australia,-31.95224,115.8614,1996,2000,2
+Brian Glencross,Narrogin,Western Australia,-32.93282,117.17763,1964,1968,2
+Mark Hager,Maryborough,Queensland,-25.54073,152.70493,1996,1996,1
+Robert Haigh,Adelaide,South Australia,-34.92866,138.59863,1968,1976,2
+Wayne Hammond,Brisbane,Queensland,-27.46794,153.02809,1976,1976,1
+Robin Hodder,Maryborough,Victoria,-37.04562,143.73923,1964,1964,1
+Jim Irvine,Sydney,New South Wales,-33.86785,151.20732,1976,1976,1
+Paul Lewis,Adelaide,South Australia,-34.92866,138.59863,1992,1996,2
+John McBryde,Maryborough,Queensland,-25.54073,152.70493,1964,1964,1
+Don McWatters,Maryborough,Queensland,-25.54073,152.70493,1964,1968,2
+Patrick Nilan,Sydney,New South Wales,-33.86785,151.20732,1964,1968,2
+Desmond Piper,Melbourne,Victoria,-37.814,144.96332,1964,1968,2
+Fred Quine,Brisbane,Queensland,-27.46794,153.02809,1968,1968,1
+Graham Reid,Redcliffe,Queensland,-27.22649,153.10648,1992,1992,1
+Ron Riley,Sydney,New South Wales,-33.86785,151.20732,1968,1976,2
+Grant Smith,Canberra,Australian Capital Territory,-35.28346,149.12807,1996,1996,1
+Matthew Smith,Tamworth,New South Wales,-31.09048,150.92905,1996,1996,1
+Daniel Sproule,Melbourne,Victoria,-37.814,144.96332,1996,2000,2
+Jay Stacy,Melbourne,Victoria,-37.814,144.96332,1992,2000,3
+Terry Walsh,Kalgoorlie,Western Australia,-30.74614,121.4742,1976,1976,1
+Ken Wark,Sydney,New South Wales,-33.86785,151.20732,1992,1996,2
+Graham Wood,Melbourne,Victoria,-37.814,144.96332,1964,1964,1
+Michael York,Tamworth,New South Wales,-31.09048,150.92905,1992,2000,3
+Rebecca Gilmore,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Mathew Helm,Bourke,New South Wales,-30.09011,145.93646,2004,2004,2
+Bec Joyce,Melbourne,Victoria,-37.814,144.96332,1996,1996,1
+Virginia Lee,Sydney,New South Wales,-33.86785,151.20732,1996,1996,1
+Kate Slatter,Adelaide,South Australia,-34.92866,138.59863,1996,2000,2
+Megan Still,Queanbeyan,New South Wales,-35.35493,149.232,1996,1996,1
+Michael Aikman,Geelong,Victoria,-38.14711,144.36069,1956,1956,1
+Peter Antonie,Melbourne,Victoria,-37.814,144.96332,1992,1992,1
+Fred Benfield,Leichhardt,New South Wales,-33.88341,151.15625,1956,1956,1
+Simon Burgess,Franklin,Tasmania,-43.08884,147.00906,2000,2004,2
+Tom Chessell,Ashfield,New South Wales,-33.88834,151.12274,1952,1952,1
+Andrew Cooper,Melbourne,Victoria,-37.814,144.96332,1992,1992,1
+Peter Dickson,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Ben Dodwell,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+David Douglas,Melbourne,Victoria,-37.814,144.96332,1968,1968,1
+Brian Doyle,Melbourne,Victoria,-37.814,144.96332,1956,1956,1
+Alf Duval,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Anthony Edwards,Ballarat,Victoria,-37.56622,143.84957,1996,2004,3
+Steve Evans,Sydney,New South Wales,-33.86785,151.20732,1984,1984,1
+Joe Fazio,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Jaime Fernandez,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Merv Finlay,Balmain,New South Wales,-33.85481,151.1833,1952,1952,1
+Duncan Free,Hobart,Tasmania,-42.87936,147.32941,1996,2008,2
+Drew Ginn,Leongatha,Victoria,-38.47607,145.94685,1996,2012,4
+Nick Green,Melbourne,Victoria,-37.814,144.96332,1992,1996,2
+Alan Grover,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Bo Hanson,Port Kembla,New South Wales,-34.4818,150.9012,1996,2004,3
+Steve Hawkins,Hobart,Tasmania,-42.87936,147.32941,1992,1992,1
+Brett Hayman,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Bruce Hick,Rockhampton,Queensland,-23.38032,150.50595,1996,1996,1
+Janusz Hooker,Sydney,New South Wales,-33.86785,151.20732,1996,1996,1
+Neville Howell,Preston,Victoria,-37.75,145.01667,1956,1956,1
+Tony Lovrich,Perth,Western Australia,-31.95224,115.8614,1984,1984,1
+Stuart MacKenzie,Sydney,New South Wales,-33.86785,151.20732,1956,1956,1
+Garth Manton,Darling Point,New South Wales,-33.87064,151.23895,1956,1956,1
+Mike McKay,Melbourne,Victoria,-37.814,144.96332,1992,2004,4
+Tim McLaren,Cootamundra,New South Wales,-34.64095,148.02838,1984,1984,1
+Adrian Monger,Mount Lawley,Western Australia,-31.93439,115.8716,1956,1956,1
+Michael Morgan,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Ted Pain,Thirroul,New South Wales,-34.31604,150.92142,1952,1952,1
+Sam Patten,Melbourne,Victoria,-37.814,144.96332,1984,1984,1
+Gary Pearce,Leichhardt,New South Wales,-33.88341,151.15625,1968,1968,1
+Bobby Pearce,Double Bay,New South Wales,-33.87782,151.24354,1928,1932,2
+Paul Reedy,Robinvale,Victoria,-34.58356,142.77228,1984,1984,1
+Robert Scott,Perth,Western Australia,-31.95224,115.8614,1996,1996,1
+Bob Shirlaw,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Ron Snook,Dalwallinu,Western Australia,-30.28045,116.66015,1996,1996,1
+Geoff Stewart,Penrith,New South Wales,-33.75,150.7,2000,2004,2
+James Stewart,Penrith,New South Wales,-33.75,150.7,2000,2004,2
+Bob Tinning,Sydney,New South Wales,-33.86785,151.20732,1952,1952,1
+James Tomkins,Sydney,New South Wales,-33.86785,151.20732,1992,2004,4
+David Weightman,Brisbane,Queensland,-27.46794,153.02809,1996,1996,1
+Geoff Williamson,Sydney,New South Wales,-33.86785,151.20732,1952,1952,1
+Tim Willoughby,Adelaide,South Australia,-34.92866,138.59863,1984,1984,1
+Merv Wood,Kensington,New South Wales,-33.92019,151.22241,1948,1956,3
+Annemarie Forder,Gold Coast,Queensland,-28.00029,153.43088,2000,2000,1
+Deserie Huddleston-Wakefield-Baynes,Mildura,Victoria,-34.18551,142.16251,1996,1996,1
+Michael Diamond,Sydney,New South Wales,-33.86785,151.20732,1996,2000,2
+Russell Mark,Ballarat,Victoria,-37.56622,143.84957,1996,2000,2
+Jan Andrew,Lindfield,New South Wales,-33.78333,151.16667,1960,1960,2
+Gerganiya Beckitt,Sydney,New South Wales,-33.86785,151.20732,1960,1960,1
+Alva Colquhoun,Brisbane,Queensland,-27.46794,153.02809,1956,1960,2
+Lorraine Crapp,Sydney,New South Wales,-33.86785,151.20732,1956,1960,4
+Judy-Joy Davies,Melbourne,Victoria,-37.814,144.96332,1948,1948,1
+Helen Denman,Perth,Western Australia,-31.95224,115.8614,1996,1996,1
+Ruth Everuss,Sydney,New South Wales,-33.86785,151.20732,1960,1960,1
+Michelle Ford,Sydney,New South Wales,-33.86785,151.20732,1980,1980,2
+Dawn Fraser,Balmain,New South Wales,-33.85481,151.1833,1956,1964,8
+Margaret Gibson,Sydney,New South Wales,-33.86785,151.20732,1956,1956,1
+Shane Gould,Sydney,New South Wales,-33.86785,151.20732,1972,1972,5
+Julia Greville,Perth,Western Australia,-31.95224,115.8614,1996,1996,1
+Emma Johnson,Sydney,New South Wales,-33.86785,151.20732,1996,1996,1
+Angela Kennedy,Nambour,Queensland,-26.62613,152.95941,1996,1996,1
+Rosemary Lassig,Bundaberg,Queensland,-24.86621,152.3479,1960,1960,1
+Faith Leech,Bendigo,Victoria,-36.75818,144.28024,1956,1956,2
+Hayley Lewis,Brisbane,Queensland,-27.46794,153.02809,1992,1992,2
+Nicole Livingstone-Stevenson,Melbourne,Victoria,-37.814,144.96332,1992,1996,3
+Lyn McClements,Nedlands,Western Australia,-31.98184,115.8073,1968,1968,2
+Bonnie Mealing,Woolloomooloo,New South Wales,-33.87042,151.21968,1932,1932,1
+Karen Moras,Ryde,New South Wales,-33.8188,151.1062,1968,1968,1
+Sandra Morgan,Tamworth,New South Wales,-31.09048,150.92905,1956,1960,2
+Jan Murphy,Sydney,New South Wales,-33.86785,151.20732,1964,1964,1
+Gail Neall,Sydney,New South Wales,-33.86785,151.20732,1972,1972,1
+Susie O'Neill,Mackay,Queensland,-21.15345,149.16554,1992,2000,8
+Karen Phillips,Nowra,New South Wales,-34.88422,150.60036,1984,1984,1
+Judy Playfair,Sydney,New South Wales,-33.86785,151.20732,1968,1968,1
+Sam Riley,Brisbane,Queensland,-27.46794,153.02809,1992,1996,3
+Sarah Ryan,Adelaide,South Australia,-34.92866,138.59863,1996,2004,3
+Jenny Steinbeck,Brisbane,Queensland,-27.46794,153.02809,1968,1968,1
+Lynne Watson,Perth,Western Australia,-31.95224,115.8614,1968,1968,1
+Beverley Whitfield,Wollongong,New South Wales,-34.424,150.89345,1972,1972,2
+Marilyn Wilson,Richmond,Victoria,-37.81819,145.00176,1960,1960,1
+Duncan Armstrong,Rockhampton,Queensland,-23.38032,150.50595,1988,1988,2
+Frank Beaurepaire,South Melbourne,Victoria,-37.83333,144.96667,1920,1924,4
+Glenn Beringen,Adelaide,South Australia,-34.92866,138.59863,1984,1984,1
+Kevin Berry,Sydney,New South Wales,-33.86785,151.20732,1960,1964,3
+Greg Brough,Surfers Paradise,Queensland,-28.00274,153.42999,1968,1968,1
+Glenn Buchanan,Townsville,Queensland,-19.26639,146.80569,1984,1984,2
+William Burton,Bowen,Queensland,-20.01367,148.24754,1960,1960,1
+Julian Carroll,Melbourne,Victoria,-37.814,144.96332,1960,1960,1
+Gary Chapman,Brighton-Le-Sands,New South Wales,-33.96009,151.1511,1956,1956,2
+Boy Charlton,Crows Nest,New South Wales,-33.82494,151.20398,1924,1928,5
+Moss Christie,Sydney,New South Wales,-33.86785,151.20732,1924,1924,1
+Robert Cusack,Maryborough,Queensland,-25.54073,152.70493,1968,1968,1
+John Davies,Willoughby,New South Wales,-33.80493,151.1993,1952,1952,1
+Michael Delany,Sydney,New South Wales,-33.86785,151.20732,1984,1984,1
+John Devitt,Granville,New South Wales,-33.8406,151.00748,1956,1960,4
+Steven Dewick,Sydney,New South Wales,-33.86785,151.20732,1996,1996,1
+Peter Evans,Perth,Western Australia,-31.95224,115.8614,1980,1984,4
+Dick Eve,Parramatta,New South Wales,-33.8178,151.00348,1924,1924,1
+Chris Fydler,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Murray Garretty,Innisfail,Queensland,-17.52209,146.03102,1956,1956,1
+Terry Gathercole,Tallimba,New South Wales,-33.99352,146.87963,1960,1960,1
+Scott Goodman,Hobart,Tasmania,-42.87936,147.32941,1996,1996,1
+Toby Haenen,Launceston,Tasmania,-41.43876,147.13467,1996,1996,1
+Graham Hamilton,North Sydney,New South Wales,-33.839,151.2072,1956,1956,1
+Harry Hay,Maitland,New South Wales,-32.73308,151.5574,1920,1920,1
+Neville Hayes,Hurstville,New South Wales,-33.9677,151.10149,1960,1960,2
+Jon Henricks,Sydney,New South Wales,-33.86785,151.20732,1956,1956,2
+Ernest Henry,Grafton,New South Wales,-29.68104,152.93394,1924,1924,1
+Billy Herald,Glebe,New South Wales,-33.87884,151.18426,1920,1920,1
+Glen Housman,Rockhampton,Queensland,-23.38032,150.50595,1992,1992,1
+Mark Kerry,Temora,New South Wales,-34.44834,147.53558,1980,1984,4
+Keith Kirkland,Cargo,New South Wales,-33.42406,148.80904,1920,1920,1
+Justin Lemberg,Brisbane,Queensland,-27.46794,153.02809,1984,1984,1
+Scott Miller,Sydney,New South Wales,-33.86785,151.20732,1996,1996,2
+Ryan Mitchell,Port Augusta,South Australia,-32.49597,137.77281,2000,2000,1
+John Monckton,Armidale,New South Wales,-30.50123,151.66553,1956,1956,1
+Ian O'Brien,Wellington,New South Wales,-32.55588,148.94508,1964,1964,2
+Kevin O'Halloran,Katanning,Western Australia,-33.68787,117.5584,1956,1956,1
+Kieren Perkins,Brisbane,Queensland,-27.46794,153.02809,1992,2000,4
+John Rigby,Brisbane,Queensland,-27.46794,153.02809,1960,1960,1
+Greg Rogers,Sydney,New South Wales,-33.86785,151.20732,1968,1968,2
+Phil Rogers,Adelaide,South Australia,-34.92866,138.59863,1992,1996,2
+Geoff Shipton,Sydney,New South Wales,-33.86785,151.20732,1960,1960,1
+Jon Sieben,Brisbane,Queensland,-27.46794,153.02809,1984,1984,2
+Ivan Stedman,Oakleigh,Victoria,-37.89809,145.08837,1920,1924,2
+Mark Stockwell,Brisbane,Queensland,-27.46794,153.02809,1984,1984,3
+David Theile,Maryborough,Queensland,-25.54073,152.70493,1956,1960,3
+Petria Thomas,Lismore,New South Wales,-28.81354,153.2773,1996,2004,8
+Mark Tonelli,Ipswich,Queensland,-27.62343,152.76067,1980,1980,1
+Mike Wenden,Sydney,New South Wales,-33.86785,151.20732,1968,1968,4
+Bob Windle,Sydney,New South Wales,-33.86785,151.20732,1964,1968,4
+Allan Wood,Sydney,New South Wales,-33.86785,151.20732,1960,1964,3
+Natalie Cook,Townsville,Queensland,-19.26639,146.80569,1996,2000,2
+Kerri-Ann Pottharst,Adelaide,South Australia,-34.92866,138.59863,1996,2000,2
+Chantelle Michell-Newbery,Melbourne,Victoria,-37.814,144.96332,2004,2004,2
+Robert Newbery,Adelaide,South Australia,-34.92866,138.59863,2000,2004,3
+Vern Barberis,Melbourne,Victoria,-37.814,144.96332,1952,1952,1
+Dean Lukin,Port Lincoln,South Australia,-34.72625,135.87442,1984,1984,1
+Jim Armstrong,Albury,New South Wales,-36.07482,146.92401,1948,1948,1
+Dick Garrard,Armadale,Victoria,-37.85544,145.02052,1948,1948,1
+Eddie Scarf,Quirindi,New South Wales,-31.50763,150.67902,1932,1932,1
+John Anderson,Sydney,New South Wales,-33.86785,151.20732,1972,1972,1
+Tom Anderson,Sydney,New South Wales,-33.86785,151.20732,1972,1972,1
+Colin Beashel,Sydney,New South Wales,-33.86785,151.20732,1996,1996,1
+John Bertrand,Melbourne,Victoria,-37.814,144.96332,1976,1976,1
+Michael Blackburn,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Mitch Booth,Sydney,New South Wales,-33.86785,151.20732,1992,1996,2
+Doug Buxton,Melbourne,Victoria,-37.814,144.96332,1956,1956,1
+John Cuneo,Sydney,New South Wales,-33.86785,151.20732,1972,1972,1
+David Forbes,Sydney,New South Wales,-33.86785,151.20732,1972,1972,1
+John Forbes,Sydney,New South Wales,-33.86785,151.20732,1992,2000,2
+David Giles,Sydney,New South Wales,-33.86785,151.20732,1996,1996,1
+Tom King,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Lars Kleppich,Sydney,New South Wales,-33.86785,151.20732,1992,1992,1
+Andrew Landenberger,Grafton,New South Wales,-29.68104,152.93394,1996,1996,1
+Devereaux Mytton,Melbourne,Victoria,-37.814,144.96332,1956,1956,1
+Malcolm Scott,Mosman Park,Western Australia,-32.00538,115.7638,1956,1956,1
+Jock Sturrock,Melbourne,Victoria,-37.814,144.96332,1956,1956,1
+Rolly Tasker,Perth,Western Australia,-31.95224,115.8614,1956,1956,1
+Judy Amoore-Pollock,Melbourne,Victoria,-37.814,144.96332,1964,1964,1
+Raelene Boyle,Coburg,Victoria,-37.75,144.96667,1968,1972,3
+Judy Canty,Sydney,New South Wales,-33.86785,151.20732,1948,1948,1
+Gloria Cooke-Wigney,Stanmore,New South Wales,-33.89407,151.16424,1956,1956,1
+Norma Croker-Fleming,Brisbane,Queensland,-27.46794,153.02809,1956,1956,1
+Betty Cuthbert,Merrylands,New South Wales,-33.83333,150.98333,1956,1964,4
+Debbie Flintoff-King,Kew,Victoria,-37.80639,145.03086,1988,1988,1
+Cathy Freeman,Mackay,Queensland,-21.15345,149.16554,1996,2000,2
+Marjorie Jackson,Coffs Harbour,New South Wales,-30.29626,153.11351,1952,1952,2
+Brenda Jones,Leongatha,Victoria,-38.47607,145.94685,1960,1960,1
+Pam Kilborn-Ryan,Melbourne,Victoria,-37.814,144.96332,1964,1968,2
+Joyce King,Sydney,New South Wales,-33.86785,151.20732,1948,1948,1
+Jennifer Lamy,Wagga Wagga,New South Wales,-35.12577,147.35375,1968,1968,1
+Lisa Martin-Ondieki,Gawler,South Australia,-34.60251,138.74902,1988,1988,1
+June Maston,Sydney,New South Wales,-33.86785,151.20732,1948,1948,1
+Marlene Mathews-Willard,Sydney,New South Wales,-33.86785,151.20732,1956,1956,3
+Betty McKinnon,Sydney,New South Wales,-33.86785,151.20732,1948,1948,1
+Louise McPaul-Currey,Port Kembla,New South Wales,-34.4818,150.9012,1996,1996,1
+Fleur Mellor,Penshurst,New South Wales,-33.96667,151.08333,1956,1956,1
+Gael Mulhall-Martin,Melbourne,Victoria,-37.814,144.96332,1984,1984,1
+Glynis Nunn,Toowoomba,Queensland,-27.56056,151.95386,1984,1984,1
+Jane Saville,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Shirley Strickland de la Hunty,Northam,Western Australia,-31.64932,116.67423,1948,1956,7
+Norma Thrower,Adelaide,South Australia,-34.92866,138.59863,1956,1956,1
+George Avery,Moree,New South Wales,-29.46278,149.84157,1948,1948,1
+Bill Bruce,Adelaide,South Australia,-34.92866,138.59863,1948,1948,1
+Ron Clarke,Melbourne,Victoria,-37.814,144.96332,1964,1964,1
+Ralph Doubell,Melbourne,Victoria,-37.814,144.96332,1968,1968,1
+Herb Elliott,Subiaco,Western Australia,-31.9485,115.8268,1960,1960,1
+Tim Forsyth,Mirboo North,Victoria,-38.40101,146.16135,1992,1992,1
+Noel Freeman,Preston,Victoria,-37.75,145.01667,1960,1960,1
+Graham Gipson,Guildford,Western Australia,-31.9,115.96667,1956,1956,1
+Kevan Gosper,Sydney,New South Wales,-33.86785,151.20732,1956,1956,1
+Hec Hogan,Rockhampton,Queensland,-23.38032,150.50595,1956,1956,1
+Gary Honey,Melbourne,Victoria,-37.814,144.96332,1984,1984,1
+John Landy,Hawthorn,Victoria,-37.81992,145.0358,1956,1956,1
+Al Lawrence,Punchbowl,New South Wales,-33.92893,151.05111,1956,1956,1
+David Lean,Launceston,Tasmania,-41.43876,147.13467,1956,1956,1
+Jack Metcalfe,Bellingen,New South Wales,-30.45294,152.89911,1936,1936,1
+Rick Mitchell,Sydney,New South Wales,-33.86785,151.20732,1980,1980,1
+Peter Norman,Melbourne,Victoria,-37.814,144.96332,1968,1968,1
+Ross Parker,Sydney,New South Wales,-33.86785,151.20732,1956,1956,1
+George Parker,Leichhardt,New South Wales,-33.88341,151.15625,1920,1920,1
+Charles Porter,Brisbane,Queensland,-27.46794,153.02809,1956,1956,1
+Dave Power,Maitland,New South Wales,-32.73308,151.5574,1960,1960,1
+Stan Rowley,Young,New South Wales,-34.3135,148.30107,1900,1900,3
+Nick Winter,Brocklesby,New South Wales,-35.82494,146.67512,1924,1924,1
+Jack Winter,Victoria Park,Western Australia,-31.97619,115.90525,1948,1948,1
+Craig Anderson,Gosford,New South Wales,-33.4244,151.34399,2004,2004,1
+Dave Nilsson,Brisbane,Queensland,-27.46794,153.02809,2004,2004,1
+Brett Roneberg,Melbourne,Victoria,-37.814,144.96332,2004,2004,1
+Rodney Van Buizen,Mona Vale,New South Wales,-33.67757,151.30307,2004,2004,1
+Glenn Williams,Gosford,New South Wales,-33.4244,151.34399,2004,2004,1
+Kristi Harrower,Bendigo,Victoria,-36.75818,144.28024,2000,2012,4
+Jo Hill,Murray Bridge,South Australia,-35.11986,139.27345,2000,2000,1
+Lauren Jackson,Albury,New South Wales,-36.07482,146.92401,2000,2024,5
+Nathan Deakes,Geelong,Victoria,-38.14711,144.36069,2004,2004,1
+Pat Dwyer,Wagga Wagga,New South Wales,-35.12577,147.35375,2004,2004,1
+Jai Taurima,Southport,Queensland,-27.96724,153.39796,2000,2000,1
+Casey Vincent,Boronia,Victoria,-37.86667,145.28333,2004,2004,1
+Christian Ryan,Warrnambool,Victoria,-38.38176,142.48799,2000,2000,1
+Rachael Taylor,Ballarat,Victoria,-37.56622,143.84957,2000,2000,1
+Stuart Welch,Sydney,New South Wales,-33.86785,151.20732,2000,2004,2
+Darren Balmforth,Hobart,Tasmania,-42.87936,147.32941,2000,2000,1
+Dan Burke,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Alastair Gordon,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Matthew Long,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Stuart Reside,Perth,Western Australia,-31.95224,115.8614,2004,2004,1
+Robert Richards,Ballarat,Victoria,-37.56622,143.84957,2000,2000,1
+Nathan Baggaley,Byron Bay,New South Wales,-28.64989,153.61246,2004,2004,2
+Graeme Brown,Darwin,Northern Territory,-12.46113,130.84185,2004,2004,2
+Sean Eadie,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Brett Lancaster,Shepparton,Victoria,-36.38047,145.39867,2004,2004,1
+Luke Roberts,Adelaide,South Australia,-34.92866,138.59863,2004,2004,1
+Mick Rogers,Barham,New South Wales,-35.62647,144.12895,2004,2004,1
+Dean Pullar,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Stuart Tinney,Mundubbera,Queensland,-25.59266,151.30225,2000,2020,3
+Ji Wallace,Lismore,New South Wales,-28.81354,153.2773,2000,2000,1
+Michael Brennan,Toowoomba,Queensland,-27.56056,151.95386,2000,2004,2
+Adam Commens,Wagga Wagga,New South Wales,-35.12577,147.35375,2000,2000,1
+Jason Duff,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Troy Elder,Bunbury,Western Australia,-33.32711,115.64137,2000,2004,2
+Stephen Holt,Darwin,Northern Territory,-12.46113,130.84185,2000,2000,1
+Brent Livermore,Grafton,New South Wales,-29.68104,152.93394,2000,2004,2
+Craig Victory,Adelaide,South Australia,-34.92866,138.59863,2000,2000,1
+Matt Wells,Hobart,Tasmania,-42.87936,147.32941,2000,2008,3
+Katie Allen,Adelaide,South Australia,-34.92866,138.59863,2000,2000,1
+Nikki Hudson,Rockhampton,Queensland,-23.38032,150.50595,2000,2000,1
+Claire Mitchell-Taverner,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Angie Skirving-Lambert,Toowoomba,Queensland,-27.56056,151.95386,2000,2000,1
+Julie Towers,Taree,New South Wales,-31.91099,152.45387,2000,2000,1
+Darren Bundock,Gosford,New South Wales,-33.4244,151.34399,2000,2008,2
+Mark Turnbull,Hobart,Tasmania,-42.87936,147.32941,2000,2000,1
+Warren Potent,Parramatta,New South Wales,-33.8178,151.00348,2008,2008,1
+Sandy Allen-Lewis,Blacktown,New South Wales,-33.76667,150.91667,2000,2008,3
+Selina Follas,Adelaide,South Australia,-34.92866,138.59863,2000,2000,1
+Fiona Hanes-Crawford,Sydney,New South Wales,-33.86785,151.20732,2000,2004,2
+Kelly Hardie,Perth,Western Australia,-31.95224,115.8614,2000,2008,2
+Simmone Morrow,Cowell,South Australia,-33.68227,136.92117,2000,2008,3
+Natalie Titcume,Sydney,New South Wales,-33.86785,151.20732,2000,2008,3
+Ashley Callus,Brisbane,Queensland,-27.46794,153.02809,2000,2008,2
+Dyana Calub,Bourke,New South Wales,-30.09011,145.93646,2000,2000,1
+Elka Graham,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Grant Hackett,Southport,Queensland,-27.96724,153.39796,2000,2008,7
+Regan Harrison,Brisbane,Queensland,-27.46794,153.02809,2000,2000,1
+Leisel Jones,Katherine,Northern Territory,-14.46517,132.26347,2000,2012,9
+Bill Kirby,Perth,Western Australia,-31.95224,115.8614,2000,2000,1
+Justin Norris,Geraldton,Western Australia,-28.77897,114.61459,2000,2000,1
+Todd Pearson,Geraldton,Western Australia,-28.77897,114.61459,2000,2004,3
+Adam Pine,Lismore,New South Wales,-28.81354,153.2773,2000,2008,3
+Giaan Rooney,Brisbane,Queensland,-27.46794,153.02809,2000,2004,3
+Kirsten Thomson,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Ian Thorpe,Milperra,New South Wales,-33.93934,150.98148,2000,2004,9
+Jacinta Van Lint,Albury,New South Wales,-36.07482,146.92401,2000,2000,1
+Josh Watson,Newcastle,New South Wales,-32.92953,151.7801,2000,2000,1
+Matt Welsh,Melbourne,Victoria,-37.814,144.96332,2000,2000,3
+Tarnee White,Redcliffe,Queensland,-27.22649,153.10648,2000,2008,2
+Lauren Burns,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Daniel Trenton,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Alicia Molik,Adelaide,South Australia,-34.92866,138.59863,2004,2004,1
+Loretta Harrop,Brisbane,Queensland,-27.46794,153.02809,2004,2004,1
+Naomi Castle,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Joanne Fox,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Bridgette Gusterson,Perth,Western Australia,-31.95224,115.8614,2000,2000,1
+Simone Hankin,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Yvette Higgins,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Bronwyn Mayer-Smith,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Gail Miller,Canberra,Australian Capital Territory,-35.28346,149.12807,2000,2000,1
+Melissa Mills,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Debbie Watson,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Liz Weekes,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Danielle Woodhouse,Perth,Western Australia,-31.95224,115.8614,2000,2000,1
+Taryn Woods,Sydney,New South Wales,-33.86785,151.20732,2000,2000,1
+Jimmy Elmer,Melbourne,Victoria,-37.814,144.96332,2000,2000,1
+Tim Cuddihy,Toowoomba,Queensland,-27.56056,151.95386,2004,2004,1
+Alicia Poto,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Penny Taylor,Melbourne,Victoria,-37.814,144.96332,2004,2008,2
+Suzy Batkovic,Newcastle,New South Wales,-32.92953,151.7801,2004,2012,3
+Belinda Snell,Mirboo North,Victoria,-38.40101,146.16135,2004,2012,3
+Natalie Porter,Melbourne,Victoria,-37.814,144.96332,2004,2004,1
+Jess Schipper,Brisbane,Queensland,-27.46794,153.02809,2004,2008,4
+Alice Mills,Brisbane,Queensland,-27.46794,153.02809,2004,2008,3
+Libby Lenton-Trickett,Townsville,Queensland,-19.26639,146.80569,2004,2012,7
+Jodie Henry,Brisbane,Queensland,-27.46794,153.02809,2004,2004,3
+Brooke Hanson,Manly,New South Wales,-33.79798,151.28826,2004,2004,2
+Linda MacKenzie,Mackay,Queensland,-21.15345,149.16554,2008,2008,1
+Eamon Sullivan,Perth,Western Australia,-31.95224,115.8614,2008,2008,3
+Felicity Galvez,Melbourne,Victoria,-37.814,144.96332,2008,2008,2
+Antony Matkovich,Perth,Western Australia,-31.95224,115.8614,2004,2004,1
+Nicholas Sprenger,Brisbane,Queensland,-27.46794,153.02809,2004,2004,1
+Craig Stevens,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Sara Carrigan,Gunnedah,New South Wales,-30.98065,150.25838,2004,2004,1
+Patrick Murphy,Albury,New South Wales,-36.07482,146.92401,2008,2008,2
+Shayne Reese,Ballarat,Victoria,-37.56622,143.84957,2008,2008,2
+Nathan Wilmot,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+Malcolm Page,Sydney,New South Wales,-33.86785,151.20732,2008,2012,2
+Dana Faletic,Hobart,Tasmania,-42.87936,147.32941,2004,2004,1
+Amber Bradley,Wickham,Western Australia,-20.67474,117.13784,2004,2004,1
+Kerry Hore,Hobart,Tasmania,-42.87936,147.32941,2004,2004,1
+Sarah Outhwaite-Tait,Perth,Western Australia,-31.95224,115.8614,2012,2012,1
+Glen Loftus,Perth,Western Australia,-31.95224,115.8614,2004,2004,1
+Ben Cureton,Perth,Western Australia,-31.95224,115.8614,2004,2004,1
+Scott Brennan,Hobart,Tasmania,-42.87936,147.32941,2008,2008,1
+David Crawshay,Charlton,Victoria,-36.26437,143.34901,2008,2008,1
+Stefan Szczurowski,Perth,Western Australia,-31.95224,115.8614,2004,2004,1
+Steve Stewart,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Michael Toon,Brisbane,Queensland,-27.46794,153.02809,2004,2004,1
+Suzy Balogh,Queanbeyan,New South Wales,-35.35493,149.232,2004,2004,1
+Adam Vella,Melbourne,Victoria,-37.814,144.96332,2004,2004,1
+Lisa Oldenhof,Perth,Western Australia,-31.95224,115.8614,2008,2008,1
+Steve Hooker,Melbourne,Victoria,-37.814,144.96332,2008,2008,1
+Anna Meares,Blackwater,Queensland,-23.58351,148.87912,2004,2016,6
+Katie Mactier,Melbourne,Victoria,-37.814,144.96332,2004,2004,1
+Ryan Bayley,Subiaco,Western Australia,-31.9485,115.8268,2004,2004,2
+Peter Dawson,Pinjarra,Western Australia,-32.6298,115.87351,2004,2004,1
+Stephen Wooldridge,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+John Steffensen,Perth,Western Australia,-31.95224,115.8614,2004,2004,1
+Mark Ormrod,Adelaide,South Australia,-34.92866,138.59863,2004,2004,1
+Steven Barnett,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Tom Brice,Woodville,South Australia,-34.877,138.54291,2004,2004,1
+Adrian Burnside,Alice Springs,Northern Territory,-23.69748,133.88362,2004,2004,1
+Nick Kimpton,Adelaide,South Australia,-34.92866,138.59863,2004,2004,1
+Brendan Kingman,Bankstown,New South Wales,-33.91667,151.03333,2004,2004,1
+Craig Lewis,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Graeme Lloyd,Geelong,Victoria,-38.14711,144.36069,2004,2004,1
+Trent Oeltjen,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Wayne Ough,Werribee,Victoria,-37.9,144.66667,2004,2004,1
+Chris Oxspring,Ipswich,Queensland,-27.62343,152.76067,2004,2004,1
+Ryan Rowland Smith,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+John Stephens,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Brett Tamburrino,Melbourne,Victoria,-37.814,144.96332,2004,2004,1
+Richard Thompson,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Andrew Utting,Melbourne,Victoria,-37.814,144.96332,2004,2004,1
+Ben Wigmore,Adelaide,South Australia,-34.92866,138.59863,2004,2004,1
+Laura Summerton-Hodges,Adelaide,South Australia,-34.92866,138.59863,2004,2012,3
+Travis Brooks,Mulgrave,Victoria,-37.92845,145.17708,2004,2008,2
+Dean Butler,Warwick,Queensland,-28.21901,152.03438,2004,2004,1
+Jamie Dwyer,Rockhampton,Queensland,-23.38032,150.50595,2004,2012,3
+Nathan Eglington,Murwillumbah,New South Wales,-28.32732,153.39339,2004,2004,1
+Bevan George,Narrogin,Western Australia,-32.93282,117.17763,2004,2008,2
+Rob Hammond,Townsville,Queensland,-19.26639,146.80569,2004,2008,2
+Mark Hickman,Darwin,Northern Territory,-12.46113,130.84185,2004,2004,1
+Mark Knowles,Rockhampton,Queensland,-23.38032,150.50595,2004,2012,3
+Stephen Mowlam,Deniliquin,New South Wales,-35.53245,144.95364,2004,2008,2
+Michael McCann,Sydney,New South Wales,-33.86785,151.20732,2004,2004,1
+Grant Schubert,Loxton,South Australia,-34.4502,140.56908,2004,2008,2
+Liam De Young,Brisbane,Queensland,-27.46794,153.02809,2004,2012,3
+Marissa Carpadios,Brisbane,Queensland,-27.46794,153.02809,2004,2004,1
+Amanda Doman,Gladstone,Queensland,-23.84852,151.25775,2004,2004,1
+Natalie Hodgskin,Brisbane,Queensland,-27.46794,153.02809,2004,2004,1
+Tracey Mosley,Sydney,New South Wales,-33.86785,151.20732,2004,2008,2
+Stacey Porter,Tamworth,New South Wales,-31.09048,150.92905,2004,2008,2
+Kerry Wyborn,Sydney,New South Wales,-33.86785,151.20732,2004,2008,2
+Nikita Cuffe,Brisbane,Queensland,-27.46794,153.02809,2008,2008,1
+Kate Gynther,Brisbane,Queensland,-27.46794,153.02809,2008,2012,2
+Emma Knox,Dampier,Western Australia,-20.66275,116.71256,2008,2008,1
+Mel Rippon,Sydney,New South Wales,-33.86785,151.20732,2008,2012,2
+Bec Rippon,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+Rohanee Cox,Broome,Western Australia,-17.95538,122.23922,2008,2008,1
+Tully Bevilaqua,Merredin,Western Australia,-31.48094,118.27448,2008,2008,1
+Hollie Grima,Launceston,Tasmania,-41.43876,147.13467,2008,2008,1
+Emma Randall,Melbourne,Victoria,-37.814,144.96332,2008,2008,1
+Erin Phillips,Carlton,Victoria,-37.8,144.96667,2008,2008,1
+Jenni Screen,Newcastle,New South Wales,-32.92953,151.7801,2008,2012,2
+Clayton Fredericks,Moora,Western Australia,-30.64003,116.00365,2008,2008,1
+Megan Jones,Adelaide,South Australia,-34.92866,138.59863,2008,2008,1
+Sonja Johnson,Albany,Western Australia,-35.02692,117.88369,2008,2008,1
+Shane Rose,Sydney,New South Wales,-33.86785,151.20732,2008,2020,3
+Brenton Rickard,Brisbane,Queensland,-27.46794,153.02809,2008,2012,3
+Christian Sprenger,Brisbane,Queensland,-27.46794,153.02809,2008,2012,3
+Steph Rice,Brisbane,Queensland,-27.46794,153.02809,2008,2008,3
+Mel Schlanger,Sunshine Coast,Queensland,-26.65682,153.07955,2008,2012,5
+Matt Ryan,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+James Marburg,Terang,Victoria,-38.24084,142.92123,2008,2008,1
+Maxi McKenzie-McHarg,Leongatha,Victoria,-38.47607,145.94685,2008,2008,1
+Francis Hegerty,Canberra,Australian Capital Territory,-35.28346,149.12807,2008,2008,1
+Kim Crow-Brennan,Melbourne,Victoria,-37.814,144.96332,2012,2016,3
+Jack Bobridge,Modbury,South Australia,-34.83333,138.68333,2012,2016,2
+Jodie Bowering,Redcliffe,Queensland,-27.22649,153.10648,2008,2008,1
+Kylie Cronk,Toowoomba,Queensland,-27.56056,151.95386,2008,2008,1
+Justine Smethurst,Melbourne,Victoria,-37.814,144.96332,2008,2008,1
+Danielle Stewart,Brisbane,Queensland,-27.46794,153.02809,2008,2008,1
+Belinda Wright,Newcastle,New South Wales,-32.92953,151.7801,2008,2008,1
+Patty Mills,Canberra,Australian Capital Territory,-35.28346,149.12807,2020,2020,1
+Eli Matheson,Lithgow,New South Wales,-33.4845,150.14903,2008,2008,1
+Eddie Ockenden,Hobart,Tasmania,-42.87936,147.32941,2008,2020,3
+Des Abbott,Darwin,Northern Territory,-12.46113,130.84185,2008,2008,1
+Luke Doerner,Melbourne,Victoria,-37.814,144.96332,2008,2008,1
+Kiel Brown,Toowoomba,Queensland,-27.56056,151.95386,2008,2012,2
+Andrew Smith,Wollongong,New South Wales,-34.424,150.89345,2008,2008,1
+David Guest,Burnie,Tasmania,-41.05584,145.90375,2008,2008,1
+Stephen Lambert,Mackay,Queensland,-21.15345,149.16554,2008,2008,1
+Mia Santoromito,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+Taniele Gofers,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+Alicia McCormack,Sydney,New South Wales,-33.86785,151.20732,2008,2012,2
+Suzie Fraser,Brisbane,Queensland,-27.46794,153.02809,2008,2008,1
+Amy Hetzel,Rockhampton,Queensland,-23.38032,150.50595,2008,2008,1
+Jenna Santoromito,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+Bronwen Knox,Brisbane,Queensland,-27.46794,153.02809,2008,2012,2
+Gemma Beadsworth,Perth,Western Australia,-31.95224,115.8614,2008,2012,2
+Jared Tallent,Ballarat,Victoria,-37.56622,143.84957,2008,2016,4
+Sally McLellan-Pearson,Paddington,New South Wales,-33.88419,151.23151,2008,2012,2
+Hayden Stoeckel,Renmark,South Australia,-34.17702,140.74697,2008,2012,3
+Ash Delaney,Sale,Victoria,-38.11095,147.06802,2008,2008,1
+Andrew Lauterstein,Melbourne,Victoria,-37.814,144.96332,2008,2008,3
+Leith Brodie,Kempsey,New South Wales,-31.07898,152.83093,2008,2008,2
+Emily Seebohm,Adelaide,South Australia,-34.92866,138.59863,2008,2020,7
+Bronte Barratt,Brisbane,Queensland,-27.46794,153.02809,2008,2016,4
+Alicia Coutts,Brisbane,Queensland,-27.46794,153.02809,2012,2012,5
+Nick Ffrost,Mackay,Queensland,-21.15345,149.16554,2008,2008,1
+Kirk Palmer,Central Coast,New South Wales,-33.42979,151.37144,2008,2008,1
+Kylie Palmer,Brisbane,Queensland,-27.46794,153.02809,2008,2012,2
+Bree Cole,Melbourne,Victoria,-37.814,144.96332,2008,2008,1
+Melissa Wu,Penrith,New South Wales,-33.75,150.7,2008,2020,2
+Matt Mitcham,Brisbane,Queensland,-27.46794,153.02809,2008,2008,1
+Emma Snowsill,Gold Coast,Queensland,-28.00029,153.43088,2008,2008,1
+Emma Moffatt,Moree,New South Wales,-29.46278,149.84157,2008,2008,1
+Erin Densham,Camden,New South Wales,-34.05405,150.69624,2012,2012,1
+Ken Wallace,Gosford,New South Wales,-33.4244,151.34399,2008,2016,3
+Dave Smith,Shellharbour,New South Wales,-34.58333,150.86667,2012,2012,1
+Tate Smith,Sydney,New South Wales,-33.86785,151.20732,2012,2012,1
+Jacob Clear,Sydney,New South Wales,-33.86785,151.20732,2012,2012,1
+Jacqui Lawrence,Cooma,New South Wales,-36.23517,149.12408,2008,2008,1
+Hannah Davis,Adelaide,South Australia,-34.92866,138.59863,2008,2008,1
+Lyndsie Fogarty,Brisbane,Queensland,-27.46794,153.02809,2008,2008,1
+Angie Bainbridge,Newcastle,New South Wales,-32.92953,151.7801,2008,2012,2
+Lara Davenport,Sydney,New South Wales,-33.86785,151.20732,2008,2008,1
+Elise Rechichi,Perth,Western Australia,-31.95224,115.8614,2008,2008,1
+Tessa Parkinson,Perth,Western Australia,-31.95224,115.8614,2008,2008,1
+Nathan Outteridge,Newcastle,New South Wales,-32.92953,151.7801,2012,2016,2
+Tom Slingsby,Sydney,New South Wales,-33.86785,151.20732,2012,2012,1
+Glenn Ashby,Bendigo,Victoria,-36.75818,144.28024,2008,2008,1
+Brooke Pratley,Goulburn,New South Wales,-34.75155,149.72086,2012,2012,1
+Kate Hornsey,Hobart,Tasmania,-42.87936,147.32941,2012,2012,1
+Chris Morgan,Adelaide,South Australia,-34.92866,138.59863,2012,2012,1
+James McRae,Adelaide,South Australia,-34.92866,138.59863,2012,2016,2
+Daniel Noonan,Warren,New South Wales,-31.70224,147.83392,2012,2012,1
+Taylor Worth,Busselton,Western Australia,-33.65249,115.3455,2016,2016,1
+Victoria Brown,Melbourne,Victoria,-37.814,144.96332,2012,2012,1
+Holly Lincoln-Smith,Sydney,New South Wales,-33.86785,151.20732,2012,2012,1
+Jane Moran,Murwillumbah,New South Wales,-28.32732,153.39339,2012,2012,1
+Glencora Ralph-McGhie,Geraldton,Western Australia,-28.77897,114.61459,2012,2012,1
+Sophie Smith,Brisbane,Queensland,-27.46794,153.02809,2012,2012,1
+Ash Southern,Ingham,Queensland,-18.64552,146.16248,2012,2012,1
+Rowie Webster,East Melbourne,Victoria,-37.81667,144.9879,2012,2012,1
+Nicola Zagame,Kogarah,New South Wales,-33.9681,151.13564,2012,2012,1
+Mitch Watt,Bendigo,Victoria,-36.75818,144.28024,2012,2012,1
+Abby Bishop,Booleroo Centre,South Australia,-32.87988,138.35074,2012,2012,1
+Matt Dellavedova,Maryborough,Victoria,-37.04562,143.73923,2020,2020,1
+Rachel Jarry,Melbourne,Victoria,-37.814,144.96332,2012,2012,1
+Kathleen MacLeod,Melbourne,Victoria,-37.814,144.96332,2012,2012,1
+Jenna O'Hea,Traralgon,Victoria,-38.19528,146.5415,2012,2012,1
+Samantha Richards,Melbourne,Victoria,-37.814,144.96332,2012,2012,1
+Anabelle Smith,Malvern,Victoria,-37.86259,145.02811,2016,2016,1
+Shane Perkins,East Melbourne,Victoria,-37.81667,144.9879,2012,2012,1
+Kaarle McCulloch,Campbelltown,New South Wales,-34.06667,150.81667,2012,2012,1
+Glenn O'Shea,Swan Hill,Victoria,-35.33781,143.5544,2012,2012,1
+Sam Willoughby,Bedford Park,South Australia,-35.02204,138.56815,2012,2012,1
+Michael Hepburn,Brisbane,Queensland,-27.46794,153.02809,2012,2016,2
+Joel Carroll,Darwin,Northern Territory,-12.46113,130.84185,2012,2012,1
+Timothy Deavin,Launceston,Tasmania,-41.43876,147.13467,2012,2012,1
+Nathan Burgers,Ayr,Queensland,-19.57393,147.40666,2012,2012,1
+Simon Orchard,Muswellbrook,New South Wales,-32.26118,150.89009,2012,2012,1
+Matthew Swann,Perth,Western Australia,-31.95224,115.8614,2012,2012,1
+Matthew Butturini,Murwillumbah,New South Wales,-28.32732,153.39339,2012,2012,1
+Kieran Govers,Wollongong,New South Wales,-34.424,150.89345,2012,2012,1
+Matt Gohdes,Rockhampton,Queensland,-23.38032,150.50595,2012,2012,1
+Russell Ford,Melbourne,Victoria,-37.814,144.96332,2012,2012,1
+Glenn Turner,Bowral,New South Wales,-34.4775,150.4204,2012,2012,1
+Chloe Esposito,Camden,New South Wales,-34.05405,150.69624,2016,2016,1
+Josh Booth,Melbourne,Victoria,-37.814,144.96332,2016,2016,1
+Josh Dunkley-Smith,East Melbourne,Victoria,-37.81667,144.9879,2012,2016,2
+Karsten Forsterling,Newcastle,New South Wales,-32.92953,151.7801,2012,2016,2
+Mathew Belcher,Gold Coast,Queensland,-28.00029,153.43088,2012,2020,3
+Nina Curtis,Wahroonga,New South Wales,-33.71816,151.11561,2012,2012,1
+Olivia Price,Darlinghurst,New South Wales,-33.87939,151.21925,2012,2012,1
+Lucinda Whitty,Darlinghurst,New South Wales,-33.87939,151.21925,2012,2012,1
+Brittany Elmslie,Nambour,Queensland,-26.62613,152.95941,2012,2016,5
+Yolane Kukla,Brisbane,Queensland,-27.46794,153.02809,2012,2012,1
+James Magnussen,Port Macquarie,New South Wales,-31.43084,152.90894,2012,2016,3
+Jade Neilsen,Southport,Queensland,-27.96724,153.39796,2012,2012,1
+James Roberts,Tweed Heads,New South Wales,-28.17671,153.5452,2016,2016,1
+Christopher Burton,Toowoomba,Queensland,-27.56056,151.95386,2016,2024,2
+Jessica Ashwood,Darlinghurst,New South Wales,-33.87939,151.21925,2016,2016,1
+Tommaso D'Orsogna,Perth,Western Australia,-31.95224,115.8614,2012,2012,1
+Cameron McEvoy,BENOWA,Queensland,-28.0077,153.38583,2016,2024,4
+Annette Edmondson,Bedford Park,South Australia,-35.02204,138.56815,2012,2012,1
+Sam Griffiths,Melbourne,Victoria,-37.814,144.96332,2016,2016,1
+Taliqua Clancy,Kingaroy,Queensland,-26.53994,151.8373,2020,2020,1
+Maddison Keeney,Sydney,New South Wales,-33.86785,151.20732,2016,2024,2
+Alicia Quirk,Wagga Wagga,New South Wales,-35.12577,147.35375,2016,2016,1
+Charlotte Caslick,Brisbane,Queensland,-27.46794,153.02809,2016,2016,1
+Emilee Cherry,Roma,Queensland,-26.56741,148.78751,2016,2016,1
+Emma Tonegato,Wollongong,New South Wales,-34.424,150.89345,2016,2016,1
+Evania Pelite,Brisbane,Queensland,-27.46794,153.02809,2016,2016,1
+Gemma Etheridge,Armidale,New South Wales,-30.50123,151.66553,2016,2016,1
+Nicole Beck,Bulli,New South Wales,-34.33834,150.91347,2016,2016,1
+Shannon Parry,Brisbane,Queensland,-27.46794,153.02809,2016,2016,1
+Sharni Williams,Batlow,New South Wales,-35.51987,148.14727,2016,2016,1
+Jessica Morrison,MELBOURNE,Victoria,-37.814,144.96332,2020,2024,2
+Lucy Stephan,Nhill,Victoria,-36.33333,141.65006,2020,2020,1
+Lisa Darmanin,Balgowlah Heights,New South Wales,-33.80661,151.26243,2016,2016,1
+Catherine Skinner,Mansfield,Victoria,-37.052,146.08846,2016,2016,1
+Brianna Throssell,Subiaco,Western Australia,-31.9485,115.8268,2020,2024,4
+Emma McKeon,Wollongong,New South Wales,-34.424,150.89345,2016,2024,14
+Leah Neale,Ipswich,Queensland,-27.62343,152.76067,2016,2020,2
+Madeline Groves,Brisbane,Queensland,-27.46794,153.02809,2016,2016,2
+Madi Wilson,Roma,Queensland,-26.56741,148.78751,2016,2020,4
+Taylor McKeown,Redcliffe,Queensland,-27.22649,153.10648,2016,2016,1
+Alec Potts,Clayton,Victoria,-37.91667,145.11667,2016,2016,1
+Ryan Tyack,Nambour,Queensland,-26.62613,152.95941,2016,2016,1
+Dane Bird-Smith,Kippa-Ring,Queensland,-27.22586,153.0835,2016,2016,1
+Chris Goulding,Launceston,Tasmania,-41.43876,147.13467,2020,2020,1
+Lachlan Tame,Gosford,New South Wales,-33.4244,151.34399,2016,2016,1
+Callum Scotson,Adelaide,South Australia,-34.92866,138.59863,2016,2016,1
+Sam Welsford,Perth,Western Australia,-31.95224,115.8614,2016,2024,3
+Andrew Charter,Wagga Wagga,New South Wales,-35.12577,147.35375,2012,2020,2
+Aran Zalewski,Subiaco,Western Australia,-31.9485,115.8268,2020,2020,1
+Blake Govers,Wollongong,New South Wales,-34.424,150.89345,2020,2020,1
+Daniel Beale,Brisbane,Queensland,-27.46794,153.02809,2020,2020,1
+Jake Whetton,Brisbane,Queensland,-27.46794,153.02809,2020,2020,1
+Matt Dawson,Gosford,New South Wales,-33.4244,151.34399,2020,2020,1
+Alexander Belonogoff,Moura,Queensland,-24.5722,149.96729,2016,2016,1
+Alex Hill,Berri,South Australia,-34.28107,140.59958,2016,2020,2
+Cam Girdlestone,Paddington,New South Wales,-33.88419,151.23151,2016,2020,2
+Spencer Turrin,Maitland,New South Wales,-32.73308,151.5574,2020,2020,1
+Jason Waterhouse,Newport,New South Wales,-33.65639,151.31401,2016,2016,1
+Tom Burton,Baulkham Hills,New South Wales,-33.75881,150.99292,2016,2016,1
+Jake Packard,Penrith,New South Wales,-33.75,150.7,2016,2016,1
+Kyle Chalmers,ADELAIDE,South Australia,-34.92866,138.59863,2016,2024,9
+Mack Horton,Malvern,Victoria,-37.86259,145.02811,2016,2020,2
+Matt Abood,Sydney,New South Wales,-33.86785,151.20732,2016,2016,1
+John Peers,Clayton,Victoria,-37.91667,145.11667,2020,2024,2
+Nicola McDermott,North Gosford,New South Wales,-33.414,151.3516,2020,2020,1
+Annabelle McIntyre,Subiaco,Western Australia,-31.9485,115.8268,2020,2024,2
+Caitlin Cronin,Brisbane,Queensland,-27.46794,153.02809,2020,2020,1
+Harriet Hudson,Toowoomba,Queensland,-27.56056,151.95386,2020,2020,1
+Ria Thompson,Carlton,Victoria,-37.8,144.96667,2020,2020,1
+Rosemary Popa,Carlton,Victoria,-37.8,144.96667,2020,2020,1
+Ariarne Titmus,Launceston,Tasmania,-41.43876,147.13467,2020,2024,8
+Meg Harris,Albury,New South Wales,-36.07482,146.92401,2020,2024,5
+Mollie O'Callaghan,SOUTH BRISBANE,Queensland,-27.48034,153.02049,2020,2024,8
+Ash Barty,Ipswich,Queensland,-27.62343,152.76067,2020,2020,1
+Ashley Moloney,Logan City,Queensland,-27.63917,153.10944,2020,2020,1
+Danté Exum,Melbourne,Victoria,-37.814,144.96332,2020,2020,1
+Jock Landale,Melbourne,Victoria,-37.814,144.96332,2020,2020,1
+Josh Green,Sydney,New South Wales,-33.86785,151.20732,2020,2020,1
+Nathan Sobey,Warrnambool,Victoria,-38.38176,142.48799,2020,2020,1
+Nick Kay,Tamworth,New South Wales,-31.09048,150.92905,2020,2020,1
+Logan Martin,Logan City,Queensland,-27.63917,153.10944,2020,2020,1
+Harry Garside,Mooroolbark,Victoria,-37.78247,145.31682,2020,2020,1
+Alexander Porter,Adelaide,South Australia,-34.92866,138.59863,2020,2020,1
+Kelland O'Brien,Kew,Victoria,-37.80639,145.03086,2020,2024,2
+Leigh Howard,Geelong,Victoria,-38.14711,144.36069,2020,2020,1
+Luke Plapp,Melbourne,Victoria,-37.814,144.96332,2020,2020,1
+Dylan Martin,Wagga Wagga,New South Wales,-35.12577,147.35375,2020,2020,1
+Joshua Beltz,Hobart,Tasmania,-42.87936,147.32941,2020,2020,1
+Joshua Simmonds,Ringwood,Victoria,-37.81667,145.23333,2020,2020,1
+Lachlan Sharp,Lithgow,New South Wales,-33.4845,150.14903,2020,2020,1
+Tom Craig,Sydney,New South Wales,-33.86785,151.20732,2020,2020,1
+Tom Wickham,Morgan,South Australia,-34.03149,139.66795,2020,2020,1
+Trent Mitton,Perth,Western Australia,-31.95224,115.8614,2020,2020,1
+Alexander Purnell,Brisbane,Queensland,-27.46794,153.02809,2020,2020,1
+Caleb Antill,Canberra,Australian Capital Territory,-35.28346,149.12807,2020,2020,1
+Jack Cleary,Subiaco,Western Australia,-31.9485,115.8268,2020,2020,1
+Jack Hargreaves,Wellington,New South Wales,-32.55588,148.94508,2020,2020,1
+Luke Letcher,Canberra,Australian Capital Territory,-35.28346,149.12807,2020,2020,1
+Matthew Wearn,Perth,Western Australia,-31.95224,115.8614,2020,2024,2
+Owen Wright,Nowra,New South Wales,-34.88422,150.60036,2020,2020,1
+Alex Graham,Brisbane,Queensland,-27.46794,153.02809,2020,2020,2
+Elijah Winnington,Gold Coast,Queensland,-28.00029,153.43088,2020,2024,3
+Isaac Cooper,Bundaberg,Queensland,-24.86621,152.3479,2020,2020,1
+Zac Stubblety-Cook,BRISBANE,Queensland,-27.46794,153.02809,2020,2024,4
+Matthew Temple,BUNDOORA,Victoria,-37.69825,145.05967,2020,2024,3
+Zac Incerti,Mount Lawley,Western Australia,-31.93439,115.8716,2020,2024,3
+Kevin McNab,Cairns,Queensland,-16.92366,145.76613,2020,2020,1
+Kaylee McKeown,REDCLIFFE,Queensland,-27.22649,153.10648,2020,2024,9
+PATTERSON Eleanor,Leongatha,Victoria,-38.47607,145.94685,2024,2024,1
+MONTAG Jemima,East Melbourne,Victoria,-37.81667,144.9879,2024,2024,2
+HULL Jessica,Wollongong,New South Wales,-34.424,150.89345,2024,2024,1
+DENNY Matthew,Toowoomba,Queensland,-27.56056,151.95386,2024,2024,1
+OLYSLAGERS Nicola,GOSFORD,New South Wales,-33.4244,151.34399,2024,2024,1
+KENNEDY Nina,Busselton,Western Australia,-33.65249,115.3455,2024,2024,1
+COWLEY Rhydian,Glen Waverley,Victoria,-37.87811,145.16476,2024,2024,1
+SMITH Alanna,Hobart,Tasmania,-42.87936,147.32941,2024,2024,1
+ATWELL Amy,PERTH,Western Australia,-31.95224,115.8614,2024,2024,1
+GEORGE Cayla,Mount Barker,South Australia,-35.06667,138.86667,2024,2024,1
+BORLASE Isobel,ADELAIDE,South Australia,-34.92866,138.59863,2024,2024,1
+MELBOURNE Jade,MELBOURNE,Victoria,-37.814,144.96332,2024,2024,1
+WALLACE Kristy,LOGANHOLME,Queensland,-27.68444,153.1864,2024,2024,1
+TOLO Marianna,Mackay,Queensland,-21.15345,149.16554,2024,2024,1
+TALBOT Steph,Katherine,Northern Territory,-14.46517,132.26347,2024,2024,1
+DIEHM Natalya,Gladstone,Queensland,-23.84852,151.25775,2024,2024,1
+SAKAKIBARA Saya,Gold Coast,Queensland,-28.00029,153.43088,2024,2024,1
+PARKER Caitlin,SUBIACO,Western Australia,-31.9485,115.8268,2024,2024,1
+BROWN Grace,Camperdown,Victoria,-38.23392,143.14983,2024,2024,1
+FITZSIMMONS Riley,North Gosford,New South Wales,-33.414,151.3516,2024,2024,1
+LEAHY Conor,PERTH,Western Australia,-31.95224,115.8614,2024,2024,1
+HOFFMAN Leigh,WHYALLA,South Australia,-33.03268,137.56483,2024,2024,1
+GLAETZER Matthew,Campbelltown,South Australia,-34.88333,138.66667,2024,2024,2
+JOHNSON Moesha,TWEED HEADS,New South Wales,-28.17671,153.5452,2024,2024,1
+MORRIS Grae,SYDNEY,New South Wales,-33.86785,151.20732,2024,2024,1
+TREW Arisa,CAIRNS,Queensland,-16.92366,145.76613,2024,2024,1
+ROBINSON Jack,PERTH,Western Australia,-31.95224,115.8614,2024,2024,1
+PERKINS Alexandria,SOUTHPORT,Queensland,-27.96724,153.39796,2024,2024,1
+RAMSAY Ella,IPSWICH,Queensland,-27.62343,152.76067,2024,2024,1
+SOUTHAM Flynn,MURDOCH,Western Australia,-32.06987,115.83757,2024,2024,2
+ANDERSON Iona,DUNCRAIG,Western Australia,-31.83291,115.7759,2024,2024,2
+CARTWRIGHT Jack,AUCHENFLOWER,Queensland,-27.47443,152.99213,2024,2024,1
+PERKINS Jamie,SUNSHINE COAST,Queensland,-26.65682,153.07955,2024,2024,1
+STRAUCH Jenna,Bendigo,Victoria,-36.75818,144.28024,2024,2024,1
+TAYLOR Kai,SOUTH BRISBANE,Queensland,-27.48034,153.02049,2024,2024,2
+PALLISTER Lani,SYDNEY,New South Wales,-33.86785,151.20732,2024,2024,1
+JACK Shayna,SUNNYBANK,Queensland,-27.58003,153.06064,2024,2024,2
+YANG William,SYDNEY,New South Wales,-33.86785,151.20732,2024,2024,1
+ANDREWS Abby,Brisbane,Queensland,-27.46794,153.02809,2024,2024,1
+WILLIAMS Alice,BRISBANE,Queensland,-27.46794,153.02809,2024,2024,1
+HALLIGAN Bronte,Sydney,New South Wales,-33.86785,151.20732,2024,2024,1
+ANDREWS Charlize,HERSTON,Queensland,-27.44453,153.01852,2024,2024,1
+ARMIT Elle,Townsville,Queensland,-19.26639,146.80569,2024,2024,1
+PALM Gabriella,Brisbane,Queensland,-27.46794,153.02809,2024,2024,1
+LONGMAN Genevieve,PERTH,Western Australia,-31.95224,115.8614,2024,2024,1
+GOFERS Keesja,Sydney,New South Wales,-33.86785,151.20732,2024,2024,1
+KEARNS Tilly,Sydney,New South Wales,-33.86785,151.20732,2024,2024,1
+GREEN Sienna,SYDNEY,New South Wales,-33.86785,151.20732,2024,2024,1
+HEARN Sienna,SYDNEY,New South Wales,-33.86785,151.20732,2024,2024,1
+ARANCINI Zoe,Perth,Western Australia,-31.95224,115.8614,2024,2024,1
+SMITH Penny,Bookar,Victoria,-38.13333,143.1,2024,2024,1

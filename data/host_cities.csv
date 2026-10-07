@@ -1,0 +1,31 @@
+year,city,country,lat,lon,gold,silver,bronze,total,note
+1896,Athens,Greece,37.985272,23.731375,2.0,0.0,0.0,2.0,
+1900,Paris,France,48.858092,2.352992,0.0,0.0,3.0,3.0,
+1904,St. Louis,United States,38.636964,-90.241926,0.0,0.0,0.0,0.0,
+1908,London,United Kingdom,51.501941,-0.118668,,,,,Australia competed as Australasia with New Zealand
+1912,Stockholm,Sweden,59.324127,18.0663,,,,,Australia competed as Australasia with New Zealand
+1920,Antwerp,Belgium,51.222319,4.413071,0.0,2.0,1.0,3.0,
+1924,Paris,France,48.858092,2.352992,3.0,1.0,2.0,6.0,
+1928,Amsterdam,Netherlands,52.351914,4.914694,1.0,2.0,1.0,4.0,
+1932,Los Angeles,United States,34.049219,-118.231986,3.0,1.0,1.0,5.0,
+1936,Berlin,Germany,52.523764,13.399603,0.0,0.0,1.0,1.0,
+1948,London,United Kingdom,51.501941,-0.118668,2.0,6.0,5.0,13.0,
+1952,Helsinki,Finland,60.163804,24.932457,6.0,2.0,3.0,11.0,
+1956,Melbourne,Australia,-37.818086,144.97307,13.0,8.0,14.0,35.0,Equestrian events were held in Stockholm
+1960,Rome,Italy,41.897902,12.481313,8.0,8.0,6.0,22.0,
+1964,Tokyo,Japan,35.686963,139.749462,6.0,2.0,10.0,18.0,
+1968,Mexico City,Mexico,19.444388,-99.132934,5.0,7.0,5.0,17.0,
+1972,Munich,West Germany,48.131888,11.573048,8.0,7.0,2.0,17.0,
+1976,Montreal,Canada,45.501945,-73.585243,0.0,1.0,4.0,5.0,
+1980,Moscow,Soviet Union,55.75411,37.613577,2.0,2.0,5.0,9.0,
+1984,Los Angeles,United States,34.049219,-118.231986,4.0,8.0,12.0,24.0,
+1988,Seoul,South Korea,37.568295,126.997785,3.0,6.0,5.0,14.0,
+1992,Barcelona,Spain,41.385245,2.181424,7.0,9.0,11.0,27.0,
+1996,Atlanta,United States,33.739457,-84.367642,9.0,9.0,23.0,41.0,
+2000,Sydney,Australia,-33.871373,151.212548,16.0,25.0,17.0,58.0,
+2004,Athens,Greece,37.985272,23.731375,17.0,16.0,17.0,50.0,
+2008,Beijing,China,39.90172,116.394201,14.0,15.0,17.0,46.0,
+2012,London,United Kingdom,51.501941,-0.118668,8.0,15.0,12.0,35.0,
+2016,Rio de Janeiro,Brazil,-22.907308,-43.212117,8.0,11.0,10.0,29.0,
+2020,Tokyo,Japan,35.686963,139.749462,17.0,7.0,22.0,46.0,Held in 2021 because of COVID-19
+2024,Paris,France,48.858092,2.352992,18.0,19.0,16.0,53.0,

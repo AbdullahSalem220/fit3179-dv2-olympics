@@ -1,0 +1,4 @@
+ioc,iso3,iso_n3,country,note
+SGP,SGP,702,Singapore,IOC code changed from SIN to SGP in 2016; crosswalk still lists SIN
+SSD,SSD,728,South Sudan,IOC code missing from the datasets/country-codes crosswalk
+KOS,XKX,XKX,Kosovo,"No ISO 3166 code; World Bank uses XKX. Our copy of world-atlas gives the Kosovo shape the id XKX"

@@ -1,0 +1,258 @@
+born_city,born_state,geo_status,people,geonameid,lat,lon
+Sydney,New South Wales,matched,126,2147714.0,-33.86785,151.20732
+Melbourne,Victoria,matched,85,2158177.0,-37.814,144.96332
+Brisbane,Queensland,matched,63,2174003.0,-27.46794,153.02809
+Adelaide,South Australia,matched,37,2078025.0,-34.92866,138.59863
+Perth,Western Australia,matched,37,2063523.0,-31.95224,115.8614
+Hobart,Tasmania,matched,14,2163355.0,-42.87936,147.32941
+Canberra,Australian Capital Territory,matched,9,2172517.0,-35.28346,149.12807
+Newcastle,New South Wales,matched,9,2155472.0,-32.92953,151.7801
+Rockhampton,Queensland,matched,9,2151437.0,-23.38032,150.50595
+Toowoomba,Queensland,matched,9,2146268.0,-27.56056,151.95386
+Mackay,Queensland,matched,8,2159220.0,-21.15345,149.16554
+Maryborough,Queensland,matched,8,2158562.0,-25.54073,152.70493
+Ballarat,Victoria,matched,7,2177091.0,-37.56622,143.84957
+Darwin,Northern Territory,matched,7,2073124.0,-12.46113,130.84185
+Launceston,Tasmania,matched,7,2160517.0,-41.43876,147.13467
+Subiaco,Western Australia,matched,7,2060886.0,-31.9485,115.8268
+Townsville,Queensland,matched,7,2146142.0,-19.26639,146.80569
+Wollongong,New South Wales,matched,7,2171507.0,-34.424,150.89345
+Gold Coast,Queensland,matched,6,2165087.0,-28.00029,153.43088
+Gosford,New South Wales,matched,6,2164849.0,-33.4244,151.34399
+Wagga Wagga,New South Wales,matched,6,2145110.0,-35.12577,147.35375
+Albury,New South Wales,matched,5,2178174.0,-36.07482,146.92401
+Bendigo,Victoria,matched,5,2176187.0,-36.75818,144.28024
+Geelong,Victoria,matched,5,2165798.0,-38.14711,144.36069
+SYDNEY,New South Wales,matched,5,2147714.0,-33.86785,151.20732
+Tamworth,New South Wales,matched,5,2147497.0,-31.09048,150.92905
+East Melbourne,Victoria,matched,4,6952201.0,-37.81667,144.9879
+Grafton,New South Wales,matched,4,2164771.0,-29.68104,152.93394
+Ipswich,Queensland,matched,4,2162644.0,-27.62343,152.76067
+Leongatha,Victoria,matched,4,2160339.0,-38.47607,145.94685
+Murwillumbah,New South Wales,matched,4,2156049.0,-28.32732,153.39339
+PERTH,Western Australia,matched,4,2063523.0,-31.95224,115.8614
+Penrith,New South Wales,matched,4,2153471.0,-33.75,150.7
+Redcliffe,Queensland,matched,4,2151955.0,-27.22649,153.10648
+Southport,Queensland,matched,4,2148928.0,-27.96724,153.39796
+Carlton,Victoria,matched,3,2172293.0,-37.8,144.96667
+Darlinghurst,New South Wales,matched,3,2169378.0,-33.87939,151.21925
+Geraldton,Western Australia,matched,3,2070998.0,-28.77897,114.61459
+Leichhardt,New South Wales,matched,3,2160386.0,-33.88341,151.15625
+Lismore,New South Wales,matched,3,2160063.0,-28.81354,153.2773
+Lithgow,New South Wales,matched,3,2160053.0,-33.4845,150.14903
+Maitland,New South Wales,matched,3,2159045.0,-32.73308,151.5574
+Nambour,Queensland,matched,3,2155862.0,-26.62613,152.95941
+Parramatta,New South Wales,matched,3,7281840.0,-33.8178,151.00348
+Warrnambool,Victoria,matched,3,2144528.0,-38.38176,142.48799
+ADELAIDE,South Australia,matched,2,2078025.0,-34.92866,138.59863
+Albany,Western Australia,matched,2,2077963.0,-35.02692,117.88369
+Armidale,New South Wales,matched,2,2177671.0,-30.50123,151.66553
+BRISBANE,Queensland,matched,2,2174003.0,-27.46794,153.02809
+Balmain,New South Wales,matched,2,2177052.0,-33.85481,151.1833
+Bedford Park,South Australia,matched,2,2076918.0,-35.02204,138.56815
+Bourke,New South Wales,matched,2,2174467.0,-30.09011,145.93646
+Bundaberg,Queensland,matched,2,2173323.0,-24.86621,152.3479
+Burnie,Tasmania,matched,2,2173125.0,-41.05584,145.90375
+Busselton,Western Australia,matched,2,2075265.0,-33.65249,115.3455
+Byron Bay,New South Wales,matched,2,2172880.0,-28.64989,153.61246
+Camden,New South Wales,matched,2,2172674.0,-34.05405,150.69624
+Clayton,Victoria,matched,2,2171400.0,-37.91667,145.11667
+Gladstone,Queensland,matched,2,2165478.0,-23.84852,151.25775
+Goulburn,New South Wales,matched,2,2164837.0,-34.75155,149.72086
+Hurstville,New South Wales,matched,2,9972762.0,-33.9677,151.10149
+Katherine,Northern Territory,matched,2,2068655.0,-14.46517,132.26347
+Kew,Victoria,matched,2,2161540.0,-37.80639,145.03086
+Logan City,Queensland,matched,2,7281838.0,-27.63917,153.10944
+MELBOURNE,Victoria,matched,2,2158177.0,-37.814,144.96332
+Malvern,Victoria,matched,2,2158952.0,-37.86259,145.02811
+Mansfield,Victoria,matched,2,2158839.0,-37.052,146.08846
+Maryborough,Victoria,matched,2,2158561.0,-37.04562,143.73923
+Mirboo North,Victoria,matched,2,2157487.0,-38.40101,146.16135
+Moree,New South Wales,matched,2,2156927.0,-29.46278,149.84157
+Mount Barker,South Australia,matched,2,2065665.0,-35.06667,138.86667
+Mount Lawley,Western Australia,matched,2,6941710.0,-31.93439,115.8716
+Narrogin,Western Australia,matched,2,2064915.0,-32.93282,117.17763
+North Gosford,New South Wales,matched,2,11704280.0,-33.414,151.3516
+Northam,Western Australia,matched,2,2064550.0,-31.64932,116.67423
+Nowra,New South Wales,matched,2,2154787.0,-34.88422,150.60036
+Paddington,New South Wales,matched,2,2207753.0,-33.88419,151.23151
+Port Kembla,New South Wales,matched,2,2152671.0,-34.4818,150.9012
+Preston,Victoria,matched,2,2152558.0,-37.75,145.01667
+Queanbeyan,New South Wales,matched,2,2152286.0,-35.35493,149.232
+Roma,Queensland,matched,2,2151187.0,-26.56741,148.78751
+SOUTH BRISBANE,Queensland,matched,2,2207259.0,-27.48034,153.02049
+Shepparton,Victoria,matched,2,2149645.0,-36.38047,145.39867
+South Melbourne,Victoria,matched,2,2148955.0,-37.83333,144.96667
+Wellington,New South Wales,matched,2,2144168.0,-32.55588,148.94508
+AUCHENFLOWER,Queensland,matched,1,6943571.0,-27.47443,152.99213
+Alice Springs,Northern Territory,matched,1,2077895.0,-23.69748,133.88362
+Ararat,Victoria,matched,1,2177756.0,-37.28542,142.92728
+Armadale,Victoria,matched,1,2177678.0,-37.85544,145.02052
+Ashfield,New South Wales,matched,1,2177565.0,-33.88834,151.12274
+Ayr,Queensland,matched,1,2177413.0,-19.57393,147.40666
+BENOWA,Queensland,matched,1,2176127.0,-28.0077,153.38583
+BUNDOORA,Victoria,matched,1,8349381.0,-37.69825,145.05967
+Balgowlah Heights,New South Wales,matched,1,2207840.0,-33.80661,151.26243
+Bankstown,New South Wales,matched,1,2176947.0,-33.91667,151.03333
+Barham,New South Wales,matched,1,2176862.0,-35.62647,144.12895
+Batlow,New South Wales,matched,1,2176625.0,-35.51987,148.14727
+Baulkham Hills,New South Wales,matched,1,2176592.0,-33.75881,150.99292
+Bellingen,New South Wales,matched,1,2176295.0,-30.45294,152.89911
+Berri,South Australia,matched,1,2176071.0,-34.28107,140.59958
+Blacktown,New South Wales,matched,1,2175411.0,-33.76667,150.91667
+Blackwater,Queensland,matched,1,2175403.0,-23.58351,148.87912
+Bookar,Victoria,matched,1,2174857.0,-38.13333,143.1
+Booleroo Centre,South Australia,matched,1,2076115.0,-32.87988,138.35074
+Boronia,Victoria,matched,1,2174580.0,-37.86667,145.28333
+Bowen,Queensland,matched,1,2174444.0,-20.01367,148.24754
+Bowral,New South Wales,matched,1,2174400.0,-34.4775,150.4204
+Brighton-Le-Sands,New South Wales,matched,1,2205999.0,-33.96009,151.1511
+Brocklesby,New South Wales,matched,1,2173939.0,-35.82494,146.67512
+Broome,Western Australia,matched,1,2075720.0,-17.95538,122.23922
+Bulli,New South Wales,matched,1,2173445.0,-34.33834,150.91347
+Bunbury,Western Australia,matched,1,2075432.0,-33.32711,115.64137
+CAIRNS,Queensland,matched,1,2172797.0,-16.92366,145.76613
+Cairns,Queensland,matched,1,2172797.0,-16.92366,145.76613
+Campbelltown,New South Wales,matched,1,2172586.0,-34.06667,150.81667
+Campbelltown,South Australia,matched,1,2075056.0,-34.88333,138.66667
+Camperdown,Victoria,matched,1,2172562.0,-38.23392,143.14983
+Cargo,New South Wales,matched,1,2172318.0,-33.42406,148.80904
+Central Coast,New South Wales,matched,1,8310663.0,-33.42979,151.37144
+Charlton,Victoria,matched,1,2171731.0,-36.26437,143.34901
+Chelsea,Victoria,matched,1,2171694.0,-38.05,145.11667
+Coburg,Victoria,matched,1,2171168.0,-37.75,144.96667
+Coffs Harbour,New South Wales,matched,1,2171085.0,-30.29626,153.11351
+Colac,Victoria,matched,1,2171069.0,-38.339,143.58489
+Cooma,New South Wales,matched,1,2170577.0,-36.23517,149.12408
+Cootamundra,New South Wales,matched,1,2170430.0,-34.64095,148.02838
+Cottesloe,Western Australia,matched,1,2073603.0,-31.99426,115.75816
+Cowell,South Australia,matched,1,2073548.0,-33.68227,136.92117
+Crows Nest,New South Wales,matched,1,2207821.0,-33.82494,151.20398
+Culcairn,New South Wales,matched,1,2169801.0,-35.66669,147.03845
+DUNCRAIG,Western Australia,matched,1,8349052.0,-31.83291,115.7759
+Dalby,Queensland,matched,1,2169535.0,-27.18169,151.26205
+Dalwallinu,Western Australia,matched,1,2073216.0,-30.28045,116.66015
+Dampier,Western Australia,matched,1,2073200.0,-20.66275,116.71256
+Darling Point,New South Wales,matched,1,2207908.0,-33.87064,151.23895
+Deniliquin,New South Wales,matched,1,2169068.0,-35.53245,144.95364
+Double Bay,New South Wales,matched,1,8348524.0,-33.87782,151.24354
+East Fremantle,Western Australia,matched,1,2078894.0,-32.03823,115.7676
+Flowerdale,Victoria,matched,1,2166409.0,-37.33333,145.33333
+Franklin,Tasmania,matched,1,2166160.0,-43.08884,147.00906
+GOSFORD,New South Wales,matched,1,2164849.0,-33.4244,151.34399
+Gawler,South Australia,matched,1,2071059.0,-34.60251,138.74902
+Glebe,New South Wales,matched,1,2165450.0,-33.87884,151.18426
+Glen Waverley,Victoria,matched,1,2165171.0,-37.87811,145.16476
+Granville,New South Wales,matched,1,2164691.0,-33.8406,151.00748
+Guildford,Western Australia,matched,1,2070332.0,-31.9,115.96667
+Gunnedah,New South Wales,matched,1,2164206.0,-30.98065,150.25838
+HERSTON,Queensland,matched,1,6931014.0,-27.44453,153.01852
+Hawthorn,Victoria,matched,1,2163782.0,-37.81992,145.0358
+Home Hill,Queensland,matched,1,2163237.0,-19.65921,147.41232
+IPSWICH,Queensland,matched,1,2162644.0,-27.62343,152.76067
+Ingham,Queensland,matched,1,2162737.0,-18.64552,146.16248
+Innisfail,Queensland,matched,1,2162683.0,-17.52209,146.03102
+Kalgoorlie,Western Australia,matched,1,2068823.0,-30.74614,121.4742
+Katanning,Western Australia,matched,1,2068661.0,-33.68787,117.5584
+Kempsey,New South Wales,matched,1,2161658.0,-31.07898,152.83093
+Kensington,New South Wales,matched,1,2161608.0,-33.92019,151.22241
+Kingaroy,Queensland,matched,1,2161376.0,-26.53994,151.8373
+Kippa-Ring,Queensland,matched,1,7932689.0,-27.22586,153.0835
+Kogarah,New South Wales,matched,1,2161185.0,-33.9681,151.13564
+LOGANHOLME,Queensland,matched,1,2159734.0,-27.68444,153.1864
+Lindfield,New South Wales,matched,1,2160114.0,-33.78333,151.16667
+Loxton,South Australia,matched,1,2159416.0,-34.4502,140.56908
+MURDOCH,Western Australia,matched,1,8349091.0,-32.06987,115.83757
+Manly,New South Wales,matched,1,2158867.0,-33.79798,151.28826
+Margaret River,Western Australia,matched,1,2066981.0,-33.95504,115.07599
+Merredin,Western Australia,matched,1,2066472.0,-31.48094,118.27448
+Merrylands,New South Wales,matched,1,2157995.0,-33.83333,150.98333
+Middle Swan,Western Australia,matched,1,2066358.0,-31.85,116.01667
+Mildura,Victoria,matched,1,2157698.0,-34.18551,142.16251
+Milperra,New South Wales,matched,1,8348681.0,-33.93934,150.98148
+Modbury,South Australia,matched,1,2066041.0,-34.83333,138.68333
+Mona Vale,New South Wales,matched,1,2157243.0,-33.67757,151.30307
+Moora,Western Australia,matched,1,2065836.0,-30.64003,116.00365
+Mooroolbark,Victoria,matched,1,2156977.0,-37.78247,145.31682
+Morgan,South Australia,matched,1,2065769.0,-34.03149,139.66795
+Mosman Park,Western Australia,matched,1,2065710.0,-32.00538,115.7638
+Moura,Queensland,matched,1,2156480.0,-24.5722,149.96729
+Mulgrave,Victoria,matched,1,2156340.0,-37.92845,145.17708
+Mundubbera,Queensland,matched,1,2156240.0,-25.59266,151.30225
+Murray Bridge,South Australia,matched,1,2065176.0,-35.11986,139.27345
+Murrayville,Victoria,matched,1,2156087.0,-35.26245,141.18346
+Muswellbrook,New South Wales,matched,1,2156034.0,-32.26118,150.89009
+Nedlands,Western Australia,matched,1,2064874.0,-31.98184,115.8073
+Newport,New South Wales,matched,1,2155412.0,-33.65639,151.31401
+Nhill,Victoria,matched,1,2155370.0,-36.33333,141.65006
+North Fremantle,Western Australia,matched,1,2064510.0,-32.03333,115.75
+North Sydney,New South Wales,matched,1,2154855.0,-33.839,151.2072
+Nyngan,New South Wales,matched,1,2154672.0,-31.56375,147.19373
+Oakleigh,Victoria,matched,1,2154618.0,-37.89809,145.08837
+Orange,New South Wales,matched,1,2154219.0,-33.28397,149.10018
+Pakenham,Victoria,matched,1,2153953.0,-38.07018,145.47411
+Parkes,New South Wales,matched,1,2153778.0,-33.1372,148.1759
+Penshurst,New South Wales,matched,1,2153467.0,-33.96667,151.08333
+Pinjarra,Western Australia,matched,1,2063293.0,-32.6298,115.87351
+Port Augusta,South Australia,matched,1,2063056.0,-32.49597,137.77281
+Port Lincoln,South Australia,matched,1,2063036.0,-34.72625,135.87442
+Port Macquarie,New South Wales,matched,1,2152659.0,-31.43084,152.90894
+Punchbowl,New South Wales,matched,1,8349222.0,-33.92893,151.05111
+Quirindi,New South Wales,matched,1,2152240.0,-31.50763,150.67902
+REDCLIFFE,Queensland,matched,1,2151955.0,-27.22649,153.10648
+Renmark,South Australia,matched,1,2151737.0,-34.17702,140.74697
+Richmond,Victoria,matched,1,2151649.0,-37.81819,145.00176
+Ringwood,Victoria,matched,1,2151576.0,-37.81667,145.23333
+Robinvale,Victoria,matched,1,8310771.0,-34.58356,142.77228
+Ryde,New South Wales,matched,1,2150767.0,-33.8188,151.1062
+SOUTHPORT,Queensland,matched,1,2148928.0,-27.96724,153.39796
+SUBIACO,Western Australia,matched,1,2060886.0,-31.9485,115.8268
+SUNNYBANK,Queensland,matched,1,2147892.0,-27.58003,153.06064
+SUNSHINE COAST,Queensland,matched,1,10630449.0,-26.65682,153.07955
+Sale,Victoria,matched,1,2150615.0,-38.11095,147.06802
+Shellharbour,New South Wales,matched,1,2149673.0,-34.58333,150.86667
+South Purrumbete,Victoria,matched,1,11746897.0,-38.35478,143.20031
+Stanmore,New South Wales,matched,1,2148513.0,-33.89407,151.16424
+Sunshine Coast,Queensland,matched,1,10630449.0,-26.65682,153.07955
+Surfers Paradise,Queensland,matched,1,2147849.0,-28.00274,153.42999
+Swan Hill,Victoria,matched,1,2147756.0,-35.33781,143.5544
+TWEED HEADS,New South Wales,matched,1,2145765.0,-28.17671,153.5452
+Tallimba,New South Wales,matched,1,2147554.0,-33.99352,146.87963
+Taree,New South Wales,matched,1,2147381.0,-31.91099,152.45387
+Temora,New South Wales,matched,1,2147150.0,-34.44834,147.53558
+Terang,Victoria,matched,1,2147070.0,-38.24084,142.92123
+Thirroul,New South Wales,matched,1,2146845.0,-34.31604,150.92142
+Tingalpa,Queensland,matched,1,8348945.0,-27.4736,153.12704
+Traralgon,Victoria,matched,1,2146108.0,-38.19528,146.5415
+Tweed Heads,New South Wales,matched,1,2145765.0,-28.17671,153.5452
+Victoria Park,Western Australia,matched,1,8478275.0,-31.97619,115.90525
+WHYALLA,South Australia,matched,1,2058430.0,-33.03268,137.56483
+Wahroonga,New South Wales,matched,1,2145092.0,-33.71816,151.11561
+Walwa,Victoria,matched,1,2144846.0,-35.9659,147.73401
+Wangaratta,Victoria,matched,1,2144764.0,-36.35846,146.32056
+Warragul,Victoria,matched,1,2144604.0,-38.15912,145.93118
+Warren,New South Wales,matched,1,2144555.0,-31.70224,147.83392
+Warwick,Queensland,matched,1,2144502.0,-28.21901,152.03438
+Warwick,Western Australia,matched,1,8349405.0,-31.83974,115.80855
+Wee Waa,New South Wales,matched,1,2144220.0,-30.2266,149.44041
+Wentworthville,New South Wales,matched,1,2144122.0,-33.80652,150.96785
+Werribee,Victoria,matched,1,2144095.0,-37.9,144.66667
+Wickham,Western Australia,matched,1,8310788.0,-20.67474,117.13784
+Willoughby,New South Wales,matched,1,6949388.0,-33.80493,151.1993
+Woodville,South Australia,matched,1,2057897.0,-34.877,138.54291
+Woolloomooloo,New South Wales,matched,1,2142996.0,-33.87042,151.21968
+Wynyard,Tasmania,matched,1,2142747.0,-40.9897,145.72617
+Yea,Victoria,matched,1,2142392.0,-37.21067,145.42755
+Young,New South Wales,matched,1,2142245.0,-34.3135,148.30107
+BAROSSA VALLEY,South Australia,no match,1,,,
+Cumberland,New South Wales,no match,1,,,
+Gove,Northern Territory,no match,1,,,
+Lake Macquarie,New South Wales,no match,1,,,
+Mereweather,New South Wales,no match,1,,,
+,,no town recorded,3,,,
+,Queensland,no town recorded,1,,,
+Bondi,New South Wales,several places with this name,2,,,
+Burwood,New South Wales,several places with this name,1,,,
+Carrington,New South Wales,several places with this name,1,,,
+Fairfield,New South Wales,several places with this name,1,,,
+Happy Valley,South Australia,several places with this name,1,,,
