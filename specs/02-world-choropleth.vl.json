@@ -1,0 +1,193 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Choropleth map: Paris 2024 medals per million people for every medal-winning country, Equal Earth projection.",
+  "title": {
+    "text": "Per person, no big country won more medals than Australia",
+    "subtitle": "Paris 2024 medals for every million people living in each country",
+    "subtitleColor": "#5A6169",
+    "subtitleFontSize": 14,
+    "offset": 12
+  },
+  "width": "container",
+  "height": 500,
+  "projection": {
+    "type": "equalEarth"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/geo/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.name !== 'Antarctica'"
+        },
+        {
+          "lookup": "id",
+          "from": {
+            "data": {
+              "url": "data/paris2024_world.csv",
+              "format": {
+                "type": "csv",
+                "parse": {
+                  "iso_n3": "string"
+                }
+              }
+            },
+            "key": "iso_n3",
+            "fields": [
+              "country",
+              "total",
+              "gold",
+              "silver",
+              "bronze",
+              "population_2024",
+              "medals_per_million"
+            ]
+          }
+        },
+        {
+          "calculate": "!isValid(datum.total) ? 'No medals' : !isValid(datum.medals_per_million) ? 'No population figure' : datum.medals_per_million < 0.25 ? 'Fewer than 0.25' : datum.medals_per_million < 0.5 ? '0.25 to 0.5' : datum.medals_per_million < 1 ? '0.5 to 1' : datum.medals_per_million < 2 ? '1 to 2' : '2 or more'",
+          "as": "class"
+        },
+        {
+          "calculate": "isValid(datum.country) ? datum.country : datum.properties.name",
+          "as": "name"
+        },
+        {
+          "calculate": "isValid(datum.population_2024) ? format(datum.population_2024 / 1e6, '.1f') + ' million' : 'not available'",
+          "as": "population_label"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "color": {
+          "field": "class",
+          "type": "ordinal",
+          "scale": {
+            "domain": [
+              "Fewer than 0.25",
+              "0.25 to 0.5",
+              "0.5 to 1",
+              "1 to 2",
+              "2 or more",
+              "No medals",
+              "No population figure"
+            ],
+            "range": [
+              "#C7E9C0",
+              "#A1D99B",
+              "#74C476",
+              "#31A354",
+              "#006D2C",
+              "#EEEBE4",
+              "#B9B4AA"
+            ]
+          },
+          "legend": {
+            "title": "Medals per million people",
+            "orient": "bottom-left",
+            "direction": "vertical",
+            "symbolType": "square",
+            "symbolSize": 180,
+            "symbolStrokeColor": "#D6D1C4",
+            "symbolStrokeWidth": 0.5,
+            "fillColor": "#FAF8F3",
+            "padding": 6,
+            "labelFontSize": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "title": "Country"
+          },
+          {
+            "field": "total",
+            "title": "Medals",
+            "format": "d"
+          },
+          {
+            "field": "gold",
+            "title": "Gold",
+            "format": "d"
+          },
+          {
+            "field": "population_label",
+            "title": "Population (2024)"
+          },
+          {
+            "field": "medals_per_million",
+            "title": "Medals per million people",
+            "format": ".2f"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "url": "data/geo/world-110m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "countries"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.id === '036'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": null,
+        "stroke": "#1F2328",
+        "strokeWidth": 1.5
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "lon": 100,
+            "lat": -47,
+            "line": "Australia: 1.95 medals per million people."
+          },
+          {
+            "lon": 100,
+            "lat": -52.5,
+            "line": "Highest of any country with more than 10 million people."
+          }
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "font": "Barlow",
+        "fontSize": 13,
+        "fontWeight": 600,
+        "color": "#1F2328"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "lon",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "lat",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "line"
+        }
+      }
+    }
+  ]
+}
