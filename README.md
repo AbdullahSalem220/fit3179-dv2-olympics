@@ -84,4 +84,4 @@ Requires Python 3 with pandas.
 
 ## Use of generative AI
 
-To be completed.
+Generative AI (Claude, by Anthropic) was used to help write the data-preparation scripts and chart specifications, to suggest layout and wording, and to check grammar. All data comes from the sources listed above, and every number, chart and sentence was checked by the author.

@@ -81,7 +81,7 @@
       "data": {
         "values": [
           {"games": "1972", "x": 5, "text": "Women won twice as many"},
-          {"games": "2024", "x": 20, "text": "Women's record: 30"}
+          {"games": "2024", "x": 20, "text": "Women's best"}
         ]
       },
       "mark": {"type": "text", "align": "left", "dx": 20, "fontSize": 11, "fontWeight": 600, "color": "#1F2328"},

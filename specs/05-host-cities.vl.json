@@ -246,7 +246,12 @@
                 "title": "Gold"
               }
             ]
-          }
+          },
+          "transform": [
+            {
+              "filter": "!datum.in_europe"
+            }
+          ]
         },
         {
           "transform": [

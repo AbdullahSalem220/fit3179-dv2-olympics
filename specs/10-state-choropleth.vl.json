@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Choropleth map: Australian-born Olympic medallists (2000-2024) per million current residents, by state or territory of birth. Albers equal-area conic projection.",
   "title": {
-    "text": "Tasmania and the Northern Territory lead, but from small numbers",
+    "text": "Tasmania and the NT lead, but from small numbers",
     "subtitle": "Medallists born in each state for every million people living there, 2000–2024",
     "subtitleColor": "#5A6169",
     "subtitleFontSize": 14,

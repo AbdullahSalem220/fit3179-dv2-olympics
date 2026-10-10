@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "Dot plot: Australia's 15 most successful Summer Olympians by gold medals, showing gold medals and total medals for each.",
   "title": {
-    "text": "Emma McKeon has won more Olympic medals than any other Australian",
+    "text": "Emma McKeon has won the most Olympic medals",
     "subtitle": "The 15 Australians with the most gold medals, 1896–2024",
     "subtitleColor": "#5A6169",
     "subtitleFontSize": 14,

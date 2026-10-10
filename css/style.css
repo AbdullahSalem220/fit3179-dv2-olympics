@@ -242,7 +242,6 @@ h1 {
 
 .slot:empty::before { content: attr(data-label); }
 
-.placeholder { color: var(--ink-muted); font-style: italic; }
 
 /* Vega tooltip uses the page fonts */
 #vg-tooltip-element {
@@ -272,6 +271,7 @@ h1 {
 .sources, .method { margin: 0; padding-left: 18px; }
 .sources li, .method li { margin-bottom: 6px; }
 .method strong { color: var(--ink); font-weight: 600; }
+.licence-note { margin: 12px 0 0; }
 
 a { color: var(--green); }
 a:hover { color: var(--ink); }
