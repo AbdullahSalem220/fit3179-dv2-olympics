@@ -43,7 +43,7 @@
           "field": "medal",
           "type": "nominal",
           "scale": {"domain": ["Gold", "Silver", "Bronze"], "range": ["#C9A227", "#A8ADB3", "#A0673A"]},
-          "legend": {"title": null, "orient": "top-left", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 13}
+          "legend": {"title": null, "orient": "top-left", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 12}
         },
         "order": {"field": "medal_order", "sort": "ascending"},
         "tooltip": [
@@ -80,19 +80,30 @@
     {
       "data": {
         "values": [
-          {"games": "1956", "y": 41, "text": "Melbourne: first home Games", "align": "center"},
-          {"games": "1976", "y": 30, "text": "Montreal: no gold at all", "align": "center"},
-          {"games": "1980", "y": 38, "text": "1981: Australian Institute of Sport opens", "align": "left"},
-          {"games": "2000", "y": 66, "text": "Sydney: most medals ever (58)", "align": "right"},
-          {"games": "2024", "y": 66, "text": "Paris: most gold ever (18)", "align": "right"}
+          {"games": "1956", "y": 41, "text": "Melbourne: first home Games"},
+          {"games": "1976", "y": 30, "text": "Montreal: no gold at all"},
+          {"games": "1980", "y": 38, "text": "1981: Australian Institute of Sport opens"}
         ]
       },
       "mark": {"type": "text", "fontSize": 12, "fontWeight": 600, "color": "#1F2328"},
       "encoding": {
         "x": {"field": "games", "type": "ordinal"},
         "y": {"field": "y", "type": "quantitative"},
-        "text": {"field": "text"},
-        "align": {"field": "align", "type": "nominal", "scale": null}
+        "text": {"field": "text"}
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"games": "2000", "y": 66, "text": "Sydney: most medals ever (58)"},
+          {"games": "2024", "y": 66, "text": "Paris: most gold ever (18)"}
+        ]
+      },
+      "mark": {"type": "text", "align": "right", "dx": 12, "fontSize": 12, "fontWeight": 600, "color": "#1F2328"},
+      "encoding": {
+        "x": {"field": "games", "type": "ordinal"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "text"}
       }
     }
   ]

@@ -223,7 +223,7 @@
         {
           "mark": {
             "type": "text",
-            "fontSize": 11,
+            "fontSize": 12,
             "fontWeight": 600,
             "stroke": "#FFFFFF",
             "strokeWidth": 4,
@@ -233,7 +233,7 @@
         {
           "mark": {
             "type": "text",
-            "fontSize": 11,
+            "fontSize": 12,
             "fontWeight": 600,
             "color": "#1F2328"
           }
@@ -242,8 +242,8 @@
     }
   ],
   "padding": {
-    "left": 40,
-    "right": 45,
+    "left": 0,
+    "right": 0,
     "top": 5,
     "bottom": 5
   }

@@ -15,9 +15,23 @@
     "rotate": [
       -150,
       0
-    ]
+    ],
+    "fit": {
+      "type": "Sphere"
+    }
   },
   "layer": [
+    {
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#D6E6EE",
+        "stroke": "#B9CFDA",
+        "strokeWidth": 0.75
+      }
+    },
     {
       "data": {
         "url": "data/geo/world-110m.json",
@@ -33,8 +47,8 @@
       ],
       "mark": {
         "type": "geoshape",
-        "fill": "#E9E5DC",
-        "stroke": "#FAF8F3",
+        "fill": "#EEEBE4",
+        "stroke": "#C9C2B4",
         "strokeWidth": 0.5
       }
     },

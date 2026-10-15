@@ -28,7 +28,7 @@
         "labelAnchor": "start",
         "labelOrient": "top",
         "labelFont": "Barlow Condensed",
-        "labelFontSize": 18,
+        "labelFontSize": 16,
         "labelFontWeight": 700,
         "labelColor": "#1F2328",
         "labelPadding": 4
@@ -38,8 +38,8 @@
   "resolve": {"scale": {"y": "independent"}},
   "spacing": 28,
   "spec": {
-    "width": "container",
-    "height": 150,
+    "width": 1023,
+    "height": 230,
     "layer": [
       {
         "transform": [
@@ -47,7 +47,7 @@
           {"calculate": "upper(slice(datum.medal_key, 0, 1)) + slice(datum.medal_key, 1)", "as": "medal"},
           {"calculate": "indexof(['gold', 'silver', 'bronze'], datum.medal_key)", "as": "medal_order"}
         ],
-        "mark": {"type": "bar", "width": 7},
+        "mark": {"type": "bar", "width": 11},
         "encoding": {
           "x": {
             "field": "year",
@@ -61,13 +61,13 @@
             "type": "quantitative",
             "stack": "zero",
             "title": "Medals",
-            "axis": {"tickCount": 3, "grid": true, "domain": false, "ticks": false}
+            "axis": {"tickCount": 4, "grid": true, "domain": false, "ticks": false}
           },
           "color": {
             "field": "medal",
             "type": "nominal",
             "scale": {"domain": ["Gold", "Silver", "Bronze"], "range": ["#C9A227", "#A8ADB3", "#A0673A"]},
-            "legend": {"title": null, "orient": "top", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 13}
+            "legend": {"title": null, "orient": "top", "direction": "horizontal", "symbolType": "square", "symbolSize": 180, "labelFontSize": 12}
           },
           "order": {"field": "medal_order", "sort": "ascending"},
           "tooltip": [
@@ -88,7 +88,7 @@
             "as": "note"
           }
         ],
-        "mark": {"type": "text", "align": "right", "dx": -8, "dy": -2, "baseline": "bottom", "fontSize": 11, "fontWeight": 600, "color": "#1F2328"},
+        "mark": {"type": "text", "align": "right", "dx": -8, "dy": -2, "baseline": "bottom", "fontSize": 12, "fontWeight": 600, "color": "#1F2328"},
         "encoding": {
           "x": {"field": "year", "type": "quantitative"},
           "y": {"field": "total", "type": "quantitative"},

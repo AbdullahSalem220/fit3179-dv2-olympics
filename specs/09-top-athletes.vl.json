@@ -9,7 +9,7 @@
     "offset": 12
   },
   "width": "container",
-  "height": {"step": 26},
+  "height": {"step": 28},
   "data": {
     "url": "data/top_athletes.csv",
     "format": {"type": "csv", "parse": {"gold": "number", "silver": "number", "bronze": "number", "total": "number", "first_year": "number", "last_year": "number"}}
@@ -70,14 +70,14 @@
             "direction": "horizontal",
             "labelExpr": "datum.label === 'gold' ? 'Gold medals' : 'All medals'",
             "symbolSize": 150,
-            "labelFontSize": 13
+            "labelFontSize": 12
           }
         }
       }
     },
     {
       "transform": [{"filter": "datum.sport !== 'Swimming'"}],
-      "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 11, "color": "#5A6169"},
+      "mark": {"type": "text", "align": "left", "dx": 10, "fontSize": 12, "color": "#5A6169"},
       "encoding": {
         "x": {"field": "total", "type": "quantitative"},
         "text": {"field": "sport"}

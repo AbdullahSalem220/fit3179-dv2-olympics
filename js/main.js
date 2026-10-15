@@ -2,11 +2,22 @@
 // Specs are added here one at a time in Phase 3.
 
 // Shared look for every chart: page fonts and quiet axes.
+// Type scale used across all specs:
+//   20 chart title · 16 panel heading · 14 subtitle · 13 axis/legend title
+//   12 annotations, direct labels, axis/legend labels · 11 numbers printed on marks
+// No left/right padding, so chart titles line up with the page text.
 const theme = {
   font: "Barlow",
   background: null,
+  padding: { left: 0, right: 0, top: 5, bottom: 5 },
   view: { stroke: null },
-  title: { font: "Barlow Condensed", fontSize: 20, fontWeight: 600, anchor: "start", color: "#1F2328", subtitleFont: "Barlow" },
+  title: {
+    font: "Barlow Condensed", fontSize: 20, fontWeight: 600, anchor: "start", color: "#1F2328",
+    subtitleFont: "Barlow", subtitleFontSize: 14, subtitleColor: "#5A6169", offset: 12
+  },
+  header: {
+    labelFont: "Barlow Condensed", labelFontSize: 16, labelFontWeight: 700, labelColor: "#1F2328"
+  },
   axis: {
     labelFont: "Barlow", labelFontSize: 12, labelColor: "#5A6169",
     titleFont: "Barlow", titleFontSize: 13, titleFontWeight: 500, titleColor: "#5A6169",
@@ -16,7 +27,7 @@ const theme = {
     labelFont: "Barlow", labelFontSize: 12, labelColor: "#5A6169",
     titleFont: "Barlow", titleFontSize: 13, titleFontWeight: 500, titleColor: "#1F2328"
   },
-  text: { font: "Barlow", color: "#1F2328" }
+  text: { font: "Barlow", fontSize: 12, color: "#1F2328" }
 };
 
 // [container id, spec path]

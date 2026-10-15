@@ -11,9 +11,23 @@
   "width": "container",
   "height": 500,
   "projection": {
-    "type": "equalEarth"
+    "type": "equalEarth",
+    "fit": {
+      "type": "Sphere"
+    }
   },
   "layer": [
+    {
+      "data": {
+        "sphere": true
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#D6E6EE",
+        "stroke": "#B9CFDA",
+        "strokeWidth": 0.75
+      }
+    },
     {
       "data": {
         "url": "data/geo/world-110m.json",
@@ -65,10 +79,16 @@
       ],
       "mark": {
         "type": "geoshape",
-        "stroke": "#FFFFFF",
-        "strokeWidth": 0.5
+        "strokeWidth": 0.6
       },
       "encoding": {
+        "stroke": {
+          "condition": {
+            "test": "isValid(datum.total)",
+            "value": "#FFFFFF"
+          },
+          "value": "#C9C2B4"
+        },
         "color": {
           "field": "class",
           "type": "ordinal",
@@ -171,7 +191,7 @@
         "type": "text",
         "align": "right",
         "font": "Barlow",
-        "fontSize": 13,
+        "fontSize": 12,
         "fontWeight": 600,
         "color": "#1F2328"
       },

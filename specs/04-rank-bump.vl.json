@@ -10,7 +10,7 @@
   },
   "width": "container",
   "height": 420,
-  "padding": {"left": 5, "top": 5, "bottom": 5, "right": 95},
+  "padding": {"left": 0, "top": 5, "bottom": 5, "right": 95},
   "data": {"url": "data/summer_ranks.csv"},
   "transform": [
     {"filter": {"field": "noc", "oneOf": ["AUS", "GBR", "JPN", "FRA", "ITA", "NED"]}},

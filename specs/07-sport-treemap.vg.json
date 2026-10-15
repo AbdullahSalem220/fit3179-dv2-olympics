@@ -11,8 +11,8 @@
     "frame": "group"
   },
   "autosize": {"type": "fit-x", "contains": "padding"},
-  "padding": 5,
-  "height": 440,
+  "padding": {"left": 0, "right": 0, "top": 5, "bottom": 5},
+  "height": 580,
   "signals": [
     {
       "name": "width",
@@ -97,7 +97,7 @@
       "direction": "horizontal",
       "symbolType": "square",
       "symbolSize": 180,
-      "labelFontSize": 13,
+      "labelFontSize": 12,
       "offset": 6
     }
   ],
@@ -146,11 +146,11 @@
       "interactive": false,
       "encode": {
         "update": {
-          "x": {"signal": "datum.x0 + 6"},
-          "y": {"signal": "datum.y0 + 18"},
-          "text": {"signal": "(datum.x1 - datum.x0) > 70 && (datum.y1 - datum.y0) > 40 ? datum.sport_group : ''"},
-          "font": {"value": "Barlow Condensed"},
-          "fontSize": {"signal": "datum.sport_total > 100 ? 22 : 15"},
+          "x": {"signal": "datum.x0 + 5"},
+          "y": {"signal": "datum.y0 + 15"},
+          "text": {"signal": "(datum.x1 - datum.x0) > 34 && (datum.y1 - datum.y0) > 20 ? datum.sport_group : ''"},
+          "limit": {"signal": "datum.x1 - datum.x0 - 8"},
+          "fontSize": {"value": 12},
           "fontWeight": {"value": 700},
           "fill": {"value": "#1F2328"}
         }
@@ -162,12 +162,11 @@
       "interactive": false,
       "encode": {
         "update": {
-          "x": {"signal": "datum.x0 + 6"},
-          "y": {"signal": "datum.y0 + (datum.sport_total > 100 ? 38 : 33)"},
-          "text": {"signal": "(datum.x1 - datum.x0) > 70 && (datum.y1 - datum.y0) > 55 ? datum.sport_total + ' medals (' + format(datum.share, '.0%') + ')' : ''"},
-          "font": {"value": "Barlow"},
-          "fontSize": {"value": 12},
-          "fontWeight": {"value": 600},
+          "x": {"signal": "datum.x0 + 5"},
+          "y": {"signal": "datum.y0 + 29"},
+          "text": {"signal": "(datum.x1 - datum.x0) <= 34 || (datum.y1 - datum.y0) <= 36 ? '' : (datum.x1 - datum.x0) > 100 ? datum.sport_total + ' medals (' + format(datum.share, '.0%') + ')' : (datum.x1 - datum.x0) > 62 ? datum.sport_total + ' medals' : datum.sport_total + ''"},
+          "fontSize": {"value": 11},
+          "fontWeight": {"value": 500},
           "fill": {"value": "#1F2328"}
         }
       }

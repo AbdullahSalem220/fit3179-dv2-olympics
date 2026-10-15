@@ -41,7 +41,7 @@
         "title": null,
         "domain": false,
         "ticks": false,
-        "labelFontSize": 14,
+        "labelFontSize": 12,
         "labelColor": "#1F2328",
         "labelPadding": 10
       }
@@ -69,8 +69,8 @@
             "orient": "top",
             "direction": "horizontal",
             "symbolType": "square",
-            "symbolSize": 200,
-            "labelFontSize": 13,
+            "symbolSize": 180,
+            "labelFontSize": 12,
             "offset": 4
           }
         },
@@ -94,8 +94,7 @@
         "type": "text",
         "align": "left",
         "baseline": "middle",
-        "font": "Barlow Condensed",
-        "fontSize": 15,
+        "fontSize": 11,
         "fontWeight": 600,
         "color": "#1F2328"
       },

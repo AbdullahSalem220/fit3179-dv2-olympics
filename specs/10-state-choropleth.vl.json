@@ -201,9 +201,8 @@
           "mark": {
             "type": "text",
             "dy": -7,
-            "fontSize": 13,
-            "fontWeight": 700,
-            "font": "Barlow Condensed"
+            "fontSize": 12,
+            "fontWeight": 700
           },
           "encoding": {
             "text": {
@@ -238,7 +237,7 @@
       "mark": {
         "type": "text",
         "align": "left",
-        "fontSize": 11,
+        "fontSize": 12,
         "fontWeight": 600,
         "color": "#1F2328",
         "lineBreak": "\n",
